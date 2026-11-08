@@ -1,0 +1,108 @@
+R23_COMPLETE_WRITER_INVENTORY
+verified_against_baseline_text=YES
+baseline_functions_modified=NO
+development_entry=src/controlled_writers.py
+
+step1_smart_rename
+Source: baseline/MAIN_ASSISTANT.py
+Creates a visible ID in a photo filename from the highest number plus one.
+Does not write a roll number or Excel identity fields.
+Reads the flat photo library and can bypass the engine.
+Development action: legacy_next_official_uid is blocked. This function is not called.
+
+step3_copy_to_library
+Source: baseline/MAIN_ASSISTANT.py
+Does not create a student ID.
+Copies a processed photo to PHOTO_LIBRARY/SCHOOL/<filename>.
+Can bypass the session photo rule.
+Development action: not called. assign_photo writes only the session path and refuses an existing file.
+
+step4_update_photo_db
+Source: baseline/MAIN_ASSISTANT.py
+Creates a student row from a photo filename.
+Writes student_unique_id, school_code, and STUDENT_PHOTO_PATH.
+Does not use the roll number.
+Can bypass the engine.
+Development action: not called.
+
+step6_data_merge
+Source: baseline/MAIN_ASSISTANT.py
+Does not create a visible ID.
+Fills empty name, father, class, mobile, and address fields.
+Uses cleaned display text, so it can bypass exact matching.
+Development action: not called. correct_name is the only name change in the development entry.
+
+step7_sync_photos
+Source: baseline/MAIN_ASSISTANT.py
+Does not create a visible ID.
+Copies a photo onto PHOTO_LIBRARY/SCHOOL/UID.jpg and can replace an existing file after making a backup.
+Development action: not called.
+
+step7b_update_photo_path
+Source: baseline/MAIN_ASSISTANT.py
+Does not create a visible ID.
+Writes STUDENT_PHOTO_PATH from the flat library or a Drive link.
+Can point a reused visible ID at the wrong photo.
+Development action: not called. The generator row receives only the path stored by assign_photo.
+
+step_reassign_mixed
+Source: baseline/MAIN_ASSISTANT.py
+Creates a new visible ID with maximum-plus-one logic.
+Writes the new ID, class, and photo path, and moves the photo file.
+Can bypass promotion and the permanent key.
+Development action: not called. promote keeps the key and does not move a file.
+
+write_enroll_to_local_xlsx
+Source: baseline/MAIN_ASSISTANT.py
+Writes a supplied visible ID and photo path onto a row matched by uppercase name and class.
+Does not calculate the ID, but it accepts an ID made by the old allocator.
+Development action: not called.
+
+stepE_enroll_from_sheet
+Source: baseline/MAIN_ASSISTANT.py
+Calls next_official_uid.
+Writes the visible ID, roll, name, father, and flat photo path.
+This is the main enrollment bypass.
+Development action: enroll calls only IdentityEngine.create_student.
+
+_write_uids_to_school_google_sheet
+Source: baseline/MAIN_ASSISTANT.py
+Writes a visible ID to a Google sheet.
+It does not calculate Option A.
+Development action: not called and not connected to Google.
+
+write_by_name
+Source: baseline/MAIN_ASSISTANT.py
+Generic header writer.
+It is not itself an identity rule. It writes whatever dictionary another function supplies.
+Development action: the engine does not call it.
+
+update_student_excel
+Source: baseline/slip_ocr.py
+Updates name, father, class, address, and mobile for an existing visible ID.
+Does not call next_official_uid.
+Can bypass an explicit correction.
+Development action: not called.
+
+write_school_csv
+Source: baseline/slip_ocr.py
+Writes a school CSV keyed by the existing visible ID.
+Development action: not called.
+
+_save_edit
+Source: baseline/school_records.py
+Writes student_name, class, father_name, mobile, and address.
+Does not change the visible ID or photo path.
+A class edit here would bypass promotion.
+Development action: not called. correct_name changes only name or father and keeps the key.
+
+_delete
+Source: baseline/school_records.py
+Deletes one school row.
+It is not an ID allocator.
+Development action: not exposed.
+
+SAINI_ID_CARD.py was inspected and is not an identity writer.
+It reads student_unique_id and STUDENT_PHOTO_PATH.
+saini_db.upsert is called by the baseline enrollment function, but its source was not in the workspace.
+That module remains NOT_VERIFIED and is not called.

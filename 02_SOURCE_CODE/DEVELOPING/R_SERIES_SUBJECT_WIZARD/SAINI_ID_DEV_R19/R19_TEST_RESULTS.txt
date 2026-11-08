@@ -1,0 +1,79 @@
+R19_TEST_RESULTS
+R19_RULES exit=0 Ran 17 tests in 0.153s
+test_01_generator_and_editor_share_one_path (__main__.R19RuleTests.test_01_generator_and_editor_share_one_path) ... ok
+test_02_legacy_f_path_is_rejected (__main__.R19RuleTests.test_02_legacy_f_path_is_rejected) ... ok
+test_03_missing_workbook_fails_closed (__main__.R19RuleTests.test_03_missing_workbook_fails_closed) ... ok
+test_04_empty_school_name_is_rejected (__main__.R19RuleTests.test_04_empty_school_name_is_rejected) ... ok
+test_05_whitespace_school_name_is_rejected (__main__.R19RuleTests.test_05_whitespace_school_name_is_rejected) ... ok
+test_06_first_eligible_row_is_selected (__main__.R19RuleTests.test_06_first_eligible_row_is_selected) ... ok
+test_07_all_fields_come_from_the_same_row (__main__.R19RuleTests.test_07_all_fields_come_from_the_same_row) ... ok
+test_08_no_field_is_taken_from_a_later_row (__main__.R19RuleTests.test_08_no_field_is_taken_from_a_later_row) ... ok
+test_09_no_eligible_row_fails_closed (__main__.R19RuleTests.test_09_no_eligible_row_fails_closed) ... ok
+test_10_duplicate_school_code_header_is_rejected (__main__.R19RuleTests.test_10_duplicate_school_code_header_is_rejected) ... ok
+test_11_duplicate_school_name_header_is_rejected (__main__.R19RuleTests.test_11_duplicate_school_name_header_is_rejected) ... ok
+test_12_duplicate_template_header_is_rejected (__main__.R19RuleTests.test_12_duplicate_template_header_is_rejected) ... ok
+test_13_missing_template_is_rejected (__main__.R19RuleTests.test_13_missing_template_is_rejected) ... ok
+test_14_existing_template_file_is_not_changed (__main__.R19RuleTests.test_14_existing_template_file_is_not_changed) ... ok
+test_15_synthetic_workbook_structure_is_not_changed (__main__.R19RuleTests.test_15_synthetic_workbook_structure_is_not_changed) ... ok
+test_16_option_c_modules_are_unchanged (__main__.R19RuleTests.test_16_option_c_modules_are_unchanged) ... ok
+test_17_live_workbook_path_is_not_a_fallback (__main__.R19RuleTests.test_17_live_workbook_path_is_not_a_fallback) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.153s
+
+OK
+
+R13_ORIGINAL PASS exit=0 Ran 17 tests in 0.051s
+test_a_both_known_empty_rows_fail_closed (__main__.BsmSelectionTests.test_a_both_known_empty_rows_fail_closed) ... ok
+test_b_whitespace_only_names_are_rejected (__main__.BsmSelectionTests.test_b_whitespace_only_names_are_rejected) ... ok
+test_c_first_eligible_row_top_to_bottom (__main__.BsmSelectionTests.test_c_first_eligible_row_top_to_bottom) ... ok
+test_d_every_field_comes_from_the_same_row (__main__.BsmSelectionTests.test_d_every_field_comes_from_the_same_row) ... ok
+test_e_no_eligible_row_has_no_template_fallback (__main__.BsmSelectionTests.test_e_no_eligible_row_has_no_template_fallback) ... ok
+test_f_other_schools_are_not_selected_as_bsm (__main__.BsmSelectionTests.test_f_other_schools_are_not_selected_as_bsm) ... ok
+test_g_duplicate_required_headers_fail_closed (__main__.BsmSelectionTests.test_g_duplicate_required_headers_fail_closed) ... ok
+test_g_synthetic_workbook_duplicate_header (__main__.BsmSelectionTests.test_g_synthetic_workbook_duplicate_header) ... ok
+test_g_unrelated_duplicate_father_header_does_not_change_row (__main__.BsmSelectionTests.test_g_unrelated_duplicate_father_header_does_not_change_row) ... ok
+test_bsm_selector_is_wired_and_non_bsm_branch_remains (__main__.PathAlignmentTests.test_bsm_selector_is_wired_and_non_bsm_branch_remains) ... ok
+test_default_path_matches_generator_workbook (__main__.PathAlignmentTests.test_default_path_matches_generator_workbook) ... ok
+test_editor_and_generator_call_the_same_resolver (__main__.PathAlignmentTests.test_editor_and_generator_call_the_same_resolver) ... ok
+test_legacy_f_path_is_refused_without_opening_it (__main__.PathAlignmentTests.test_legacy_f_path_is_refused_without_opening_it) ... ok
+test_temporary_override_is_shared_and_not_opened (__main__.PathAlignmentTests.test_temporary_override_is_shared_and_not_opened) ... ok
+test_baseline_matches_recorded_live_hashes (__main__.ProtectionTests.test_baseline_matches_recorded_live_hashes) ... ok
+test_development_sources_do_not_reference_photo_library (__main__.ProtectionTests.test_development_sources_do_not_reference_photo_library) ... ok
+test_option_c_modules_were_not_modified (__main__.ProtectionTests.test_option_c_modules_were_not_modified) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.051s
+
+OK
+
+R4_ORIGINAL PASS exit=0 Ran 5 tests in 0.203s
+test_callers_pass_gate_keywords (__main__.CompatibilityTests.test_callers_pass_gate_keywords) ... ok
+test_first_bsm_row_only (__main__.CompatibilityTests.test_first_bsm_row_only) ... ok
+test_public_call_signatures_stay_compatible (__main__.CompatibilityTests.test_public_call_signatures_stay_compatible) ... ok
+test_recorded_hashes_unchanged (__main__.CompatibilityTests.test_recorded_hashes_unchanged) ... ok
+test_v5_journal_and_gate_match_live (__main__.CompatibilityTests.test_v5_journal_and_gate_match_live) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.203s
+
+OK
+
+R14_ORIGINAL PASS exit=0 Ran 4 tests in 0.414s
+
+=== PHOTO DEBUG ===
+Path from Excel : [D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_R19\regression_r14_view\synthetic_output\synthetic_color_block.png]
+Exists?         : True
+Photo pasted successfully!
+====================
+
+ERROR: Template file missing!
+test_copied_patch_hashes_match_r13 (__main__.R14IntegrationTests.test_copied_patch_hashes_match_r13) ... ok
+test_gate_calls_remain_and_non_bsm_branch_remains (__main__.R14IntegrationTests.test_gate_calls_remain_and_non_bsm_branch_remains) ... ok
+test_option_c_modules_match_baseline (__main__.R14IntegrationTests.test_option_c_modules_match_baseline) ... ok
+test_synthetic_render_uses_only_the_selected_row (__main__.R14IntegrationTests.test_synthetic_render_uses_only_the_selected_row) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.414s
+
+OK

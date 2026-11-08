@@ -1,0 +1,59 @@
+R23_4E_TEST_REPORT
+package=R23_4E_WINDOWS_JUNCTION_VERIFICATION
+gui_launched=NO
+real_student_data=NO
+identity_engine_modified=NO
+r23_4a_modified=NO
+r23_4b_modified=NO
+r23_4c_modified=NO
+r23_4d_modified=NO
+production_modified=NO
+windows_junction=UNVERIFIED
+teacher_trial=NOT AUTHORIZED
+production=NOT APPROVED
+final_status=PATCH PREPARED — WINDOWS JUNCTION VERIFICATION REQUIRED
+
+tests/test_r23_4a_path_safety.py
+Ran 11 tests
+OK
+Failed: 0
+Skipped: 0
+
+tests/test_r23_4b_safety.py
+Ran 13 tests
+OK
+Passed: 12
+Skipped: 1
+Failed: 0
+Skipped: test_windows_junction_is_reported_when_unsupported
+Reason: Windows junction verification was not executed on this Linux runner. Status: UNVERIFIED.
+This skip is not a pass.
+
+tests/test_r23_4c_remediation.py
+Ran 4 tests
+OK
+Failed: 0
+Skipped: 0
+
+tests/test_r23_4d_staging.py
+Ran 3 tests
+OK
+Failed: 0
+Skipped: 0
+
+tests/test_r23_4e_junction.py
+Ran 3 tests
+OK
+Passed: 2
+Skipped: 1
+Failed: 0
+Passed checks:
+indeterminate Windows file attributes fail closed
+a failed junction creation is classified as skipped, not passed
+Skipped: test_linux_skips_live_junction_without_passing_it
+Reason: Windows junction verification was not executed on this Linux runner. Status: UNVERIFIED.
+The live junction was not created and was not marked passed.
+
+Total on this Linux runner: 32 passed, 0 failed, 2 skipped.
+Windows junction protection is UNVERIFIED.
+A Windows run must execute the junction probe before that status can change.

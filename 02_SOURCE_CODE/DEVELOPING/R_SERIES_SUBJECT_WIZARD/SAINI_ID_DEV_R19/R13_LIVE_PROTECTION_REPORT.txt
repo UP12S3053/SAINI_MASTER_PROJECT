@@ -1,0 +1,20 @@
+R13_LIVE_PROTECTION_REPORT
+status=LIVE_TREE_NOT_WRITTEN_BY_R13
+
+The patch was made only under the isolated development copy.
+No path under D:\SHRI_JAI_SHRI_RAM was opened for writing by this patch.
+The user's live disk was not mounted in the test environment.
+
+Workspace reference copies that match the previously recorded live hashes were re-checked by the existing R4 compatibility tests:
+SAINI_ID_CARD.py 08F68584254CE7E016BCB075EE25F59EEB94803550F82D8FF4BFF844453CB0E1
+config reference 2684F6C2475F645401E61F0532724C6146C9DF98D2BDA239A2B0D2FD80273216
+school_config_front.xlsx reference hash checked by R4 test_recorded_hashes_unchanged: PASSED
+Those reference files were not edited.
+
+student_data.xlsx was not opened.
+PHOTO_LIBRARY was not opened.
+No ID card was generated.
+Config Editor was not launched.
+The F: workbook was not opened. The corrected resolver rejects that path as a string.
+
+This report does not by itself re-hash the user's D: disk. The install command prints those live hashes and compares them, read-only.

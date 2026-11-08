@@ -1,0 +1,22 @@
+STOP
+
+यह R23.5 पैकेज है। शिक्षक ट्रायल अभी अधिकृत नहीं है।
+This is the R23.5 package. The teacher trial is NOT AUTHORIZED.
+
+प्रोडक्शन अभी मंजूर नहीं है।
+Production is NOT APPROVED.
+
+Open_Enrollment.bat या open_launcher.py न चलाएँ।
+Do not launch Open_Enrollment.bat or open_launcher.py.
+
+नामांकन विंडो न खोलें।
+Do not open the enrollment window.
+
+स्किप का मतलब पास नहीं है।
+A skip is not a pass.
+
+जिन सिमलिंक टेस्ट को Windows ने WinError 1314 दिया, वे अब भी स्किप हैं।
+Symlink tests refused with WinError 1314 remain skipped.
+
+जंक्शन टेस्ट पास होने का मतलब सिमलिंक टेस्ट पास नहीं है।
+A passed junction test does not make a skipped symlink test a pass.

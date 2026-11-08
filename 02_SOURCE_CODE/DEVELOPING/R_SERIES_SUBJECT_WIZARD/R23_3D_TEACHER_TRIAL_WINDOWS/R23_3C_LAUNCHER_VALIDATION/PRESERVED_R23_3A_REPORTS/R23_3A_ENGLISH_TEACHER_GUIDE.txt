@@ -1,0 +1,44 @@
+R23.3A English Teacher Guide
+This is a development exercise. Do not use a real student or a real photograph. No ID card is created.
+
+Open the program
+Double-click open_launcher.py.
+You do not need to type a command.
+
+Prepare the file
+Use these seven columns only:
+school_code
+session
+class
+roll_number
+student_name
+father_name
+photo_file
+
+Example:
+ABC, 2026_27, I, 1, TRIAL CHILD A, TRIAL FATHER A, good.jpg
+
+Class 1 can be written as I or 1.
+Class 6 can be written as VI or 6.
+photo_file is the file name only, not a full path.
+The photograph must be inside the folder you select.
+
+Steps
+1. Choose the Excel or CSV file.
+2. Choose the photo folder.
+3. Choose the session. The sample uses 2026_27.
+4. Choose the class.
+5. Press Start enrollment.
+6. Read the message below the button.
+
+Messages
+Enrollment completed: the student was recorded. The shown ID is the result.
+Already recorded: starting again did not create another record.
+Roll or ID already exists: another name cannot use the same class and roll. Change the roll.
+Photo not found: put the named file in the selected folder.
+Photo could not be opened: the file is unreadable. Use another synthetic photo.
+Nursery, LKG, and UKG are not in the class list. Their limit is still closed.
+
+Cancel stops the current run.
+Exit closes the window.
+The permanent student key is never shown.

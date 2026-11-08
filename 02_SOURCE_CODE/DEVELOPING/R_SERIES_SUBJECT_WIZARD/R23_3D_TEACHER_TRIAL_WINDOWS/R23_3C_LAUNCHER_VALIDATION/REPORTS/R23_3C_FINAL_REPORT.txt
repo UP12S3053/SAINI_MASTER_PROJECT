@@ -1,0 +1,16 @@
+R23_3C_FINAL_REPORT
+status=R23_3C_VALIDATION_COMPLETE_NOT_LIVE
+production_deployment=NOT_AUTHORIZED
+windows_deployment=NOT_PERFORMED
+real_teacher_trial=NO
+
+The development launcher package passed its final local validation.
+32 tests passed, with 0 failed and 0 skipped.
+The window opened again in this Linux workspace.
+Nothing was copied to the live project or to the Windows computer.
+No real teacher has used it.
+No ID card was generated.
+
+Do not treat this as a live deployment.
+Do not treat this as a passed teacher trial.
+Stop and wait for the next instruction.

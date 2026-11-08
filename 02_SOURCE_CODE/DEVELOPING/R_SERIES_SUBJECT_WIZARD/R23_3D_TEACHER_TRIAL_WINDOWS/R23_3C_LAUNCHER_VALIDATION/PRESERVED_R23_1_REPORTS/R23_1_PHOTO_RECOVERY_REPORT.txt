@@ -1,0 +1,13 @@
+R23_1_PHOTO_RECOVERY_REPORT
+existing_photo_overwrite=NO
+synthetic_only=YES
+
+The photo sequence validates the identity, refuses a recorded or conflicting destination, writes a staging file, checks its bytes, copies to the final session path, checks those bytes, and only then stores the path.
+Staging is removed after success or failure.
+A stage failure leaves no final file and no database path.
+A finalize failure leaves no final file and no staging file.
+A database failure can leave the verified final file without a database path.
+Retry with the same bytes records that path and does not write the file again.
+Retry with different bytes stops and leaves the existing bytes unchanged.
+An interrupted staging file is removed only when the final photo does not exist.
+No real photo library was opened.

@@ -1,0 +1,10 @@
+R20_MIGRATION_PROPOSAL
+executed=NO
+Stage A: user decides the authoritative column for every duplicate header. No rename yet.
+Stage B: user confirms the real BSM school name and an existing template path for the intended row. Do not invent either.
+Stage C: simulate the approved changes in a new development workbook copy. Do not use the live workbook.
+Stage D: rerun the R19 synthetic tests plus checks that the selected row keeps its own template.
+Stage E: take an independent backup, record hashes, and rehearse rollback without restoring over live files.
+Stage F: consider live migration only after a separate production approval.
+duplicate_headers_now=KEEP AS IS
+merge_now=NO

@@ -1,0 +1,13 @@
+R23_1_REGRESSION_REPORT
+r23_tests_still_pass=YES
+baseline_hash_changed=NO
+generator_hash_changed=NO
+r22_columns_changed=NO
+bsm_rows_changed=NO
+live_project_opened=NO
+
+Option A, the provisional roll limit, exact matching, session history, and same-key promotion still pass in the original 14 tests.
+The photo writer now stages and verifies before the database update.
+That change did not break the original collision or preservation tests.
+No previous R13-R22 patch directory was overwritten.
+The original R23 package outside this folder was not modified.

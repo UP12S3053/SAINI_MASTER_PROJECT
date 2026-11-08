@@ -1,0 +1,860 @@
+[
+  {
+    "filename": "LKG-MATH-Q001.png",
+    "source_size": [
+      2172,
+      724
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "019a69e40f6115e759a366ab608237f2e3895b18c119acd08786320593f9b021",
+    "output_sha256": "bc6a731ae841c9c6234f3ab0e9ca7f86ac489b16c98747d075ac8bcdd1a1adf0"
+  },
+  {
+    "filename": "LKG-MATH-Q002.png",
+    "source_size": [
+      2172,
+      578
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "88d6d8d68fdb2bfca44660f3c77392f27048e34b24e85d290607a1207cc7bd43",
+    "output_sha256": "d2128334b1b05c1b80a0bd41a4e1402ac9b747dcb749e554f59382ecbff01974"
+  },
+  {
+    "filename": "LKG-MATH-Q003.png",
+    "source_size": [
+      2172,
+      696
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "0c10c020075683be3be0e22b9cb0392a92ff0eefe21cacfd7939583534b69f5e",
+    "output_sha256": "1ad747066e40fa1b84dd05ea5d8df4e458c4d502433a665bf4d97b8274e5be89"
+  },
+  {
+    "filename": "LKG-MATH-Q004.png",
+    "source_size": [
+      2172,
+      592
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "2bda06f6140103ece7d580c67b0c3d1c6cb544b41c0e18c5ebd71401afc126df",
+    "output_sha256": "17f87e7971f8a3d2aba71ec4d45fbb7b57a9d04f59a3f4e5443dea460d12ef9e"
+  },
+  {
+    "filename": "LKG-MATH-Q005.png",
+    "source_size": [
+      2172,
+      724
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "0549172f37165eb38b279de8a1a4db19b712d022e5b71f76a616abc5a7882960",
+    "output_sha256": "028b0e1bee71ab7739ba9efbff1114fb57bb11b56b9cc63c994b5b2f818dcc63"
+  },
+  {
+    "filename": "LKG-MATH-Q006.png",
+    "source_size": [
+      2172,
+      572
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "05a5d9226bff04818b35cbf8cf33adcd6d62ca7668b40649e672caf5e1262487",
+    "output_sha256": "b13a067bd294057e7d22df849c0bc13d7e2e4d45d1a689c6105a65d8309b373d"
+  },
+  {
+    "filename": "LKG-MATH-Q007.png",
+    "source_size": [
+      2172,
+      676
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "54402fe87d77c3ed5db42c42e8eaf192487e9670bd79f7f504c1bc2ad3480774",
+    "output_sha256": "4d0fbc04095a7da27ac7bbf8138647d9d10b2f4579cb41c2d150578c7961ba93"
+  },
+  {
+    "filename": "LKG-MATH-Q008.png",
+    "source_size": [
+      2172,
+      724
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "98b9d11ffd80c65abebdd807a26f4790c28205ef1b7399add60a546a0090f629",
+    "output_sha256": "ebb8fff207b6a1ad2d57c9754fb8ceb88777bc53399c1b2e8c6091c136b7335b"
+  },
+  {
+    "filename": "LKG-MATH-Q009.png",
+    "source_size": [
+      2172,
+      672
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "9e9dda6f8574d3771c031b9a802f3a24c7e350c3997862301be92f13f2e32749",
+    "output_sha256": "5afa2972028995066a9ba2e2a2786b9017d8ed20a2933ae77a5f6726306045f1"
+  },
+  {
+    "filename": "LKG-MATH-Q010.png",
+    "source_size": [
+      2172,
+      724
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "4ac1b26294a3193f17fd69f3154aa50f5f20ecf3ea191bf731f23da2c32198db",
+    "output_sha256": "2261e8df5455767e8ce9ccee2e5c9ff5dcf884e0259e93b503968f528aad4ae2"
+  },
+  {
+    "filename": "LKG-MATH-Q011.png",
+    "source_size": [
+      2172,
+      695
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "227cd11cc7b2c88101a0e97cf74d4670120abb592756ccdd0b8cdabc07b72eef",
+    "output_sha256": "20c07f754679d6b07ee0639934a30104f58b58546fcd4d26e45926e48e0550c3"
+  },
+  {
+    "filename": "LKG-MATH-Q012.png",
+    "source_size": [
+      2172,
+      559
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "af31279d39e7c35abfa79f7a4a01d3762d7ed5f99f9a7649d5a2f892ce4a96b6",
+    "output_sha256": "35e5e12eb6845b22d69bb41012bb823ba77c5cc99f7c50c5e3f585c352f53391"
+  },
+  {
+    "filename": "LKG-MATH-Q013.png",
+    "source_size": [
+      2172,
+      672
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "b48d52bf2c6d9141bc524b8a76ecb5e5d977ac888b963696d609474b9ce26eeb",
+    "output_sha256": "4c8284b900e3fce9b14e28a90687978a7404b46c97750eef930022fef250a69d"
+  },
+  {
+    "filename": "LKG-MATH-Q014.png",
+    "source_size": [
+      2171,
+      651
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "0318914be62ba1edafffc3da62ae6aeb22ac406a56f209aa8cc3ded29073d2fa",
+    "output_sha256": "7423169a369e175cec0bd609a78101f9a8bd5c4c598e68a2d2ccdc7c1d61b4f9"
+  },
+  {
+    "filename": "LKG-MATH-Q015.png",
+    "source_size": [
+      1930,
+      791
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "638653749f25e5e928a3603f46af3188beecff816954807a4ddd19731fffe432",
+    "output_sha256": "9fce035125adc39b8b67eeecaf57ce16e0bc28718aaa35d1b75633f9b7785120"
+  },
+  {
+    "filename": "LKG-MATH-Q016.png",
+    "source_size": [
+      2172,
+      592
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "93be647a75debfab7b40b413bf4caa9dcfe1571725bca4393513aea2148c7b50",
+    "output_sha256": "48c7f7e4058a4e1481160738b26c60387069cf5407c087356e49ce5426fd462b"
+  },
+  {
+    "filename": "LKG-MATH-Q017.png",
+    "source_size": [
+      1928,
+      789
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "ca3a9fca758638bf80444d0a48899b4f09b2b49f6a28fb6e1db6b7a529d8be7e",
+    "output_sha256": "3ebf2796c7655c6bfaa6b7674959967420b6c142e709f0a736dc98df7e0ce38b"
+  },
+  {
+    "filename": "LKG-MATH-Q018.png",
+    "source_size": [
+      2172,
+      585
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "58189e352927a8d083221b592e5e20ce49bd157090aa82c98a419f517554f598",
+    "output_sha256": "f4abe881a2efe7f3de96d30f69c0d2c5d6e2b93657cbbdc6758b825ffa5ccc45"
+  },
+  {
+    "filename": "LKG-MATH-Q019.png",
+    "source_size": [
+      1930,
+      783
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "0a9f6c1a8b2cfc89b6b61b5755508da959d27964dbc808406e2c624c15c21260",
+    "output_sha256": "a399f37e3549712989b11ac3503b71ce4ec5762c0818e699da23e68f99b0779a"
+  },
+  {
+    "filename": "LKG-MATH-Q020.png",
+    "source_size": [
+      2172,
+      724
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "d31cc80aea964819a0ba9e2d205ca9da4ed9a0174b0c8762774dd6ae6d11a76b",
+    "output_sha256": "5bc0fa6112cc87c65809e9001437f9e13a228fc483a09b037fc288f016716c69"
+  },
+  {
+    "filename": "LKG-MATH-Q021.png",
+    "source_size": [
+      2172,
+      691
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "e1e014d2b9918f85f6982a633e63e81e573499110f919ad671a752a1e898ae20",
+    "output_sha256": "c43fc00797e3154b656addcbaea484949a6a885e59ac07a783a32e8933e0144c"
+  },
+  {
+    "filename": "LKG-MATH-Q022.png",
+    "source_size": [
+      2172,
+      649
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "96cae7da7aba43e32ad1e14325dd8d401366747d15dff3c3ba5314f3405d3c62",
+    "output_sha256": "965a2549966751d19c3932df9c38879c1c982f45fb59a6bf43007434b80151d5"
+  },
+  {
+    "filename": "LKG-MATH-Q023.png",
+    "source_size": [
+      2172,
+      656
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "df520c3db32a652848f95eea03555168f44cce365e0cbdfd10d1ed5cc3f8600f",
+    "output_sha256": "022af578f6b7048136793aa41d18083ad4c7bbf821ce18300b1e52028ab2cc2a"
+  },
+  {
+    "filename": "LKG-MATH-Q024.png",
+    "source_size": [
+      2172,
+      651
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "d8795c28c7ce50352ea892f6e6c4f3118a3a8c90c6ecfa5deee2032d00c45f40",
+    "output_sha256": "a5b74519876243ca1173cb680cb854938f3d2e60b34e5d4444a19a6be04d4fef"
+  },
+  {
+    "filename": "LKG-MATH-Q025.png",
+    "source_size": [
+      2172,
+      568
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "96d9df3fa2ec4293a68b497c88ed3d0159654d0999c45a80701ccc0940986e41",
+    "output_sha256": "938498ec53834f9b1f76b88ae3fac81a655fb3f4255d3763f5643a8d2737d97c"
+  },
+  {
+    "filename": "LKG-MATH-Q026.png",
+    "source_size": [
+      2172,
+      669
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "41680e15e47910642f571d494b008f3794e3f60bda14419ef73fea9574f9f826",
+    "output_sha256": "9eb47d2d0b490bde4cc621db8238307371f895c7d7c2e57f759e3c1551506c3d"
+  },
+  {
+    "filename": "LKG-MATH-Q027.png",
+    "source_size": [
+      2172,
+      597
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "2f23bcde36e9904afc670d0f4249c69fa15608233f31f75a6a2f091e33396abd",
+    "output_sha256": "1b2b7b33ae15f55462b850ce7620d315bf51a02989a20ef9eaf72d80c160702f"
+  },
+  {
+    "filename": "LKG-MATH-Q028.png",
+    "source_size": [
+      2172,
+      696
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "d5082b3845cc2a874429699097976a897361e46f7e946e5c26b8052bfe7c8e20",
+    "output_sha256": "cba6c9999d8521e2b3e29adce59bef8dbff79a560adb90b18d6343c41ae3dc6e"
+  },
+  {
+    "filename": "LKG-MATH-Q029.png",
+    "source_size": [
+      2172,
+      592
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "d10fdb8b9805d84974f13b337f316415c4849720bfa5826cca6f40d033983a9b",
+    "output_sha256": "627243d21c268613077970d79ae78e562ab7b4306d31863f1ece7c332e08a71b"
+  },
+  {
+    "filename": "LKG-MATH-Q030.png",
+    "source_size": [
+      2172,
+      697
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "846ada81c807bc6eca289bf483db9bf1b5101971ce4f285de5a7c23384b889c0",
+    "output_sha256": "0e7ed0daae10e7473534176681ca78c57dcdd78a2baf89851ef2c1de6d454168"
+  },
+  {
+    "filename": "LKG-MATH-Q031.png",
+    "source_size": [
+      2172,
+      586
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "22ce1cc1c3253e57030e1da1ab49e157d7d10dcdd1e3bcdd95a05c263c2d0099",
+    "output_sha256": "97d625dbafea2a189f608d179ff9075305dfd5a035b2ac111ce9ca9aedf4788e"
+  },
+  {
+    "filename": "LKG-MATH-Q032.png",
+    "source_size": [
+      2172,
+      660
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "b9fead10788fc0eb2c86e5fcfaab9ea2a1b5c25ab78229a53f746973df9d9666",
+    "output_sha256": "639ec31eac12e6f010d7f4caba4860df9cc3c60a842e3f8d026720928b37e837"
+  },
+  {
+    "filename": "LKG-MATH-Q033.png",
+    "source_size": [
+      2170,
+      693
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "9365699e2dbf90e45fa4412fe53ced1b653dfc667fd845a6ab967eb420f4939c",
+    "output_sha256": "14d37cd8a1ceb11f8b46455f615c6a4b537f27de3056a05186417831352b0537"
+  },
+  {
+    "filename": "LKG-MATH-Q034.png",
+    "source_size": [
+      2170,
+      667
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "460b3a6388c3b7530b84dfa148616b1f849ee602c43206b109fac957c6b00a0c",
+    "output_sha256": "0bf7c114fb044a8b67c97534a58220df203b4179ef13027bde52f69c5b3e1fca"
+  },
+  {
+    "filename": "LKG-MATH-Q035.png",
+    "source_size": [
+      2172,
+      626
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "3d8952b99610ba3a0d4cf18c46f73975089fdf33e30f97fde868704d9c870b35",
+    "output_sha256": "462c9e25c384e014ed56dfd4d0df893007272a74e6eb7c5409575e34a062c831"
+  },
+  {
+    "filename": "LKG-MATH-Q036.png",
+    "source_size": [
+      2170,
+      694
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "4ae9686fea1a4bcce154a299db58d327fc6046d370756e763ad601b582bea36d",
+    "output_sha256": "98aa455a5cc5134c3127b034812c1d5af4b050055aea6d18834eda3c7892b2a1"
+  },
+  {
+    "filename": "LKG-MATH-Q037.png",
+    "source_size": [
+      2172,
+      595
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "2a43fff76f39e6f71114cb447e3a7487d0a89435f93ea5f1db83619564bdc3e5",
+    "output_sha256": "3616db708bce63d2f05b4c66c6eaabc1181062efea87dec58e4d4ef880a6e768"
+  },
+  {
+    "filename": "LKG-MATH-Q038.png",
+    "source_size": [
+      2170,
+      694
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "f93ac059f7780605fe696a96df64ca8a6abb4f7dd2762646cbad362f4e0ca188",
+    "output_sha256": "0cf90e328fdd43ee3bf622faf81319b8f5be28327f1e28203bf332dc71390a51"
+  },
+  {
+    "filename": "LKG-MATH-Q039.png",
+    "source_size": [
+      2172,
+      631
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "d46e836ec21e259dd02b74ea72b285fc52c6a8a14d52035e641290b633a59737",
+    "output_sha256": "3607cf9e3b9fadd879c259635802054e4b1471647197ac4ba554a6dadabfcb5b"
+  },
+  {
+    "filename": "LKG-MATH-Q040.png",
+    "source_size": [
+      2172,
+      625
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "76dd55cf9581fc8e599e6abd98f0bebb335c01075c23e453bdd65687301819a3",
+    "output_sha256": "3a50f46624e006a3316d40e265e67f3b690b4ef0a8296b8f67dd48a03846b9c1"
+  },
+  {
+    "filename": "LKG-MATH-Q041.png",
+    "source_size": [
+      2172,
+      599
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "84667093b5efa17ad4bd0b7a280656c8181655ce860480ade9d9e598cb81bff8",
+    "output_sha256": "a8489099b3cb033470d4970b65eb9f8e7ce059274a958df3c0fbc306ba1ad032"
+  },
+  {
+    "filename": "LKG-MATH-Q042.png",
+    "source_size": [
+      2172,
+      631
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "f9d741cf8d94ee94ab7ae934b22d2296c8bd9f7751cabdefe6bf2f397403a54f",
+    "output_sha256": "d5560a676e533fae362b8907ebfd576ff90d3e412213a2d140b4df7bc7595ce1"
+  },
+  {
+    "filename": "LKG-MATH-Q043.png",
+    "source_size": [
+      2171,
+      699
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "b6e945b4f69e7245634ea6f1a338854d601442ed596fa7c86c1f3e04b358f88e",
+    "output_sha256": "c9175f347a6cf5a14d6f72786716501aaf96d64c5b724090c254ce67849ebca4"
+  },
+  {
+    "filename": "LKG-MATH-Q044.png",
+    "source_size": [
+      2172,
+      591
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "fe16266fac5856fd26c1e062e661bd200618b1501ac9254b54bc662b4e418c90",
+    "output_sha256": "d349aa032a9ab4393f98f55e039e41e8d4476aca49a3b727bca0648c76067a6e"
+  },
+  {
+    "filename": "LKG-MATH-Q045.png",
+    "source_size": [
+      2172,
+      702
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "d1b0b8b815afd5f48c90d228cf851dcd40f5883ae71075b9740db443dc391b59",
+    "output_sha256": "066ff508cd4ff1072d02d4df397e5b6215245143c8c52b87a9ac439a082d925b"
+  },
+  {
+    "filename": "LKG-MATH-Q046.png",
+    "source_size": [
+      2172,
+      651
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "98b53e65ed018d01c6100f7f8415ac76279d9f9f202477a08bebfcf2b8d270dd",
+    "output_sha256": "0e1cc70dff339110f1b37ccfef551bd298a38012d652eba54791d56e8750fbd9"
+  },
+  {
+    "filename": "LKG-MATH-Q047.png",
+    "source_size": [
+      2172,
+      705
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "c9a2af47ef88eff0221e299e195a2af49be2e533ffdf36a39fbde2474f750efe",
+    "output_sha256": "b76a7c03162ada82887377cc2dbbd151aec5f61968456b278002c05858f38746"
+  },
+  {
+    "filename": "LKG-MATH-Q048.png",
+    "source_size": [
+      2172,
+      691
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "b28e51923db14b49f667444fc9f9939cccf80639219dbeb67cb5e83e4441ce24",
+    "output_sha256": "f3b61121ae036cd1d7575a6c5500c49187a7b132b7b2e00ca45e3f586e7ce231"
+  },
+  {
+    "filename": "LKG-MATH-Q049.png",
+    "source_size": [
+      2170,
+      696
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "7c060704104725509128bf6279807164b3641c3b5de70e4119955b26609bb4f4",
+    "output_sha256": "9d2d7ff4e9014ac403fbd81bea83632ad86228866cfbf9066374c2f2007faa01"
+  },
+  {
+    "filename": "LKG-MATH-Q050.png",
+    "source_size": [
+      2172,
+      698
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "d5e1bef554b987821c5518efc73beb8827985555d5e21b542a6140edebf20118",
+    "output_sha256": "193493f953b98e3571ca9b6e187009c5d30f522f5b17cba0663f7d34d2010071"
+  },
+  {
+    "filename": "LKG-MATH-Q051.png",
+    "source_size": [
+      2172,
+      664
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "980103a5b074a0a29d22cbc0200aef9506fd93421703044b09e8919df3c06dcd",
+    "output_sha256": "8fd2a77251645e488b9a5c438ca9ab78e4078a506257893d7308debf514a2262"
+  },
+  {
+    "filename": "LKG-MATH-Q052.png",
+    "source_size": [
+      2172,
+      670
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "da5a5c96798a5a7eead8565c83955787835fd239ad0d0641e6cf5177f5df25c6",
+    "output_sha256": "e5263d1c2d3f50a250b2862b6b315fd66af5478072a9c44dc88ea31603e962ae"
+  },
+  {
+    "filename": "LKG-MATH-Q053.png",
+    "source_size": [
+      2170,
+      703
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "46c31de259eabb62dc00fc18c2aff0d21ba52f0bc4b79c19d5d494d35e01b6e7",
+    "output_sha256": "2287bc0fc2abab7f908984863e125a9e8693e629d6e4e582fe3eae181c8a0a4a"
+  },
+  {
+    "filename": "LKG-MATH-Q054.png",
+    "source_size": [
+      2172,
+      595
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "294100fb867544493572d2694c5832972c3c8f92a3e4118fd2dbfbe4009203cf",
+    "output_sha256": "af25477dc0d57fe838d544b6ca265ea76b5c8075e420480e566874d956c876a8"
+  },
+  {
+    "filename": "LKG-MATH-Q055.png",
+    "source_size": [
+      2170,
+      704
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "946214974d4362b30a1a5990f6eb3c9aacc6795a9934e6f1880bd205b036d6dd",
+    "output_sha256": "deaf66b759831027456186d692658f3d5eca8b6aab440202786670910fb61f44"
+  },
+  {
+    "filename": "LKG-MATH-Q056.png",
+    "source_size": [
+      2172,
+      618
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "7122581079c2d533e19b616cd720c63c5313d670e4ee3601a2e83548c2e06dc4",
+    "output_sha256": "e2016eca802ada97805065f469dc211ed8d547a7e958530cb2d98e3d30931030"
+  },
+  {
+    "filename": "LKG-MATH-Q057.png",
+    "source_size": [
+      2172,
+      576
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "3fc27ccf2421037d0f2e47b223405beae4a46c2f7bde34ea5b61d27cfce80eac",
+    "output_sha256": "4da9178253daab5715b54a1a5426b516d0e8972bf0c240fd16b0d02ae084c3ea"
+  },
+  {
+    "filename": "LKG-MATH-Q058.png",
+    "source_size": [
+      2172,
+      692
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "25699a83b8dd2f4b678384ff2e807d4338485c6ee9d5bdeff479a3102825de94",
+    "output_sha256": "d1ca1076509d31dd5f1ebc4355afac97991eff097b8918b328ba3d5b1da0880d"
+  },
+  {
+    "filename": "LKG-MATH-Q059.png",
+    "source_size": [
+      2172,
+      691
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "c576f313db6048aa3bf7da9d0cde9a679b21a0575b803673fce62b4eb9e5ee29",
+    "output_sha256": "302bee436531d9bf62746c7cacfa2bf542d8d6fd58a78382a18fb3da1a7e4d46"
+  },
+  {
+    "filename": "LKG-MATH-Q060.png",
+    "source_size": [
+      2172,
+      598
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "fd2eb6ace13f197c1ff21f38aebd1c6613a24be0ed69d1b071fdd8b36c0a5fd2",
+    "output_sha256": "5e797aaff5dca0b08df27ec9473f229db4960c82f37150f1be3fb4b0ea209151"
+  },
+  {
+    "filename": "LKG-MATH-Q061.png",
+    "source_size": [
+      2172,
+      625
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "e5ea16a7440105c79c82d6eb0c2db257497e809aee1427caef24652b9fe437cc",
+    "output_sha256": "ec7a95cbea6c4bfea8768604dc55349934271e3dc4bf7df75162e24be3a2d969"
+  },
+  {
+    "filename": "LKG-MATH-Q062.png",
+    "source_size": [
+      2172,
+      705
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "dbfcc2dc44207714eb245de8ac60ee2e39332888311cc7633204a9752a5036f6",
+    "output_sha256": "e028bcf82e703c1fdfd5ed807518ee4455e2582c4bc44b75cd09e6dbdeb18b5e"
+  },
+  {
+    "filename": "LKG-MATH-Q063.png",
+    "source_size": [
+      2172,
+      646
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "f53cf5ecf4235387edd6d66a6660b9288a0a382a0f7d9c56ab71a68786791179",
+    "output_sha256": "bf18c81d6f056b8b4e92b65b25e919ae77157aae708b875f4571f688c77bb2a6"
+  },
+  {
+    "filename": "LKG-MATH-Q064.png",
+    "source_size": [
+      2172,
+      702
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "7149c6b4793b339f516f42b5c300661f37a7652eeedc7a0f63095aec24a0b7ea",
+    "output_sha256": "ac16a4a099389fd821f36bc073d5c3c5f09d3e2902e51177fa69ee8876b50dd3"
+  },
+  {
+    "filename": "LKG-MATH-Q065.png",
+    "source_size": [
+      2172,
+      662
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "9402ddac8fc3b6afcc141133a72839ec393ffb443688402d0755b8893d77494f",
+    "output_sha256": "af0cd40c02ee6f03aeec62c9093c75fa41a1bc94d07d4383e65d55ecdea577fd"
+  },
+  {
+    "filename": "LKG-MATH-Q066.png",
+    "source_size": [
+      2172,
+      724
+    ],
+    "normalized_size": [
+      2172,
+      791
+    ],
+    "source_sha256": "d78e0e18fb230c82128800f30ee535f9d8dfa1eb40782b78594d66bb8aec278a",
+    "output_sha256": "e9a237b26900e7d9c2398806964b14d893fd2e19082a2dc77b2e0a4ce0a2b6a2"
+  }
+]

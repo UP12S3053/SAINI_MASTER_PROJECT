@@ -1,0 +1,78 @@
+R17B_REMAINING_TESTS_REPORT
+source=original/test_compat_r4.py sha256=A21288B52A53F7C2C2800616FAF9ABF7DCD954E15C29AFC29CA1FB387678A716 match=YES
+source=original/test_r14_integration.py sha256=5DDB2A93416B0C4F6B9E20AC29D1B87526BB005FEF4D5A99C36A35BD8E73CD26 match=YES
+r4_original_location=/workspace/SAINI_ID_DEV_000I_R4/tests/test_compat_r4.py
+r14_original_location=/workspace/SAINI_ID_DEV_000I_R14/tests/test_r14_integration.py
+tests_were_not_rewritten=YES
+R14_COMMAND=C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\python.exe D:\SAINI_SUBJECT_WIZARD_PATCH\R17B_TEST_BUNDLE\r14_view\tests\test_r14_integration.py
+R14_EXIT=0
+R14_OUTPUT_BEGIN
+
+=== PHOTO DEBUG ===
+Path from Excel : [D:\SAINI_SUBJECT_WIZARD_PATCH\R17B_TEST_BUNDLE\r14_view\synthetic_output\synthetic_color_block.png]
+Exists?         : True
+Photo pasted successfully!
+====================
+
+ERROR: Template file missing!
+test_copied_patch_hashes_match_r13 (__main__.R14IntegrationTests.test_copied_patch_hashes_match_r13) ... ok
+test_gate_calls_remain_and_non_bsm_branch_remains (__main__.R14IntegrationTests.test_gate_calls_remain_and_non_bsm_branch_remains) ... ok
+test_option_c_modules_match_baseline (__main__.R14IntegrationTests.test_option_c_modules_match_baseline) ... ok
+test_synthetic_render_uses_only_the_selected_row (__main__.R14IntegrationTests.test_synthetic_render_uses_only_the_selected_row) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.509s
+
+OK
+R14_OUTPUT_END
+R4_COMMAND=C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\python.exe D:\SAINI_SUBJECT_WIZARD_PATCH\R17B_TEST_BUNDLE\original\test_compat_r4.py
+R4_BASELINE_MOUNT=C:\workspace\SAINI_ID_DEV_000I_R4
+R4_EXIT=0
+R4_OUTPUT_BEGIN
+test_callers_pass_gate_keywords (__main__.CompatibilityTests.test_callers_pass_gate_keywords) ... ok
+test_first_bsm_row_only (__main__.CompatibilityTests.test_first_bsm_row_only) ... ok
+test_public_call_signatures_stay_compatible (__main__.CompatibilityTests.test_public_call_signatures_stay_compatible) ... ok
+test_recorded_hashes_unchanged (__main__.CompatibilityTests.test_recorded_hashes_unchanged) ... ok
+test_v5_journal_and_gate_match_live (__main__.CompatibilityTests.test_v5_journal_and_gate_match_live) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.209s
+
+OK
+R4_OUTPUT_END
+R4_READS_BUNDLED_BASELINE_COPY=YES
+R4_LIVE_WORKBOOK_OPENED=NO
+r13_source_hashes:
+EA1E637CD5FABF2E122BD84FCF275908D41B5A2929908D823A3C518FED95D187 unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\SAINI_ID_CARD.py
+FE3C8090698A491EDB6C6E7AC943AF853832E074F394090D787A0282F0328A0E unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\config_editor.py
+3B58769CBE08B36B30FE8536BEA9391FEE6640A10F4545D43215E62E3F6B891C unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\bsm_selector.py
+A1EEA7A6233C9DF6B28123E70DB69A28E14112C36D8D69FDFE900D74E8EAF550 unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\saini_config_path.py
+0EEB0EA1FEE4520A3E91B59E16D8C1BCF2F4B2B1DC1A7C4C5C10C7F60E1D51EA unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\option_c_modules\gate.py
+10FFD0C9A91DB42D5904255FD41CB307A458FC02F33378073A875C6C2CC0F112 unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\option_c_modules\identity.py
+5A908C6BED369B597FC92D64BE27CF0444C0076B33A839D8D5E77523E43BF361 unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\option_c_modules\journal.py
+42BDEFA0ECD3C2EA21490B39542E7ECFE0A8FA06EF4C73CED53BFB2FF8EE6F2E unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\option_c_modules\safety.py
+C274F2D0A214EDB95FF609FC10D1BEF6B3BBDC4240D543ADDA0F6CA8C44F78AC unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\option_c_modules\sink_verifier.py
+0EEB0EA1FEE4520A3E91B59E16D8C1BCF2F4B2B1DC1A7C4C5C10C7F60E1D51EA unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\baseline\gate.py
+10FFD0C9A91DB42D5904255FD41CB307A458FC02F33378073A875C6C2CC0F112 unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\baseline\identity.py
+5A908C6BED369B597FC92D64BE27CF0444C0076B33A839D8D5E77523E43BF361 unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\baseline\journal.py
+42BDEFA0ECD3C2EA21490B39542E7ECFE0A8FA06EF4C73CED53BFB2FF8EE6F2E unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\baseline\safety.py
+C274F2D0A214EDB95FF609FC10D1BEF6B3BBDC4240D543ADDA0F6CA8C44F78AC unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\baseline\sink_verifier.py
+08F68584254CE7E016BCB075EE25F59EEB94803550F82D8FF4BFF844453CB0E1 unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\baseline\SAINI_ID_CARD.py
+2684F6C2475F645401E61F0532724C6146C9DF98D2BDA239A2B0D2FD80273216 unchanged=YES D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\baseline\config_editor.py
+live_production_hashes:
+08F68584254CE7E016BCB075EE25F59EEB94803550F82D8FF4BFF844453CB0E1 unchanged=YES D:\SHRI_JAI_SHRI_RAM\project_panels\SAINI_ID_CARD.py
+8E774A9754CB0A1CA0ED4099C721052FD416476770EA4BDD28C8E8FCA07BE7EF unchanged=YES D:\SHRI_JAI_SHRI_RAM\project_panels\school_config_front.xlsx
+2684F6C2475F645401E61F0532724C6146C9DF98D2BDA239A2B0D2FD80273216 unchanged=YES D:\SHRI_JAI_SHRI_RAM\project_panels\config_editor.py
+FE644757E1F23AAAB47C46AE2880F8DFD4CCDE63B645C50B6C10B7C855151B73 unchanged=YES D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\templates\IDCARD\BSM.png
+0EEB0EA1FEE4520A3E91B59E16D8C1BCF2F4B2B1DC1A7C4C5C10C7F60E1D51EA unchanged=YES D:\SHRI_JAI_SHRI_RAM\project_panels\option_c_modules\gate.py
+10FFD0C9A91DB42D5904255FD41CB307A458FC02F33378073A875C6C2CC0F112 unchanged=YES D:\SHRI_JAI_SHRI_RAM\project_panels\option_c_modules\identity.py
+5A908C6BED369B597FC92D64BE27CF0444C0076B33A839D8D5E77523E43BF361 unchanged=YES D:\SHRI_JAI_SHRI_RAM\project_panels\option_c_modules\journal.py
+42BDEFA0ECD3C2EA21490B39542E7ECFE0A8FA06EF4C73CED53BFB2FF8EE6F2E unchanged=YES D:\SHRI_JAI_SHRI_RAM\project_panels\option_c_modules\safety.py
+C274F2D0A214EDB95FF609FC10D1BEF6B3BBDC4240D543ADDA0F6CA8C44F78AC unchanged=YES D:\SHRI_JAI_SHRI_RAM\project_panels\option_c_modules\sink_verifier.py
+R4_PASSED=5 expected=5
+R14_PASSED=4 expected=4
+R13_17_TESTS_NOT_COUNTED_AGAIN=YES
+production_deployment=NOT_DONE
+student_records_opened=NO
+photographs_opened=NO
+status=R17B_ALL_9_TESTS_PASSED

@@ -1,0 +1,12 @@
+R21_REGRESSION_TEST_SPEC
+executed=NO
+For every duplicate header, future synthetic tests should cover:
+1. A workbook with the header repeated is detected.
+2. Different values in the repeated columns do not silently select one.
+3. Both columns blank fails closed when the field is required.
+4. Only the first column populated is not treated as proof that the second is unused.
+5. Only a later column populated is not silently ignored.
+6. Both columns populated differently requires an explicit mapping.
+7. A write without an explicit mapping is rejected.
+8. An approved legacy mapping reads the chosen column and preserves the other.
+9. The five M columns are tested separately and are not merged.

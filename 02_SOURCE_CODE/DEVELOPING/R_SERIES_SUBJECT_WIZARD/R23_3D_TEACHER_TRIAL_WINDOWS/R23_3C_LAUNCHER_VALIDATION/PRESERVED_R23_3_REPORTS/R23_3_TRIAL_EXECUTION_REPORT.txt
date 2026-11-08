@@ -1,0 +1,25 @@
+R23_3_TRIAL_EXECUTION_REPORT
+real_teacher_trial=NO
+participation=TEACHER_NOT_AVAILABLE
+simulated_review=YES
+live_files_opened=NO
+
+No consenting teacher or school staff was available in this session.
+The automated scenarios were executed with synthetic names, a synthetic workbook, and a synthetic JPEG.
+Scenario results:
+A. Class 1 Roll 1 returned ABC1001.
+B. Class 6 Roll 15 returned ABC6015.
+C. A repeated roll was rejected.
+D. The same rejection covered the duplicate visible ID because the ID comes from the class and roll.
+E. Nursery stopped with the pending-limit message and created nothing.
+F. A missing photo stopped before a student row was created.
+G. An unreadable photo stopped before a student row was created.
+H. Promotion from ABC1001 to ABC2004 kept the same internal key.
+I. The roll change produced ABC2005 and kept that same key.
+J. Ram Kumar and RAM KUMAR remained two identities.
+K. An existing photo kept its original bytes.
+L. The returned JSON did not contain the key.
+M. The photo path included the school, 2026_27, and the visible ID.
+N. Running the same Class 1 file again added no record and did not change the photo.
+O. The baseline MAIN_ASSISTANT.py path was refused. It is not the approved trial route.
+No production file or database was accessed.

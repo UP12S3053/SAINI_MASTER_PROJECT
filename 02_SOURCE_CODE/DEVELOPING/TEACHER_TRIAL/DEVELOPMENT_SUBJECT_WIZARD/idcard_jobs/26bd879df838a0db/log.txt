@@ -1,0 +1,285 @@
+Loading Option C slip OCR
+12:11:25 | Gemini API key configured from env:GEMINI_API_KEY; key material redacted.
+Starting MAIN_ASSISTANT GAPS mode A
+12:11:26 | INFO     | ======================================================================
+12:11:26 | INFO     | SAINI SCHOOL MASTER PROCESSOR - PERFECTED v2.0
+12:11:26 | INFO     | ======================================================================
+12:11:26 | INFO     | School: GAPS | Mode: FULL PROCESS
+
+Background Color Options:
+  W  = White
+  R  = Red
+  B  = Blue
+  G  = Green
+  LG = Light Green
+  LB = Light Blue
+Background color [W]: 
+>> LB
+12:11:26 | INFO     | Selected Background: LB
+12:11:26 | INFO     | === STEP 1: Smart Renaming + Highest Number Logic ===
+12:11:26 | INFO     | Originals backed up to: GAPS_Originals_2026-11-02_12-11
+12:11:26 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-03 (normalized: APBHORIGINALS202610091603)
+12:11:26 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-14 (normalized: APBHORIGINALS202610091614)
+12:11:26 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-29 (normalized: APBHORIGINALS202610091629)
+12:11:26 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-33 (normalized: APBHORIGINALS202610091633)
+12:11:26 | WARNING  | Skipping unknown class folder: BSM_Originals_2026-10-12_09-25 (normalized: BSMORIGINALS202610120925)
+12:11:26 | WARNING  | Skipping unknown class folder: BVM_Originals_2026-11-02_11-47 (normalized: BVMORIGINALS202611021147)
+12:11:26 | WARNING  | Skipping unknown class folder: BVM_Originals_2026-11-02_11-54 (normalized: BVMORIGINALS202611021154)
+12:11:26 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0700 (normalized: DCMMIXUNCROPPED202610190700)
+12:11:26 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0737 (normalized: DCMMIXUNCROPPED202610190737)
+12:11:26 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0833 (normalized: DCMMIXUNCROPPED202610190833)
+12:11:26 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0847 (normalized: DCMMIXUNCROPPED202610190847)
+12:11:26 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0855 (normalized: DCMMIXUNCROPPED202610190855)
+12:11:26 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0859 (normalized: DCMMIXUNCROPPED202610190859)
+12:11:26 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0903 (normalized: DCMMIXUNCROPPED202610190903)
+12:11:26 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0918 (normalized: DCMMIXUNCROPPED202610190918)
+12:11:26 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_1117 (normalized: DCMMIXUNCROPPED202610191117)
+12:11:26 | WARNING  | Skipping unknown class folder: DCM_Originals_2026-10-17_21-06 (normalized: DCMORIGINALS202610172106)
+12:11:26 | WARNING  | Skipping unknown class folder: DCM_Originals_2026-10-28_20-39 (normalized: DCMORIGINALS202610282039)
+12:11:26 | WARNING  | Skipping unknown class folder: GPSK_Originals_2026-10-05_09-21 (normalized: GPSKORIGINALS202610050921)
+12:11:26 | WARNING  | Skipping unknown class folder: GPSK_Originals_2026-10-05_10-48 (normalized: GPSKORIGINALS202610051048)
+12:11:26 | WARNING  | Skipping unknown class folder: JPSN_Originals_2026-10-27_19-37 (normalized: JPSNORIGINALS202610271937)
+12:11:26 | INFO     | Processing Class: MIX (range 50000-59999)
+12:11:26 | INFO     |    Last used: 49999 â†’ Starting new from: 50000
+12:11:26 | INFO     |   GAPS5000.jpg â†’ GAPS50000.jpg
+12:11:26 | INFO     |   GAPS5001.jpg â†’ GAPS50001.jpg
+12:11:26 | INFO     |   GAPS5002.jpg â†’ GAPS50002.jpg
+12:11:26 | INFO     |   GAPS5003.jpg â†’ GAPS50003.jpg
+12:11:26 | INFO     |   GAPS5004.jpg â†’ GAPS50004.jpg
+12:11:26 | INFO     |   GAPS5005.jpg â†’ GAPS50005.jpg
+12:11:26 | INFO     |   GAPS5006.jpg â†’ GAPS50006.jpg
+12:11:26 | INFO     |   GAPS5007.jpg â†’ GAPS50007.jpg
+12:11:26 | INFO     |   GAPS5008.jpg â†’ GAPS50008.jpg
+12:11:26 | INFO     |   GAPS5009.jpg â†’ GAPS50009.jpg
+12:11:26 | WARNING  | Skipping unknown class folder: RECORD (normalized: RECORD)
+12:11:26 | WARNING  | Skipping unknown class folder: SDV_Originals_2026-10-11_15-56 (normalized: SDVORIGINALS202610111556)
+12:11:26 | WARNING  | Skipping unknown class folder: SDV_Originals_2026-10-26_07-35 (normalized: SDVORIGINALS202610260735)
+12:11:26 | WARNING  | Skipping unknown class folder: SLIP_AUDIO (normalized: SLIPAUDIO)
+12:11:26 | WARNING  | Skipping unknown class folder: SPBUCH_Originals_2026-10-08_13-14 (normalized: SPBUCHORIGINALS202610081314)
+12:11:26 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-05_09-02 (normalized: TAGOREORIGINALS202610050902)
+12:11:26 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-05_10-52 (normalized: TAGOREORIGINALS202610051052)
+12:11:26 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-07_10-17 (normalized: TAGOREORIGINALS202610071017)
+12:11:26 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-09_12-24 (normalized: TAGOREORIGINALS202610091224)
+12:11:26 | INFO     | âœ… Step 1 done. Total photos renamed: 10
+12:11:26 | INFO     | === STEP 2: Running ID_CARD_AI_STUDIO Pipeline ===
+12:11:26 | INFO     | Using NEW Advanced Studio Pipeline
+12:11:26 | INFO     | Command: C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\python.exe D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_AI_STUDIO\run_studio_pipeline.py --source D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\INPUT --output D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\OUTPUT --bg LB --gfpgan-blend 0.65 --skip-existing --quality 95
+12:12:32 | ERROR    | Pipeline failed with code 3221225477
+
+>>> CHECK & FIX photos in OUTPUT folder if needed, then press ENTER to continue... <<<
+>> Y
+12:13:50 | INFO     | === STEP 3: Copying processed photos to Library + Google Drive ===
+12:13:50 | INFO     | Google Drive path available: D:\SHRI_JAI_SHRI_RAM\PHOTOCHAMBER\GAPS
+12:13:51 | INFO     |   âœ“ Local: BVM50030.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50031.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50032.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50033.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50034.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50035.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50036.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50037.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50038.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50039.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50040.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50041.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50042.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50043.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50044.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50045.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50046.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50047.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50048.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50049.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50050.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50051.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50052.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50053.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50054.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50055.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50056.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50057.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50058.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50059.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50060.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50061.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50062.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50063.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50064.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50065.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50066.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50067.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50068.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50069.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50070.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50071.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50072.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50073.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50074.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50075.jpg
+12:13:51 | INFO     |   âœ“ Local: BVM50076.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS1000.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS1001.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS2000.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS20001.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS2001.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS20011.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS20012.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS20013.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS20014.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS2002.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS2014.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS2015.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS2016.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS2017.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS2018.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS2019.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS2020.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS2021.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS3000.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS30004.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS3001.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS30012.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS30013.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS30014.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS30015.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS30016.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS3002.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS3015.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS3016.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS3017.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS3018.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS3019.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS3020.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS3021.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS3022.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS3023.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS5000.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS5001.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS5002.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS5003.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS5004.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS5005.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS5006.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS5007.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS5008.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS5009.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS7002.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS7003.jpg
+12:13:51 | INFO     |   âœ“ Local: GAPS8000.jpg
+12:13:51 | INFO     | âœ… 96 photos copied to local library.
+12:13:51 | INFO     | âœ… 96 photos also copied to Google Drive.
+12:13:51 | INFO     | === STEP 4: Updating Database (Sequence Preserved + Series Wise + Formatting Safe) ===
+12:13:58 | INFO     | Found 445 photos in library for GAPS
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50030.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50031.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50032.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50033.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50034.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50035.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50036.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50037.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50038.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50039.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50040.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50041.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50042.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50043.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50044.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50045.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50046.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50047.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50048.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50049.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50050.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50051.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50052.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50053.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50054.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50055.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50056.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50057.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50058.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50059.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50060.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50061.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50062.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50063.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50064.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50065.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50066.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50067.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50068.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50069.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50070.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50071.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50072.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50073.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50074.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50075.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): BVM50076.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): Inaya _Khalid_LKG_GAPS.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): Layba_Sajid_LKG_GAPS.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): Misba _Mr Ilyas _VI_GAPS.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): Saniya_nan_II_GAPS.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): Shad_Mr Saddam_VI_GAPS.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): Shad_Mr Sajid_UKG_GAPS.jpg
+12:13:58 | WARNING  | Skipping invalid photo (wrong school): Tajkira _nan_III_GAPS.jpg
+12:14:01 | INFO     | âœ… 78 new records added successfully in correct series order.
+12:14:01 | INFO     | âœ… Old records sequence and formatting preserved 100%.
+12:14:01 | INFO     | === STEP 5: Generating Teacher Slips (10 per A4, photo + address) ===
+12:14:01 | INFO     | Total classes/buckets: 9 | Total photos: 97
+12:14:01 | INFO     | Big classes (â‰¥5): 6 | Small classes (<5): 3
+12:14:01 | INFO     |   Big Class II: 11 students â†’ 2 page(s)
+12:14:01 | INFO     |     Saved: PRINT_SHEET_GAPS_II_P1.jpg
+12:14:01 | INFO     |     Saved: PRINT_SHEET_GAPS_II_P2.jpg
+12:14:01 | INFO     |   Big Class III: 12 students â†’ 2 page(s)
+12:14:01 | INFO     |     Saved: PRINT_SHEET_GAPS_III_P1.jpg
+12:14:01 | INFO     |     Saved: PRINT_SHEET_GAPS_III_P2.jpg
+12:14:01 | INFO     |   Big Class V: 10 students â†’ 1 page(s)
+12:14:02 | INFO     |     Saved: PRINT_SHEET_GAPS_V_P1.jpg
+12:14:02 | INFO     |   Big Class LKG: 5 students â†’ 1 page(s)
+12:14:02 | INFO     |     Saved: PRINT_SHEET_GAPS_LKG_P1.jpg
+12:14:02 | INFO     |   Big Class UKG: 6 students â†’ 1 page(s)
+12:14:02 | INFO     |     Saved: PRINT_SHEET_GAPS_UKG_P1.jpg
+12:14:02 | INFO     |   Big Class MIX: 48 students â†’ 5 page(s)
+12:14:02 | INFO     |     Saved: PRINT_SHEET_GAPS_MIX_P1.jpg
+12:14:02 | INFO     |     Saved: PRINT_SHEET_GAPS_MIX_P2.jpg
+12:14:03 | INFO     |     Saved: PRINT_SHEET_GAPS_MIX_P3.jpg
+12:14:03 | INFO     |     Saved: PRINT_SHEET_GAPS_MIX_P4.jpg
+12:14:03 | INFO     |     Saved: PRINT_SHEET_GAPS_MIX_P5.jpg
+12:14:03 | INFO     |   Small Classes Combined: I(2) + VII(2) + VIII(1) â†’ Total 5 students â†’ 1 page(s)
+12:14:04 | INFO     |     Saved: PRINT_SHEET_GAPS_SMALL_CLASSES_P1.jpg
+12:14:05 | INFO     | âœ… Combined PDF created: SAINI_ALL_PRINT_SHEETS_GAPS.pdf (13 pages)
+12:14:05 | INFO     | === STEP 6: Data merge (FILL-EMPTY ONLY, no refine) ===
+12:14:05 | INFO     | Individual school CSV: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\CSV\GAPS.csv
+12:14:05 | INFO     | Step6 incoming = daily CSV None (GAPS.csv)
+12:14:07 | INFO     | Backup: student_data_BACKUP_2026-11-02_12-14-06.xlsx
+12:14:14 | INFO     | Step6 fill-empty: updated_rows=0 added=0 kept_manual_cells=178
+12:14:14 | INFO     | === STEP 7: Syncing Photos into PHOTO_LIBRARY ===
+12:14:18 | INFO     | âœ… Step 7 done. 0 photos synced/verified in PHOTO_LIBRARY.
+12:14:18 | INFO     | === STEP 7B: Smart Photo Path Update (Local Preferred + Drive Fallback) ===
+12:14:18 | INFO     | Local photos found: 445
+12:14:19 | INFO     | Drive links from GETID: 1713
+12:14:26 | INFO     | âœ… Total Updated : 393
+12:14:26 | INFO     |    â†’ Local Path  : 393
+12:14:26 | INFO     |    â†’ Drive Link  : 0
+12:14:26 | INFO     | 
+--- SCHOOL STATUS ---
+school_status.py not found next to MAIN_ASSISTANT.py
+12:14:26 | INFO     | ID source = LOCAL EXCEL ONLY -> student_data.xlsx
+
+ID card source: PRIMARY local Excel â†’ student_data.xlsx
+Launch ID card generator? [Y/n]: 
+>> y
+12:14:26 | INFO     | === STEP 8: Launching SAINI ID Card Generator (Excel-only) ===
+12:14:26 | INFO     | ID source = LOCAL EXCEL ONLY -> student_data.xlsx
+12:14:26 | ERROR    | ID-card launch blocked: validated Gate evidence unavailable: Validated Option C handoff missing: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\OPTION_C_JOURNAL\latest_verified_batch.handoff
+12:14:26 | INFO     | 
+======================================================================
+12:14:26 | INFO     | Workflow ended. Review per-step logs; Mode B uses master-roster authorization, while OCR modes retain Option C Gate verification.
+12:14:26 | INFO     | Log file: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\LOGS
+12:14:26 | INFO     | ======================================================================
+
+Press Enter to exit...
+>> 
+ID card process finished.

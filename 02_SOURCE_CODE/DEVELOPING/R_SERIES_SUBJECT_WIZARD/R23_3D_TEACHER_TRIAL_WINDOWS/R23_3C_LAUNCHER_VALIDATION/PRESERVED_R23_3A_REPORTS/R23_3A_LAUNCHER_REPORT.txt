@@ -1,0 +1,16 @@
+R23_3A_LAUNCHER_REPORT
+entry=open_launcher.py
+window=src/trial_window.py
+identity_rules_changed=NO
+
+The teacher opens one window.
+Two buttons use the operating-system file picker and folder picker.
+The selected file name and folder name are shown.
+Session and class start blank.
+Start enrollment stays disabled in practice until those four choices pass validation. A second press while work is running is ignored.
+Cancel can stop the run between rows.
+Exit closes the window when nothing is running.
+The summary shows the visible ID and a short message.
+The permanent key is not included.
+This Linux preparation machine could not open the graphical dialog because the Tk library file was missing. The button code still calls the real file and folder dialogs, and the selection logic was executed with test pickers.
+The teacher computer is expected to open the window by double-clicking open_launcher.py.

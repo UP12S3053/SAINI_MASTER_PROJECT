@@ -1,0 +1,46 @@
+शिक्षक प्रतिक्रिया / Teacher feedback form
+R23.4N
+
+STOP। यह फ़ॉर्म अभी न भरें।
+STOP. Do not fill this form now.
+
+शिक्षक ट्रायल अधिकृत नहीं है। / Teacher Trial is NOT AUTHORIZED.
+प्रोडक्शन मंजूर नहीं है। / Production is NOT APPROVED.
+Open_Enrollment.bat और open_launcher.py न चलाएँ।
+Do not run Open_Enrollment.bat or open_launcher.py.
+नामांकन विंडो न खोलें। / Do not open the enrollment window.
+
+खाली उत्तर नीचे सिर्फ़ इसलिए रखे हैं ताकि पुराना फ़ॉर्म मिटे नहीं।
+The blank answers below are kept so the old form is not deleted.
+वे वर्तमान काम नहीं हैं। / They are not current work.
+
+तारीख / Date: NOT STARTED
+कक्षा जिसे चुना / Class selected: NONE
+
+1. क्या प्रोग्राम आसानी से खुला? / Was the application easy to open?
+नहीं खोला गया। / It was not opened.
+
+2. क्या Excel और फ़ोटो फ़ोल्डर चुनना समझ आया? / Were the selectors understandable?
+चुना नहीं गया। / Nothing was selected.
+
+3. क्या सेशन और कक्षा साफ़ समझ आए? / Were Session and Class clear?
+चुना नहीं गया। / Nothing was selected.
+
+4. क्या आपने नकली छात्र अकेले दर्ज किया? / Could you enroll a dummy student independently?
+नामांकन नहीं हुआ। / No enrollment was performed.
+
+5. क्या सफलता और डुप्लिकेट के वाक्य समझ आए? / Were the success and duplicate messages understandable?
+स्क्रीन खोली नहीं गई। / The screen was not opened.
+
+6. क्या मदद चाहिए पड़ी? / Did you need help?
+लागू नहीं। / Not applicable.
+
+7. क्या उलझन या कठिनाई हुई? / What was confusing or difficult?
+लागू नहीं। ट्रायल शुरू नहीं हुआ। / Not applicable. The trial did not start.
+
+8. उपयोग में आसानी / Overall usability rating:
+कोई अंक नहीं। / No rating.
+
+यह फ़ॉर्म सफलता का प्रमाण नहीं है।
+This form is not evidence of success.
+स्किप पास नहीं है। / A skip is not a pass.

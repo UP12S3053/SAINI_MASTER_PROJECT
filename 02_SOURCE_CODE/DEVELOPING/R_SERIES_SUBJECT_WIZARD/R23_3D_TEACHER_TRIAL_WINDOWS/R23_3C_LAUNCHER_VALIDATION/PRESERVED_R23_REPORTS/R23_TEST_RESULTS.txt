@@ -1,0 +1,29 @@
+R23_TEST_RESULTS
+command=python3 tests/test_r23_engine.py
+tests_run=14
+passed=14
+failed=0
+errors=0
+skipped=0
+records=synthetic
+photos=synthetic
+
+test_formula_for_every_approved_class PASS
+test_numeric_and_roman_issue_and_pending_primary_classes PASS
+test_duplicate_roll_and_visible_id_write_nothing PASS
+test_roll_change_and_promotion_keep_key_and_history PASS
+test_same_session_reentry_and_session_gap PASS
+test_exact_spelling_does_not_merge PASS
+test_explicit_correction_keeps_key PASS
+test_photo_collision_and_existing_file_are_preserved PASS
+test_same_visible_id_in_another_session_has_a_separate_photo PASS
+test_invalid_roll_does_not_truncate_or_write PASS
+test_concurrent_duplicate_enrollment PASS
+test_legacy_allocator_and_live_paths_are_blocked PASS
+test_writer_inventory_matches_baseline_and_engine_has_no_r22_fields PASS
+test_generator_contract_and_baseline_hash PASS
+
+The legacy writer functions were not executed. Executing them would use their original paths and old allocator.
+Their presence was verified in the baseline, and the development entry does not call them.
+The ID card image function was not executed. Its source contract and hash were verified.
+Nursery, LKG, and UKG creation is an expected fail-closed result, not a test failure.

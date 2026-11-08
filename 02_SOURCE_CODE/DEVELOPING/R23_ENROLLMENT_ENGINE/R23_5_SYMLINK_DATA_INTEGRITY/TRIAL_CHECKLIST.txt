@@ -1,0 +1,27 @@
+R23.4N जाँच-सूची / Checklist
+
+STOP। शिक्षक ट्रायल अधिकृत नहीं है। / Teacher Trial is NOT AUTHORIZED.
+प्रोडक्शन मंजूर नहीं है। / Production is NOT APPROVED.
+Open_Enrollment.bat, open_launcher.py, नामांकन विंडो और प्रोडक्शन वर्कफ़्लो न चलाएँ।
+Do not run Open_Enrollment.bat, open_launcher.py, the enrollment window, or a production workflow.
+
+यह सूची काम शुरू करने की आज्ञा नहीं है।
+This list is not permission to start.
+
+रोकी हुई जाँचें / Checks that must not be started
+[ ] BLOCKED — Open_Enrollment.bat न चलाएँ। विंडो न खोलें। / Do not run Open_Enrollment.bat. Do not open the window.
+[ ] BLOCKED — TEST_CLASS_1.xlsx से नामांकन न करें। / Do not enroll from TEST_CLASS_1.xlsx.
+[ ] BLOCKED — TEST_PHOTOS चुनकर दर्ज न करें। / Do not enroll from TEST_PHOTOS.
+[ ] BLOCKED — सेशन 2026_27 और कक्षा I अभी न चलाएँ। / Do not run session 2026_27 and class I.
+[ ] BLOCKED — कक्षा 1 दोबारा न चलाएँ। / Do not repeat Class 1.
+[ ] BLOCKED — TEST_CLASS_6.xlsx और कक्षा VI न चलाएँ। / Do not run TEST_CLASS_6.xlsx and class VI.
+[ ] BLOCKED — कक्षा 6 दोबारा न चलाएँ। / Do not repeat Class 6.
+[ ] BLOCKED — TEST_MIXED.xlsx न चलाएँ। / Do not run TEST_MIXED.xlsx.
+[ ] BLOCKED — प्रतिक्रिया फ़ॉर्म अभी न भरें। / Do not fill the feedback form yet.
+
+नतीजा / Result
+असली शिक्षक ट्रायल / Actual teacher trial: NOT AUTHORIZED
+प्रोडक्शन / Production: NOT APPROVED
+स्किप / Skips: NOT PASSES
+Windows स्किप दस रहे, WinError 1314। जंक्शन टेस्ट पास हुए।
+Windows had ten skips, WinError 1314. The junction tests passed.

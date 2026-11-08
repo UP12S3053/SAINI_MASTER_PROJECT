@@ -1,0 +1,16 @@
+R23_3A_SYNTHETIC_TRIAL_PACK_REPORT
+folder=R23_3A_TEACHER_TRIAL_PACK
+all_data_artificial=YES
+
+Required columns, taken from the current reader, are:
+school_code, session, class, roll_number, student_name, father_name, photo_file
+
+01_valid_class_1: TRIAL CHILD A, Class 1, Roll 1, expected visible ID ABC1001.
+02_valid_class_6: TRIAL CHILD B, Class 6, Roll 15, expected visible ID ABC6015.
+03_duplicate_roll: the second row repeats Roll 1 with a different fictional name.
+04_missing_photo: the row names absent.jpg, which is not in the folder.
+05_invalid_photo: bad.jpg is not a readable image.
+Each example has both students.xlsx and students.csv.
+The photographs are generated colored squares, not pictures of people.
+README.txt says the pack is artificial.
+The automated pack test enrolled the Class 1 example and received ABC1001.

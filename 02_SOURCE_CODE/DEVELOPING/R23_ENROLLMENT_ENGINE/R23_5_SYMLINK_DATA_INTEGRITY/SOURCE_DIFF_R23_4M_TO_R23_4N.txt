@@ -1,0 +1,521 @@
+--- R23.4M/STOP.txt
++++ R23.4N/STOP.txt
+@@ -1,13 +1,22 @@
+ STOP
+ 
+-यह R23.4M पैकेज है। शिक्षक ट्रायल अभी अधिकृत नहीं है।
+-This is the R23.4M package. The teacher trial is NOT AUTHORIZED.
++यह R23.4N पैकेज है। शिक्षक ट्रायल अभी अधिकृत नहीं है।
++This is the R23.4N package. The teacher trial is NOT AUTHORIZED.
+ 
+ प्रोडक्शन अभी मंजूर नहीं है।
+ Production is NOT APPROVED.
+ 
+-स्किप का मतलब पास नहीं है।
+-A skip is not a pass.
++नामांकन विंडो, GUI या प्रोडक्शन वर्कफ़्लो न चलाएँ।
++Do not run the enrollment window, the GUI, or a production workflow.
+ 
+ Open_Enrollment.bat या open_launcher.py न चलाएँ।
+ Do not launch Open_Enrollment.bat or open_launcher.py.
++
++स्किप का मतलब पास नहीं है।
++A skip is not a pass.
++
++Windows पर दस टेस्ट स्किप रहे। कारण WinError 1314 था। सिमलिंक बना ही नहीं।
++On Windows, ten tests stayed skipped. The cause was WinError 1314. No symlink was created.
++
++जंक्शन टेस्ट पास हुए। उन्हें स्किप न समझें।
++The junction tests passed. Do not describe those passes as skips, or the skips as passes.
+--- R23.4M/README.txt
++++ R23.4N/README.txt
+@@ -1,62 +1,44 @@
+-R23.4M WINDOWS SYMLINK COMPATIBILITY
++R23.4N DOCUMENTATION CLEANUP
+ final_status=PATCH PREPARED
+ teacher_trial=NOT AUTHORIZED
+ production=NOT APPROVED
+ do_not_launch=YES
+ 
++STOP
++Teacher Trial is NOT AUTHORIZED.
++Production is NOT APPROVED.
++Do not run Open_Enrollment.bat.
++Do not run open_launcher.py.
++Do not open the enrollment GUI.
++Do not start a production workflow.
++Read STOP.txt. This file does not give permission to start.
++
++QUICK_START and USER_GUIDE are not in this package.
++The old "HOW TO OPEN" section told the reader to double-click Open_Enrollment.bat.
++That instruction is withdrawn. It must not be followed.
++
++WHAT THIS PACKAGE IS
++This is a documentation-only copy of R23.4M.
++R23.4M was not overwritten.
++No identity rule, test, database path, or photo rule was changed.
++
++WHERE THE FILES MAY SIT
++The zip may be extracted into a new empty folder for reading.
++Do not extract it into the live project.
++Do not extract it on top of an older trial folder.
++Extracting it is not permission to enroll anyone.
++
++WHAT IS STILL TRUE FROM THE WINDOWS RUN
++R23.4M on the review PC: 87 tests, 77 passed, 0 failed, 0 errors, 10 skipped.
++A skip is not a pass.
++The ten skips are WinError 1314. Symlink creation was refused before the assertion.
++The Windows junction tests ran and passed. They are not skips.
++The rmdir-failure assertion did not run on that PC because the symlink was not created.
++That skip is not a pass.
++
++CLASS CODES, IF A LATER REVIEW EVER ALLOWS A TRIAL
++Class 1 is I. Class 6 is VI. Session is 2026_27.
++Those codes are a reference only. Do not enroll now.
+ 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-This is a separate safety patch. The original R23.4 package was not overwritten.
+-Do not give this patch to a teacher until an independent source review accepts it
+-and every safety test has passed again on the reviewed copy.
+-The identity allocation rules are unchanged.
+-
+-The copied trial instructions below describe the unchanged enrollment screen.
+-They are not permission to start the teacher trial.
+-
+-
+-This is a separate trial package.
+-The enrollment program inside it was copied unchanged from the Windows-tested development build.
+-No identity rule was changed for this package.
+-The live project is not included and must not be opened.
+-
+-WHERE TO PUT IT
+-Unzip this package into a new empty folder.
+-Do not unzip it into the live project.
+-Do not unzip it on top of an older trial folder.
+-A safe example is a new folder named R23_4_CONTROLLED_TEACHER_TRIAL.
+-
+-HOW TO OPEN
+-On Windows, double-click Open_Enrollment.bat.
+-That file opens the same window as open_launcher.py.
+-If the window does not open, do not remove the current Python.
+-Write the message on the feedback form and stop.
+-
+-WHAT THE TEACHER USES
+-Excel files are in TEST_EXCEL.
+-Dummy photos are in TEST_PHOTOS.
+-The program saves its trial output in TRIAL_WORKSPACE.
+-Notes and screenshots go in TRIAL_LOGS.
+-Read TEACHER_INSTRUCTIONS_HI_EN.txt before the trial.
+-Use TRIAL_CHECKLIST.txt during the trial.
+-Fill TEACHER_FEEDBACK_FORM.txt after the trial.
+-If something unexpected appears, follow STOP.txt.
+-
+-CLASS LIST
+-The class list shows the code, not the words Class 1.
+-Class 1 is I.
+-Class 6 is VI.
+-Session must be 2026_27.
+-
+-This package does not prove that a teacher has completed the trial.
+-Production deployment remains NOT APPROVED.
++This package does not prove that a teacher has completed a trial.
++Production remains NOT APPROVED.
+--- R23.4M/TEACHER_INSTRUCTIONS_HI_EN.txt
++++ R23.4N/TEACHER_INSTRUCTIONS_HI_EN.txt
+@@ -1,88 +1,58 @@
+ शिक्षक निर्देश / Teacher instructions
+-R23.4 controlled trial
++R23.4N
+ 
+-कृपया यह काम अकेले करें। ट्रायल के दौरान कोई कदम नहीं बताएगा।
+-Please do this independently. Nobody should guide you during the trial.
+-अगर खतरे वाली स्थिति दिखे तो STOP.txt पढ़कर तुरंत रुक जाएँ।
+-If a safety problem appears, follow STOP.txt and stop immediately.
+-
+-1. प्रोग्राम खोलें / Open the application
+-Windows पर Open_Enrollment.bat पर डबल-क्लिक करें।
+-On Windows, double-click Open_Enrollment.bat.
+-एक विंडो खुलेगी। शुरुआत में कोई फ़ाइल चुनी हुई नहीं होगी।
+-A window will open. No file is selected at the start.
+-
+-2. Excel चुनें / Select the test workbook
+-बटन दबाएँ: Excel या CSV चुनें / Choose file
+-Press: Excel या CSV चुनें / Choose file
+-पहली जाँच के लिए TEST_EXCEL फ़ोल्डर में TEST_CLASS_1.xlsx चुनें।
+-For the first check, choose TEST_CLASS_1.xlsx in the TEST_EXCEL folder.
+-असली स्कूल की Excel फ़ाइल न चुनें।
+-Do not choose a real school Excel file.
+-
+-3. फ़ोटो फ़ोल्डर चुनें / Select the test photo folder
+-बटन दबाएँ: फ़ोटो फ़ोल्डर चुनें / Choose photo folder
+-Press: फ़ोटो फ़ोल्डर चुनें / Choose photo folder
+-TEST_PHOTOS फ़ोल्डर चुनें।
+-Choose the TEST_PHOTOS folder.
+-इसमें सिर्फ़ नकली फ़ोटो हैं: DUMMY PHOTO A और DUMMY PHOTO B।
+-It contains only dummy photos: DUMMY PHOTO A and DUMMY PHOTO B.
+-
+-4. सेशन और कक्षा चुनें / Select the session and class
+-सेशन / Session में 2026_27 चुनें।
+-In Session, choose 2026_27.
+-कक्षा / Class की सूची में शब्द Class 1 नहीं दिखता।
+-The Class list does not show the words Class 1.
+-कक्षा 1 के लिए I चुनें।
+-For Class 1, choose I.
+-कक्षा 6 के लिए VI चुनें।
+-For Class 6, choose VI.
+-
+-5. नकली छात्र दर्ज करें / Enroll a dummy student
+-TEST_CLASS_1.xlsx के साथ कक्षा I चुनकर यह बटन दबाएँ:
+-With TEST_CLASS_1.xlsx and class I selected, press:
+-नामांकन शुरू करें / Start enrollment
+-यह छात्र नकली है। नाम है DUMMY STUDENT A।
+-This student is fake. The name is DUMMY STUDENT A.
+-
+-6. सफल नामांकन कैसे पहचानें / How to recognize success
+-नई दर्ज पर यह लिखा आएगा: नामांकन हो गया।
+-A new enrollment says: नामांकन हो गया।
+-कक्षा 1, रोल 1 का दिखाई देने वाला नंबर ABC1001 है।
+-Class 1, Roll 1 shows the visible ID ABC1001.
+-बाद में TEST_CLASS_6.xlsx खोलें, कक्षा VI चुनें और शुरू करें।
+-Later open TEST_CLASS_6.xlsx, choose class VI, and start.
+-कक्षा 6, रोल 15 का दिखाई देने वाला नंबर ABC6015 है।
+-Class 6, Roll 15 shows the visible ID ABC6015.
+-सफल पंक्ति पर भी यही वाक्य आएगा: नामांकन हो गया।
+-That success also says: नामांकन हो गया।
+-
+-7. पहले से दर्ज छात्र कैसे पहचानें / How to recognize an existing student
+-वही फ़ाइल, वही सेशन और वही कक्षा दोबारा शुरू करें।
+-Start the same file, session, and class again.
+-यह वाक्य आना चाहिए:
+-This sentence should appear:
+-यह छात्र पहले से दर्ज है। नया रिकॉर्ड नहीं बना।
+-कोई नया नंबर नहीं बनेगा।
+-No new number is created.
+-
+-8. गलती दिखे तो क्या करें / How to report an error
+-Excel या फ़ोटो को अपने हाथ से सुधारें नहीं।
+-Do not correct the Excel or the photo yourself.
+-विंडो बंद करें।
+-Close the window.
+-जो वाक्य स्क्रीन पर था, उसे हूबहू TRIAL_LOGS में लिखें।
+-Write the exact sentence from the screen in TRIAL_LOGS.
+-फिर TEACHER_FEEDBACK_FORM.txt भरें।
+-Then fill TEACHER_FEEDBACK_FORM.txt.
+-
+-मिश्रित फ़ाइल / Mixed file
+-आखिर में TEST_MIXED.xlsx चुनें और कक्षा I चुनें।
+-Finally choose TEST_MIXED.xlsx and class I.
+-जो पंक्ति चुनी हुई कक्षा की नहीं है, उस पर यह वाक्य आना चाहिए:
+-A row that is not in the selected class should show:
+-यह पंक्ति चुनी हुई कक्षा या सेशन की नहीं है।
+-अगर कक्षा 1 पहले ही दर्ज हो चुकी है, तो उसी पंक्ति पर डुप्लिकेट वाला वाक्य भी आ सकता है।
+-If Class 1 was already enrolled, that row can also show the duplicate sentence.
+-इसे हाथ से ठीक न करें। जैसा दिखे, वैसा फ़ॉर्म में लिखें।
+-Do not fix it by hand. Write exactly what you see on the form.
++STOP। यह ट्रायल अभी अधिकृत नहीं है।
++STOP. This trial is NOT AUTHORIZED.
++
++प्रोडक्शन मंजूर नहीं है।
++Production is NOT APPROVED.
++
++अभी कुछ न चलाएँ।
++Do not run anything now.
++
++न चलाएँ / Do not run:
++- Open_Enrollment.bat
++- open_launcher.py
++- नामांकन विंडो / the enrollment window
++- कोई प्रोडक्शन वर्कफ़्लो / any production workflow
++
++असली छात्र की Excel या फ़ोटो न खोलें।
++Do not open a real student's Excel file or photo.
++
++नीचे पुराने कदम सिर्फ़ रिकॉर्ड के लिए जमे हुए हैं।
++The old steps below are frozen as a record only.
++वे वर्तमान आदेश नहीं हैं। उन्हें पूरा न करें।
++They are not current instructions. Do not carry them out.
++
++FROZEN RECORD — DO NOT PERFORM / जमा रिकॉर्ड — न करें
++
++1. प्रोग्राम खोलना मना है। Open_Enrollment.bat पर डबल-क्लिक न करें।
++   Opening the program is forbidden. Do not double-click Open_Enrollment.bat.
++
++2. Excel चुनना मना है। असली स्कूल की फ़ाइल न चुनें।
++   Choosing an Excel file is forbidden. Do not choose a real school file.
++
++3. फ़ोटो फ़ोल्डर चुनना मना है। TEST_PHOTOS में सिर्फ़ नकली फ़ोटो हैं।
++   Choosing a photo folder is forbidden. TEST_PHOTOS has dummy photos only.
++
++4. कक्षा कोड, सिर्फ़ संदर्भ: कक्षा 1 = I, कक्षा 6 = VI, सेशन = 2026_27।
++   Class codes, reference only: Class 1 = I, Class 6 = VI, session = 2026_27.
++   अभी चुनें नहीं। / Do not select them now.
++
++5. "नामांकन शुरू करें / Start enrollment" न दबाएँ।
++   Do not press "नामांकन शुरू करें / Start enrollment".
++
++6. सफलता का वाक्य "नामांकन हो गया।" अभी किसी स्क्रीन पर साबित नहीं करना है।
++   Do not try to produce the sentence "नामांकन हो गया।"
++
++7. डुप्लिकेट वाक्य की जाँच अभी न करें।
++   Do not repeat a run to look for the duplicate sentence.
++
++8. TEST_MIXED.xlsx अभी न चलाएँ।
++   Do not run TEST_MIXED.xlsx.
++
++स्किप पास नहीं है। / A skip is not a pass.
++Windows पर दस टेस्ट WinError 1314 से स्किप रहे। सिमलिंक बना ही नहीं।
++On Windows, ten tests were skipped because of WinError 1314. No symlink was created.
++जंक्शन टेस्ट पास हुए। स्किप को पास न लिखें।
++The junction tests passed. Do not record a skip as a pass.
+--- R23.4M/TRIAL_CHECKLIST.txt
++++ R23.4N/TRIAL_CHECKLIST.txt
+@@ -1,26 +1,27 @@
+-R23.4 ट्रायल जाँच-सूची / Trial checklist
++R23.4N जाँच-सूची / Checklist
+ 
+-शुरू करने से पहले / Before starting
+-[ ] पैकेज नए खाली फ़ोल्डर में खुला है। / The package is in a new empty folder.
+-[ ] लाइव प्रोजेक्ट नहीं खोला गया। / The live project was not opened.
+-[ ] असली छात्र की फ़ाइल या फ़ोटो इस्तेमाल नहीं हुई। / No real student file or photo was used.
+-[ ] STOP.txt पढ़ ली गई है। / STOP.txt has been read.
++STOP। शिक्षक ट्रायल अधिकृत नहीं है। / Teacher Trial is NOT AUTHORIZED.
++प्रोडक्शन मंजूर नहीं है। / Production is NOT APPROVED.
++Open_Enrollment.bat, open_launcher.py, नामांकन विंडो और प्रोडक्शन वर्कफ़्लो न चलाएँ।
++Do not run Open_Enrollment.bat, open_launcher.py, the enrollment window, or a production workflow.
+ 
+-जाँच / Checks
+-हर पंक्ति शिक्षक के नतीजे के बाद भरी जाएगी। अभी कोई पास नहीं है।
+-Each line is filled only after the teacher finishes it. Nothing is passed yet.
++यह सूची काम शुरू करने की आज्ञा नहीं है।
++This list is not permission to start.
+ 
+-[ ] PENDING — Open_Enrollment.bat से विंडो खुली। / The window opened from Open_Enrollment.bat.
+-[ ] PENDING — TEST_CLASS_1.xlsx चुना। / TEST_CLASS_1.xlsx was selected.
+-[ ] PENDING — TEST_PHOTOS चुना। / TEST_PHOTOS was selected.
+-[ ] PENDING — सेशन 2026_27 और कक्षा I चुनी। / Session 2026_27 and class I were selected.
+-[ ] PENDING — पहली बार कक्षा 1 का नतीजा स्क्रीन पर लिखा गया। / The first Class 1 result was written down.
+-[ ] PENDING — दूसरी बार वही कक्षा 1 चलाई गई। / The same Class 1 run was repeated.
+-[ ] PENDING — TEST_CLASS_6.xlsx और कक्षा VI पहली बार चलाई गई। / TEST_CLASS_6.xlsx and class VI were run once.
+-[ ] PENDING — वही कक्षा 6 दोबारा चलाई गई। / The same Class 6 run was repeated.
+-[ ] PENDING — TEST_MIXED.xlsx कक्षा I के साथ चलाई गई। / TEST_MIXED.xlsx was run with class I.
+-[ ] PENDING — प्रतिक्रिया फ़ॉर्म भर गया। / The feedback form was completed.
++रोकी हुई जाँचें / Checks that must not be started
++[ ] BLOCKED — Open_Enrollment.bat न चलाएँ। विंडो न खोलें। / Do not run Open_Enrollment.bat. Do not open the window.
++[ ] BLOCKED — TEST_CLASS_1.xlsx से नामांकन न करें। / Do not enroll from TEST_CLASS_1.xlsx.
++[ ] BLOCKED — TEST_PHOTOS चुनकर दर्ज न करें। / Do not enroll from TEST_PHOTOS.
++[ ] BLOCKED — सेशन 2026_27 और कक्षा I अभी न चलाएँ। / Do not run session 2026_27 and class I.
++[ ] BLOCKED — कक्षा 1 दोबारा न चलाएँ। / Do not repeat Class 1.
++[ ] BLOCKED — TEST_CLASS_6.xlsx और कक्षा VI न चलाएँ। / Do not run TEST_CLASS_6.xlsx and class VI.
++[ ] BLOCKED — कक्षा 6 दोबारा न चलाएँ। / Do not repeat Class 6.
++[ ] BLOCKED — TEST_MIXED.xlsx न चलाएँ। / Do not run TEST_MIXED.xlsx.
++[ ] BLOCKED — प्रतिक्रिया फ़ॉर्म अभी न भरें। / Do not fill the feedback form yet.
+ 
+ नतीजा / Result
+-असली शिक्षक ट्रायल / Actual teacher trial: PENDING
+-प्रोडक्शन / Production deployment: NOT APPROVED
++असली शिक्षक ट्रायल / Actual teacher trial: NOT AUTHORIZED
++प्रोडक्शन / Production: NOT APPROVED
++स्किप / Skips: NOT PASSES
++Windows स्किप दस रहे, WinError 1314। जंक्शन टेस्ट पास हुए।
++Windows had ten skips, WinError 1314. The junction tests passed.
+--- R23.4M/TEACHER_FEEDBACK_FORM.txt
++++ R23.4N/TEACHER_FEEDBACK_FORM.txt
+@@ -1,40 +1,46 @@
+ शिक्षक प्रतिक्रिया / Teacher feedback form
+-R23.4
++R23.4N
+ 
+-नाम लिखना ज़रूरी नहीं है। / Name is optional.
+-तारीख / Date:
+-कक्षा जिसे चुना / Class selected:
++STOP। यह फ़ॉर्म अभी न भरें।
++STOP. Do not fill this form now.
++
++शिक्षक ट्रायल अधिकृत नहीं है। / Teacher Trial is NOT AUTHORIZED.
++प्रोडक्शन मंजूर नहीं है। / Production is NOT APPROVED.
++Open_Enrollment.bat और open_launcher.py न चलाएँ।
++Do not run Open_Enrollment.bat or open_launcher.py.
++नामांकन विंडो न खोलें। / Do not open the enrollment window.
++
++खाली उत्तर नीचे सिर्फ़ इसलिए रखे हैं ताकि पुराना फ़ॉर्म मिटे नहीं।
++The blank answers below are kept so the old form is not deleted.
++वे वर्तमान काम नहीं हैं। / They are not current work.
++
++तारीख / Date: NOT STARTED
++कक्षा जिसे चुना / Class selected: NONE
+ 
+ 1. क्या प्रोग्राम आसानी से खुला? / Was the application easy to open?
+-हाँ / Yes    नहीं / No
+-जो दिखा, वह लिखें / What appeared:
++नहीं खोला गया। / It was not opened.
+ 
+ 2. क्या Excel और फ़ोटो फ़ोल्डर चुनना समझ आया? / Were the selectors understandable?
+-हाँ / Yes    नहीं / No
++चुना नहीं गया। / Nothing was selected.
+ 
+ 3. क्या सेशन और कक्षा साफ़ समझ आए? / Were Session and Class clear?
+-हाँ / Yes    नहीं / No
++चुना नहीं गया। / Nothing was selected.
+ 
+ 4. क्या आपने नकली छात्र अकेले दर्ज किया? / Could you enroll a dummy student independently?
+-हाँ / Yes    नहीं / No
+-दिखाई देने वाला नंबर / Visible ID seen:
++नामांकन नहीं हुआ। / No enrollment was performed.
+ 
+ 5. क्या सफलता और डुप्लिकेट के वाक्य समझ आए? / Were the success and duplicate messages understandable?
+-हाँ / Yes    नहीं / No
+-जो वाक्य दिखा, उसे यहाँ लिखें / Write the exact sentence:
++स्क्रीन खोली नहीं गई। / The screen was not opened.
+ 
+ 6. क्या मदद चाहिए पड़ी? / Did you need help?
+-हाँ / Yes    नहीं / No
+-अगर हाँ, तो कहाँ / If yes, where:
++लागू नहीं। / Not applicable.
+ 
+ 7. क्या उलझन या कठिनाई हुई? / What was confusing or difficult?
++लागू नहीं। ट्रायल शुरू नहीं हुआ। / Not applicable. The trial did not start.
+ 
+-8. उपयोग में आसानी, 1 से 5 / Overall usability rating from 1 to 5:
+-1 = बहुत कठिन / very difficult
+-5 = बहुत आसान / very easy
+-अंक / Rating:
+-
+-अन्य बात / Anything else:
++8. उपयोग में आसानी / Overall usability rating:
++कोई अंक नहीं। / No rating.
+ 
+-यह फ़ॉर्म ट्रायल पूरा होने से पहले सफलता का प्रमाण नहीं है।
+-This form is not evidence of success until the teacher completes it.
++यह फ़ॉर्म सफलता का प्रमाण नहीं है।
++This form is not evidence of success.
++स्किप पास नहीं है। / A skip is not a pass.
+--- R23.4M/TRIAL_LOGS/README.txt
++++ R23.4N/TRIAL_LOGS/README.txt
+@@ -1,6 +1,14 @@
+-शिक्षक स्क्रीन का सही वाक्य या फ़ोटो यहाँ रखें।
+-The teacher may place the exact screen sentence or a screenshot here.
++STOP। यहाँ ट्रायल लॉग न बनाएँ।
++STOP. Do not create a trial log here.
++
++शिक्षक ट्रायल अधिकृत नहीं है। / Teacher Trial is NOT AUTHORIZED.
++प्रोडक्शन मंजूर नहीं है। / Production is NOT APPROVED.
++Open_Enrollment.bat और open_launcher.py न चलाएँ।
++Do not run Open_Enrollment.bat or open_launcher.py.
++
+ इस फ़ोल्डर में अभी कोई ट्रायल लॉग नहीं है।
+-There is no trial log here yet.
+-लॉग को पास का प्रमाण न मानें। प्रमाण तभी बनेगा जब प्रतिक्रिया फ़ॉर्म पूरा हो।
+-Do not treat a log as a pass by itself. The feedback form must also be completed.
++There is no trial log here.
++स्क्रीन वाक्य या फ़ोटो यहाँ रखना नामांकन शुरू करना होगा। अभी ऐसा न करें।
++Placing a screen sentence here would mean the enrollment window was opened. Do not do that.
++
++स्किप पास नहीं है। / A skip is not a pass.
+--- R23.4M/TRIAL_WORKSPACE/README.txt
++++ R23.4N/TRIAL_WORKSPACE/README.txt
+@@ -1,9 +1,16 @@
+-यह फ़ोल्डर खाली है।
+-This folder starts empty.
++STOP। इस फ़ोल्डर में नामांकन न चलाएँ।
++STOP. Do not run enrollment into this folder.
++
++शिक्षक ट्रायल अधिकृत नहीं है। / Teacher Trial is NOT AUTHORIZED.
++प्रोडक्शन मंजूर नहीं है। / Production is NOT APPROVED.
++Open_Enrollment.bat और open_launcher.py न चलाएँ।
++Do not run Open_Enrollment.bat or open_launcher.py.
+ 
+-प्रोग्राम अपना ट्रायल डेटा और नकली फ़ोटो की कॉपी यहीं रखेगा।
+-The program will keep its trial data and a copy of the dummy photo here.
+-इसमें पहले से कोई छात्र दर्ज नहीं है।
+-No student is enrolled here yet.
++यह फ़ोल्डर खाली शुरू होता है।
++This folder starts empty.
++प्रोग्राम को अभी यहाँ डेटा लिखने की आज्ञा नहीं है।
++The program is not allowed to write trial data here now.
+ असली डेटा यहाँ न रखें।
+ Do not place real data here.
++कोई छात्र यहाँ दर्ज नहीं है।
++No student is enrolled here.
+--- R23.4M/R23_4_STATUS.txt
++++ R23.4N/R23_4_STATUS.txt
+@@ -1,13 +1,19 @@
+ R23_4_STATUS
+-package=R23_4_CONTROLLED_TEACHER_TRIAL
++current_package=R23_4N_DOCUMENTATION_CLEANUP
++final_status=PATCH PREPARED
+ engine_logic_changed=NO
+ r23_3d_report_changed=NO
+ live_project_changed=NO
+-actual_teacher_trial=PENDING
++actual_teacher_trial=NOT AUTHORIZED
+ production_deployment=NOT APPROVED
++do_not_launch=YES
+ 
+-R23.3D Windows runtime checks remain user-reported PASS.
+-Those checks were not repeated while this package was prepared.
+-The copied program files match the development build that shows the recorded messages.
+-No teacher has completed this package yet.
++Current rule: do not run Open_Enrollment.bat, open_launcher.py, the enrollment GUI, or a production workflow.
++The older line "actual_teacher_trial=PENDING" is withdrawn. Pending is not permission to start.
++
++R23.3D Windows runtime checks remain user-reported PASS for that older run only.
++Those checks were not repeated for R23.4N.
++They do not authorize this package.
++No teacher has completed this package.
+ Do not treat this package as production-ready.
++A skip is not a pass.
+--- R23.4M/R23_4A_STATUS.txt
++++ R23.4N/R23_4A_STATUS.txt
+@@ -1,11 +1,16 @@
+ R23_4A_STATUS
+-package=R23_4A_PATH_SAFETY
++current_package=R23_4N_DOCUMENTATION_CLEANUP
+ original_r23_4_modified=NO
+ identity_allocation_changed=NO
+ live_project_modified=NO
+ teacher_trial=NOT AUTHORIZED
+ production_deployment=NOT APPROVED
++do_not_launch=YES
+ 
+-R23.3D Windows runtime checks remain user-reported PASS.
+-R23.4 actual teacher trial remains PENDING and is not authorized by this patch.
++Current rule: do not run Open_Enrollment.bat, open_launcher.py, the enrollment GUI, or a production workflow.
++"Remains PENDING" is not permission to start the teacher trial.
++
++R23.3D Windows runtime checks remain user-reported PASS for that older run only.
++They do not authorize R23.4N.
+ Independent source review is still required.
++A skip is not a pass.
+--- R23.4M/R23_4B_CALL_GRAPH.md
++++ R23.4N/R23_4B_CALL_GRAPH.md
+@@ -1,3 +1,10 @@
++# Current status: STOP
++
++Teacher Trial is NOT AUTHORIZED. Production is NOT APPROVED.
++Do not run `Open_Enrollment.bat`, `open_launcher.py`, the enrollment GUI, or a production workflow.
++The word ACTIVE below names a historical code path. It is not permission to launch it.
++A skip is not a pass.
++
+ # R23.4B call graph
+ 
+ Line numbers for the original routes refer to `R23_4A_PATH_SAFETY` before this patch. The patched routes refer to `R23_4B_FINAL_SAFETY_REVIEW`.
+@@ -43,4 +50,5 @@
+ 
+ ## Unknown
+ 
+-Windows junction creation was not executed. This runner is Linux, so that check is skipped, not passed.
++Windows junction creation was not executed in the original R23.4B Linux review. That old skip was not a pass.
++R23.4M later ran the junction tests on Windows and those tests passed. Do not describe the R23.4M passes as skips, or the WinError 1314 skips as passes.
+
+# Added file:
+# DOCUMENTATION_CHANGE_REPORT.txt

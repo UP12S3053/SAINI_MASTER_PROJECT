@@ -1,0 +1,27 @@
+Loading Option C slip OCR
+06:42:14 | Gemini API key configured from env:GEMINI_API_KEY; key material redacted.
+Starting MAIN_ASSISTANT SDV mode C
+06:42:14 | INFO     | ======================================================================
+06:42:14 | INFO     | SAINI SCHOOL MASTER PROCESSOR - PERFECTED v2.0
+06:42:14 | INFO     | ======================================================================
+06:42:14 | INFO     | School: SDV | Mode: RETURNED SLIPS OCR
+06:42:14 | INFO     | === STEP 5C: Returned teacher slips (Gemini OCR) ===
+06:42:14 | OCR: Image to PDF 20261028 19.44.59-32.jpg
+06:42:20 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+06:42:20 |   extracted 2 slips
+06:42:20 | OCR payload staged durably: batch=20261101T064220364787-a80e4085; rows=2; sinks untouched
+06:42:20 | Loading local Piper Priyamvada voice...
+06:42:23 | Priyamvada voice: generated 2/2 student clips
+06:42:23 | Combined Priyamvada WAV created: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\WHATSAP\SLIP_AUDIO\SDV_ALL_STUDENTS_PRIYAMVADA_20261101_064220.wav (install ffmpeg to also create MP3)
+
+PRIYAMVADA voice audio ready for slip:
+D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\WHATSAP\SLIP_AUDIO\SDV_ALL_STUDENTS_PRIYAMVADA_20261101_064220.wav
+AUTO APPROVE on. Barrier skipped.
+06:42:23 | slip audio approval validated for batch 20261101T064220364787-a80e4085; fingerprints rechecked.
+06:42:23 | LOCK BLOCKED batch before any sink writes. Approved OCR payload remains in staging; do not delete lock or replay automatically.
+06:42:23 | ERROR    | school batch lock already exists; fail closed pending journal/sink reconciliation: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\OPTION_C_JOURNAL\locks\SDV.lock
+06:42:23 | INFO     | Koi naya slip data nahi mila. Folder check karo.
+06:42:23 | WARNING  | No OCR records were approved in audio verification. Stopping: merge, sync, and ID card generation are blocked.
+Verification pending/rejected. Press Enter to exit...
+>> 
+ID card process finished.

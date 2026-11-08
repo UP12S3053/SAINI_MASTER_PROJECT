@@ -1,0 +1,53 @@
+Loading Option C slip OCR
+09:02:18 | Gemini API key configured from env:GEMINI_API_KEY; key material redacted.
+Starting MAIN_ASSISTANT SDV mode B
+09:02:18 | INFO     | ======================================================================
+09:02:18 | INFO     | SAINI SCHOOL MASTER PROCESSOR - PERFECTED v2.0
+09:02:18 | INFO     | ======================================================================
+09:02:18 | INFO     | School: SDV | Mode: DATA + SYNC + GENERATOR
+09:02:18 | INFO     | === STEP 6: Data merge (FILL-EMPTY ONLY, no refine) ===
+09:02:18 | WARNING  | Individual CSV not found for school code SDV: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\CSV\SDV.csv
+09:02:19 | INFO     | Backup: student_data_BACKUP_2026-11-01_09-02-19.xlsx
+09:02:21 | INFO     | Step6 fill-empty: updated_rows=0 added=0 kept_manual_cells=1633
+09:02:21 | INFO     | === STEP 7: Syncing Photos into PHOTO_LIBRARY ===
+09:02:22 | INFO     | âœ… Step 7 done. 0 photos synced/verified in PHOTO_LIBRARY.
+09:02:22 | INFO     | === STEP 7B: Smart Photo Path Update (Local Preferred + Drive Fallback) ===
+09:02:22 | INFO     | Local photos found: 411
+09:02:23 | INFO     | Drive links from GETID: 1713
+09:02:25 | INFO     | âœ… Total Updated : 665
+09:02:25 | INFO     |    â†’ Local Path  : 665
+09:02:25 | INFO     |    â†’ Drive Link  : 0
+09:02:25 | INFO     | 
+--- SCHOOL STATUS ---
+school_status.py not found next to MAIN_ASSISTANT.py
+09:02:25 | INFO     | ID source = LOCAL EXCEL ONLY -> student_data.xlsx
+
+ID card source: PRIMARY local Excel â†’ student_data.xlsx
+Launch ID card generator? [Y/n]: 
+>> y
+09:02:25 | INFO     | === STEP 8: Launching SAINI ID Card Generator (Excel-only) ===
+09:02:25 | INFO     | ID source = LOCAL EXCEL ONLY -> student_data.xlsx
+
+MODE B MASTER-ROSTER AUTHORIZATION
+School: SDV
+Config workbook: D:\SHRI_JAI_SHRI_RAM\project_panels\school_config_front.xlsx
+Student workbook: D:\SHRI_JAI_SHRI_RAM\project_panels\student_data.xlsx
+Eligible unique IDs for SDV: 37
+Duplicate IDs blocked across all schools: 2390
+This authorizes only the current Excel snapshot for ID-card generation.
+Option C/D OCR Gate is unchanged. No student workbook is modified.
+To approve this exact snapshot, type exactly: AUTHORIZE MASTER ROSTER SDV
+> 
+>> AUTHORIZE MASTER ROSTER SDV
+09:02:56 | INFO     | Mode B/E authorization: hash-bound Local Excel master roster; Option C stays for slip OCR only.
+09:02:56 | INFO     | ID-card source confirmed: Local Excel -> D:\SHRI_JAI_SHRI_RAM\project_panels\student_data.xlsx
+09:02:56 | INFO     | Launching ID-card interface: D:\SHRI_JAI_SHRI_RAM\project_panels\SAINI_ID_CARD.py
+09:08:48 | INFO     | 
+======================================================================
+09:08:48 | INFO     | Workflow ended. Review per-step logs; Mode B uses master-roster authorization, while OCR modes retain Option C Gate verification.
+09:08:48 | INFO     | Log file: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\LOGS
+09:08:48 | INFO     | ======================================================================
+
+Press Enter to exit...
+>> 
+ID card process finished.

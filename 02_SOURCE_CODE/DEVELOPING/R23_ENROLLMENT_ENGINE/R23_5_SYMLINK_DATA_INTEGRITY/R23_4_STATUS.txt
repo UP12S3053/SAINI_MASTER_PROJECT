@@ -1,0 +1,19 @@
+R23_4_STATUS
+current_package=R23_4N_DOCUMENTATION_CLEANUP
+final_status=PATCH PREPARED
+engine_logic_changed=NO
+r23_3d_report_changed=NO
+live_project_changed=NO
+actual_teacher_trial=NOT AUTHORIZED
+production_deployment=NOT APPROVED
+do_not_launch=YES
+
+Current rule: do not run Open_Enrollment.bat, open_launcher.py, the enrollment GUI, or a production workflow.
+The older line "actual_teacher_trial=PENDING" is withdrawn. Pending is not permission to start.
+
+R23.3D Windows runtime checks remain user-reported PASS for that older run only.
+Those checks were not repeated for R23.4N.
+They do not authorize this package.
+No teacher has completed this package.
+Do not treat this package as production-ready.
+A skip is not a pass.

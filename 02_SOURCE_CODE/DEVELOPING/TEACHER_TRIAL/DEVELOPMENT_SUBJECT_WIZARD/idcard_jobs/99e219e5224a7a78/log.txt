@@ -1,0 +1,40 @@
+Loading Option C slip OCR
+17:47:45 | Gemini API key configured from env:GEMINI_API_KEY; key material redacted.
+Starting MAIN_ASSISTANT NBFP mode B
+17:47:45 | INFO     | ======================================================================
+17:47:45 | INFO     | SAINI SCHOOL MASTER PROCESSOR - PERFECTED v2.0
+17:47:45 | INFO     | ======================================================================
+17:47:45 | INFO     | School: NBFP | Mode: DATA + SYNC + GENERATOR
+17:47:45 | INFO     | === STEP 6: Data merge (FILL-EMPTY ONLY, no refine) ===
+17:47:45 | INFO     | Individual school CSV: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\CSV\NBFP.csv
+17:47:45 | INFO     | Step6 incoming = daily CSV None (NBFP.csv)
+17:47:46 | INFO     | Backup: student_data_BACKUP_2026-10-31_17-47-46.xlsx
+17:47:49 | INFO     | Step6 fill-empty: updated_rows=0 added=0 kept_manual_cells=5
+17:47:49 | INFO     | === STEP 7: Syncing Photos into PHOTO_LIBRARY ===
+17:47:50 | INFO     | No records for this school in database.
+17:47:50 | INFO     | === STEP 7B: Smart Photo Path Update (Local Preferred + Drive Fallback) ===
+17:47:50 | INFO     | Local photos found: 20
+17:47:51 | INFO     | Drive links from GETID: 1713
+17:47:54 | INFO     | âœ… Total Updated : 0
+17:47:54 | INFO     |    â†’ Local Path  : 0
+17:47:54 | INFO     |    â†’ Drive Link  : 0
+17:47:54 | INFO     | 
+--- SCHOOL STATUS ---
+school_status.py not found next to MAIN_ASSISTANT.py
+17:47:54 | INFO     | ID source = LOCAL EXCEL ONLY -> student_data.xlsx
+
+ID card source: PRIMARY local Excel â†’ student_data.xlsx
+Launch ID card generator? [Y/n]: 
+>> y
+17:47:54 | INFO     | === STEP 8: Launching SAINI ID Card Generator (Excel-only) ===
+17:47:54 | INFO     | ID source = LOCAL EXCEL ONLY -> student_data.xlsx
+17:47:56 | ERROR    | Mode B master-roster authorization failed; GUI not launched: No unambiguous student IDs available for school NBFP; refusing launch
+17:47:56 | INFO     | 
+======================================================================
+17:47:56 | INFO     | Workflow ended. Review per-step logs; Mode B uses master-roster authorization, while OCR modes retain Option C Gate verification.
+17:47:56 | INFO     | Log file: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\LOGS
+17:47:56 | INFO     | ======================================================================
+
+Press Enter to exit...
+>> 
+ID card process finished.

@@ -1,0 +1,22 @@
+R23_3B_GUI_VERIFICATION
+method=REAL_BUTTONS_ON_A_REAL_WINDOW
+
+The live window contained these controls:
+Excel या CSV चुनें / Choose file
+फोटो फ़ोल्डर चुनें / Choose photo folder
+सेशन / Session
+कक्षा / Class
+नामांकन शुरू करें / Start enrollment
+रद्द करें / Cancel
+बाहर निकलें / Exit
+
+Pressing Start before a choice showed the Hindi prompt to choose a file.
+The file and folder buttons then selected the synthetic pack through the real button commands.
+Nothing was preselected.
+Class 1 showed ABC1001 and the completed status.
+Class 6 showed ABC6015.
+The duplicate, missing-photo, and invalid-photo examples showed their rejection messages.
+Cancel showed the cancelled status.
+The summary text did not contain the permanent key.
+No ID card function was called.
+The file dialog itself was not clicked by a person. The button command was executed on the real window, and the operating-system dialog was not left waiting.

@@ -1,0 +1,52 @@
+R23_4F_TEST_REPORT
+package=R23_4F_TARGETED_SECURITY_PATCH
+baseline=R23_4E_WINDOWS_JUNCTION_VERIFICATION
+baseline_overwritten=NO
+identity_engine_modified=NO
+identity_engine_sha256=e7d9b3626986e5aa287480ba9de5f2bb5d0d9efdbdf81ee9b9eaf633490910d2
+gui_launched=NO
+bat_launched=NO
+real_student_data=NO
+production_modified=NO
+windows_junction=UNVERIFIED
+teacher_trial=NOT AUTHORIZED
+production=NOT APPROVED
+final_status=PATCH PREPARED
+
+Existing R23.4E tests
+test_r23_4a_path_safety.py: 11 passed, 0 failed, 0 skipped
+test_r23_4b_safety.py: 12 passed, 0 failed, 1 skipped
+test_r23_4c_remediation.py: 4 passed, 0 failed, 0 skipped
+test_r23_4d_staging.py: 3 passed, 0 failed, 0 skipped
+test_r23_4e_junction.py: 2 passed, 0 failed, 1 skipped
+
+New R23.4F tests
+test_r23_4f_rollback.py: 7 passed, 0 failed, 0 skipped
+test_r23_4f_junction.py: 4 passed, 0 failed, 0 skipped
+
+TOTAL
+passed=43
+failed=0
+skipped=2
+
+Skipped tests, neither is a pass:
+test_windows_junction_is_reported_when_unsupported
+test_linux_skips_live_junction_without_passing_it
+Reason: Windows junction verification was not executed on this Linux runner. Status: UNVERIFIED.
+
+Linux junction-cleanup tests are separate from Windows junction verification.
+They do not change the UNVERIFIED status.
+
+Rollback checks that passed:
+OSError before staging leaves no student row.
+OSError during staging removes only a file whose bytes match the source.
+OSError during final photo creation leaves no student row.
+OSError during linking leaves no student row.
+An unproven partial staging file stays byte-for-byte unchanged.
+An existing student and existing files stay unchanged when a new enrollment fails.
+An unexpected exception is raised again, and the new row is still removed.
+
+Junction cleanup checks that passed:
+Successful removal does not delete the target.
+A simulated rmdir failure is reported as FAIL, not PASS or SKIPPED.
+A real directory is not recursively deleted.

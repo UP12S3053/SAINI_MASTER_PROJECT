@@ -1,0 +1,11 @@
+R23_3C_DEPLOYMENT_BOUNDARY
+live_deployment=NO
+windows_copy=NOT_PERFORMED
+production_files_changed=NO
+
+The full R23.3C instruction text was not included with the request.
+This phase therefore validated the development package only.
+It did not copy anything into the live project and did not change live Python files, Excel files, photos, or databases.
+A destination containing SHRI_JAI_SHRI_RAM, student_data.xlsx, MAIN_ASSISTANT.py, or SAINI_ID_CARD.py is refused.
+The approved start files are Open_Enrollment.bat and open_launcher.py.
+Both stay inside this development folder.

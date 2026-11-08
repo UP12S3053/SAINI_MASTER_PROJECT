@@ -1,0 +1,55 @@
+R23_4B_TEST_REPORT
+package=R23_4B_FINAL_SAFETY_REVIEW
+gui_launched=NO
+real_student_data=NO
+identity_engine_modified=NO
+identity_engine_sha256=e7d9b3626986e5aa287480ba9de5f2bb5d0d9efdbdf81ee9b9eaf633490910d2
+original_r23_4a_modified=NO
+production_files_modified=NO
+teacher_trial=NOT AUTHORIZED
+production=NOT APPROVED
+final_status=B. PATCH PREPARED — RUNTIME VERIFICATION REQUIRED
+
+tests/test_r23_4a_path_safety.py
+Ran 11 tests
+OK
+Failed: 0
+Skipped: 0
+
+tests/test_r23_4b_safety.py
+Ran 13 tests
+OK
+Passed: 12
+Skipped: 1
+Failed: 0
+
+Skipped:
+test_windows_junction_is_reported_when_unsupported
+Windows junction/reparse creation is not supported on this Linux runner.
+This skipped test is not a pass.
+
+Executed checks that passed:
+Excel outside TEST_EXCEL
+Photo directory outside TEST_PHOTOS
+Workspace outside TRIAL_WORKSPACE
+Symlink escape
+UNC path rejection
+../ photo filename
+Absolute photo filename
+Missing required photo
+Corrupt photo
+No database after rejected preflight
+No student row after failed photo assignment
+Direct old writer
+Direct old launcher
+Direct controlled writer
+Duplicate enrollment
+Duplicate roll
+Wrong class/session
+Permanent key not present in the trial result
+Production/live path rejection
+Visible ID rule ABC1001 and ABC6015
+
+No identity.sqlite remained in TRIAL_WORKSPACE after the tests.
+Unit tests passing does not authorize a teacher trial and does not approve production.
+Windows runtime verification is still required.

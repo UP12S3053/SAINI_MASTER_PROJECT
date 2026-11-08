@@ -1,0 +1,13 @@
+R23_REGRESSION_AUDIT
+baseline_hash_changed=NO
+previous_r13_to_r22_patches_overwritten=NO
+live_project_opened=NO
+production_deployment=NO
+real_cards_generated=NO
+
+The old next_official_uid function is still present in the untouched baseline.
+That is intentional. The R23 development entry rejects that allocator instead of editing the baseline.
+No R22 column was selected, renamed, merged, or deleted.
+No BSM row was selected or renamed.
+Failed identity operations roll back the database transaction.
+A refused photo write leaves the existing file bytes unchanged.

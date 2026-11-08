@@ -1,0 +1,184 @@
+Loading Option C slip OCR
+22:24:00 | Gemini API key configured from env:GEMINI_API_KEY; key material redacted.
+Starting MAIN_ASSISTANT SDV mode C
+22:24:00 | INFO     | ======================================================================
+22:24:00 | INFO     | SAINI SCHOOL MASTER PROCESSOR - PERFECTED v2.0
+22:24:00 | INFO     | ======================================================================
+22:24:00 | INFO     | School: SDV | Mode: RETURNED SLIPS OCR
+22:24:00 | INFO     | === STEP 5C: Returned teacher slips (Gemini OCR) ===
+22:24:00 | OCR: Image to PDF 20261028 19.44.59-01.jpg
+22:24:08 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:24:08 |   extracted 1 slips
+22:24:08 | OCR: Image to PDF 20261028 19.44.59-02.jpg
+22:24:22 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:24:22 |   extracted 8 slips
+22:24:22 | OCR: Image to PDF 20261028 19.44.59-03.jpg
+22:24:33 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:24:33 |   extracted 6 slips
+22:24:33 | OCR: Image to PDF 20261028 19.44.59-04.jpg
+22:24:45 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:24:45 |   extracted 10 slips
+22:24:45 | OCR: Image to PDF 20261028 19.44.59-05.jpg
+22:24:54 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:24:54 |   extracted 6 slips
+22:24:54 | OCR: Image to PDF 20261028 19.44.59-06.jpg
+22:25:10 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:25:10 |   extracted 10 slips
+22:25:10 | OCR: Image to PDF 20261028 19.44.59-07.jpg
+22:25:26 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:25:26 |   extracted 8 slips
+22:25:26 | OCR: Image to PDF 20261028 19.44.59-08.jpg
+22:25:40 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:25:40 |   extracted 10 slips
+22:25:40 | OCR: Image to PDF 20261028 19.44.59-09.jpg
+22:26:01 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:26:01 |   extracted 6 slips
+22:26:01 | OCR: Image to PDF 20261028 19.44.59-10.jpg
+22:26:12 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:26:12 |   extracted 10 slips
+22:26:12 | OCR: Image to PDF 20261028 19.44.59-11.jpg
+22:26:28 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:26:28 |   extracted 10 slips
+22:26:28 | OCR: Image to PDF 20261028 19.44.59-12.jpg
+22:26:32 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:26:32 |   extracted 1 slips
+22:26:32 | OCR: Image to PDF 20261028 19.44.59-13.jpg
+22:26:47 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:26:47 |   extracted 9 slips
+22:26:47 | OCR: Image to PDF 20261028 19.44.59-14.jpg
+22:27:00 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:27:00 |   extracted 10 slips
+22:27:00 | OCR: Image to PDF 20261028 19.44.59-15.jpg
+22:27:12 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:27:12 |   extracted 9 slips
+22:27:12 | OCR: Image to PDF 20261028 19.44.59-16.jpg
+22:27:26 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:27:26 |   extracted 8 slips
+22:27:26 | OCR: Image to PDF 20261028 19.44.59-17.jpg
+22:27:37 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:27:37 |   extracted 8 slips
+22:27:37 | OCR: Image to PDF 20261028 19.44.59-18.jpg
+22:27:50 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:27:50 |   extracted 8 slips
+22:27:50 | OCR: Image to PDF 20261028 19.44.59-19.jpg
+22:28:05 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:28:05 |   extracted 10 slips
+22:28:05 | OCR: Image to PDF 20261028 19.44.59-20.jpg
+22:28:17 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:28:17 |   extracted 10 slips
+22:28:17 | OCR: Image to PDF 20261028 19.44.59-21.jpg
+22:28:27 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:28:27 |   extracted 6 slips
+22:28:27 | OCR: Image to PDF 20261028 19.44.59-22.jpg
+22:28:39 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:28:39 |   extracted 5 slips
+22:28:39 | OCR: Image to PDF 20261028 19.44.59-23.jpg
+22:28:51 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:28:51 |   extracted 10 slips
+22:28:51 | OCR: Image to PDF 20261028 19.44.59-24.jpg
+22:29:04 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:29:04 |   extracted 8 slips
+22:29:04 | OCR: Image to PDF 20261028 19.44.59-25.jpg
+22:29:19 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:29:19 |   extracted 10 slips
+22:29:19 | OCR: Image to PDF 20261028 19.44.59-26.jpg
+22:29:33 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:29:33 |   extracted 10 slips
+22:29:33 | OCR: Image to PDF 20261028 19.44.59-27.jpg
+22:29:44 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:29:44 |   extracted 8 slips
+22:29:44 | OCR: Image to PDF 20261028 19.44.59-28.jpg
+22:29:58 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:29:58 |   extracted 10 slips
+22:29:58 | OCR: Image to PDF 20261028 19.44.59-29.jpg
+22:30:11 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:30:11 |   extracted 10 slips
+22:30:11 | OCR: Image to PDF 20261028 19.44.59-30.jpg
+22:30:24 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:30:24 |   extracted 9 slips
+22:30:24 | OCR: Image to PDF 20261028 19.44.59-32.jpg
+22:30:31 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:30:31 |   extracted 2 slips
+22:30:31 | OCR: Image to PDF 20261028 19.44.59-33.jpg
+22:30:39 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:30:39 |   extracted 3 slips
+22:30:39 | OCR: Image to PDF 20261028 19.44.59-34.jpg
+22:30:53 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:30:53 |   extracted 8 slips
+22:30:53 | OCR: Image to PDF 20261028 19.44.59-35.jpg
+22:31:06 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:31:06 |   extracted 10 slips
+22:31:06 | OCR: Image to PDF 20261028 19.44.59-36.jpg
+22:31:21 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:31:21 |   extracted 10 slips
+22:31:21 | OCR: Image to PDF 20261028 19.44.59-37.jpg
+22:31:34 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:31:34 |   extracted 10 slips
+22:31:34 | OCR: Image to PDF 20261028 19.44.59-38.jpg
+22:31:53 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:31:53 |   extracted 10 slips
+22:31:53 | OCR: Image to PDF 20261028 19.44.59-39.jpg
+22:32:08 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:32:08 |   extracted 3 slips
+22:32:08 | OCR: Image to PDF 20261028 19.44.59-40.jpg
+22:32:27 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:32:27 |   extracted 9 slips
+22:32:27 | OCR: Image to PDF 20261028 19.44.59-41.jpg
+22:32:35 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:32:35 |   extracted 3 slips
+22:32:35 | OCR: Image to PDF 20261028 19.44.59-42.jpg
+22:32:48 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:32:48 |   extracted 7 slips
+22:32:48 | OCR: Image to PDF 20261028 19.44.59-43.jpg
+22:33:05 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+22:33:05 |   extracted 10 slips
+22:33:05 | OCR payload staged durably: batch=20261031T223305527236-1e389292; rows=329; sinks untouched
+22:33:05 | Loading local Piper Priyamvada voice...
+22:33:12 | Priyamvada voice: generated 10/329 student clips
+22:33:17 | Priyamvada voice: generated 20/329 student clips
+22:33:23 | Priyamvada voice: generated 30/329 student clips
+22:33:28 | Priyamvada voice: generated 40/329 student clips
+22:33:34 | Priyamvada voice: generated 50/329 student clips
+22:33:40 | Priyamvada voice: generated 60/329 student clips
+22:33:45 | Priyamvada voice: generated 70/329 student clips
+22:33:51 | Priyamvada voice: generated 80/329 student clips
+22:33:56 | Priyamvada voice: generated 90/329 student clips
+22:34:02 | Priyamvada voice: generated 100/329 student clips
+22:34:07 | Priyamvada voice: generated 110/329 student clips
+22:34:13 | Priyamvada voice: generated 120/329 student clips
+22:34:18 | Priyamvada voice: generated 130/329 student clips
+22:34:24 | Priyamvada voice: generated 140/329 student clips
+22:34:32 | Priyamvada voice: generated 150/329 student clips
+22:34:39 | Priyamvada voice: generated 160/329 student clips
+22:34:45 | Priyamvada voice: generated 170/329 student clips
+22:34:50 | Priyamvada voice: generated 180/329 student clips
+22:34:56 | Priyamvada voice: generated 190/329 student clips
+22:35:02 | Priyamvada voice: generated 200/329 student clips
+22:35:08 | Priyamvada voice: generated 210/329 student clips
+22:35:14 | Priyamvada voice: generated 220/329 student clips
+22:35:20 | Priyamvada voice: generated 230/329 student clips
+22:35:26 | Priyamvada voice: generated 240/329 student clips
+22:35:31 | Priyamvada voice: generated 250/329 student clips
+22:35:38 | Priyamvada voice: generated 260/329 student clips
+22:35:44 | Priyamvada voice: generated 270/329 student clips
+22:35:50 | Priyamvada voice: generated 280/329 student clips
+22:35:56 | Priyamvada voice: generated 290/329 student clips
+22:36:02 | Priyamvada voice: generated 300/329 student clips
+22:36:08 | Priyamvada voice: generated 310/329 student clips
+22:36:13 | Priyamvada voice: generated 320/329 student clips
+22:36:18 | Priyamvada voice: generated 329/329 student clips
+22:36:18 | Combined Priyamvada WAV created: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\WHATSAP\SLIP_AUDIO\SDV_ALL_STUDENTS_PRIYAMVADA_20261031_223305.wav (install ffmpeg to also create MP3)
+
+PRIYAMVADA voice audio ready for slip:
+D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\WHATSAP\SLIP_AUDIO\SDV_ALL_STUDENTS_PRIYAMVADA_20261031_223305.wav
+Please listen to the complete audio and verify this batch before approving.
+Approve this slip batch after listening? [Y/N]: 
+>> 
+22:37:18 | slip batch was not approved; no sink writes will occur; input scans will remain in place.
+22:37:18 | Audio approval was not granted; staged OCR retained, no sinks written, scans left in place.
+22:37:18 | INFO     | OCR result: {'school': 'SDV', 'extracted': 329, 'updated': 0, 'added': 0, 'scans': 42, 'audio_file': 'D:\\SHRI_JAI_SHRI_RAM\\project_panels\\ID_CARD_PROJECT\\WHATSAP\\SLIP_AUDIO\\SDV_ALL_STUDENTS_PRIYAMVADA_20261031_223305.wav', 'approved': 0, 'stage_file': 'D:\\SHRI_JAI_SHRI_RAM\\project_panels\\ID_CARD_PROJECT\\OPTION_C_JOURNAL\\staging\\20261031T223305527236-1e389292.json', 'verification_required': True, 'committed': False}
+22:37:18 | INFO     | Koi naya slip data nahi mila. Folder check karo.
+22:37:18 | WARNING  | No OCR records were approved in audio verification. Stopping: merge, sync, and ID card generation are blocked.
+Verification pending/rejected. Press Enter to exit...
+>> 
+ID card process finished.

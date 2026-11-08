@@ -1,0 +1,53 @@
+R23_4D_TEST_REPORT
+package=R23_4D_TARGETED_PATCH
+gui_launched=NO
+real_student_data=NO
+identity_engine_modified=NO
+r23_4a_modified=NO
+r23_4b_modified=NO
+r23_4c_modified=NO
+production_modified=NO
+windows_junction=UNVERIFIED
+teacher_trial=NOT AUTHORIZED
+production=NOT APPROVED
+final_status=PATCH PREPARED — WINDOWS RUNTIME VERIFICATION REQUIRED
+
+tests/test_r23_4a_path_safety.py
+Ran 11 tests
+OK
+Failed: 0
+Skipped: 0
+
+tests/test_r23_4b_safety.py
+Ran 13 tests
+OK
+Passed: 12
+Skipped: 1
+Failed: 0
+Skipped test: test_windows_junction_is_reported_when_unsupported
+Reason: Windows junction/reparse creation is not supported on this Linux runner.
+This skip is not a pass. Windows junction status is UNVERIFIED.
+
+tests/test_r23_4c_remediation.py
+Ran 4 tests
+OK
+Failed: 0
+Skipped: 0
+
+tests/test_r23_4d_staging.py
+Ran 3 tests
+OK
+Failed: 0
+Skipped: 0
+
+Total executed: 30 passed, 0 failed, 1 skipped.
+
+New checks that passed:
+A pre-existing staging file stayed byte-for-byte unchanged.
+No new student row was created.
+No new photo file was created.
+Normal enrollment still works when no staging file exists.
+A pre-existing different target photo is still refused and left unchanged.
+
+No identity.sqlite remained after the tests.
+Windows junction protection is UNVERIFIED.

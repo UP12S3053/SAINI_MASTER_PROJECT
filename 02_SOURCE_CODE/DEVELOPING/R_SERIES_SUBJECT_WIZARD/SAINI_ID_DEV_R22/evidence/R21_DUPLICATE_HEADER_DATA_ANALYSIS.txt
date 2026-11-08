@@ -1,0 +1,85 @@
+R21_DUPLICATE_HEADER_DATA_ANALYSIS
+cell_values_copied=NO
+HEADER ADDR_COLOR
+actual_columns=CP#94,CW#101
+r20_columns=CP,CW
+r20_matches_workbook=YES
+column=CP non_empty=208 blank=9 formulas=0 types=BLANK:9,COLOR:205,SHORT_TOKEN:3
+column=CW non_empty=170 blank=47 formulas=0 types=BLANK:47,COLOR:167,SHORT_TOKEN:3
+different_non_empty_combinations=2
+semantic_difference=NOT VERIFIED
+HEADER ADDR_SIZE
+actual_columns=CO#93,CV#100
+r20_columns=CO,CV
+r20_matches_workbook=YES
+column=CO non_empty=208 blank=9 formulas=0 types=BLANK:9,NUMBER:205,SHORT_TOKEN:3
+column=CV non_empty=170 blank=47 formulas=0 types=BLANK:47,NUMBER:167,SHORT_TOKEN:3
+different_non_empty_combinations=42
+semantic_difference=NOT VERIFIED
+HEADER FATHER_COLOR
+actual_columns=BE#57,BS#71
+r20_columns=BE,BS
+r20_matches_workbook=YES
+column=BE non_empty=208 blank=9 formulas=0 types=BLANK:9,COLOR:205,SHORT_TOKEN:3
+column=BS non_empty=204 blank=13 formulas=0 types=BLANK:13,COLOR:201,SHORT_TOKEN:3
+different_non_empty_combinations=13
+semantic_difference=NOT VERIFIED
+HEADER FATHER_FONT
+actual_columns=BC#55,BQ#69
+r20_columns=BC,BQ
+r20_matches_workbook=YES
+column=BC non_empty=208 blank=9 formulas=0 types=BLANK:9,SHORT_TOKEN:206,TEXT:2
+column=BQ non_empty=204 blank=13 formulas=0 types=BLANK:13,SHORT_TOKEN:202,TEXT:2
+different_non_empty_combinations=2
+semantic_difference=NOT VERIFIED
+HEADER FATHER_PREFIX
+actual_columns=BF#58,BT#72
+r20_columns=BF,BT
+r20_matches_workbook=YES
+column=BF non_empty=132 blank=85 formulas=0 types=BLANK:85,SHORT_TOKEN:130,TEXT:2
+column=BT non_empty=132 blank=85 formulas=0 types=BLANK:85,SHORT_TOKEN:130,TEXT:2
+different_non_empty_combinations=2
+semantic_difference=NOT VERIFIED
+HEADER FATHER_SHOW
+actual_columns=AZ#52,BU#73
+r20_columns=AZ,BU
+r20_matches_workbook=YES
+column=AZ non_empty=208 blank=9 formulas=0 types=BLANK:9,NUMBER:205,SHORT_TOKEN:3
+column=BU non_empty=170 blank=47 formulas=0 types=BLANK:47,NUMBER:167,SHORT_TOKEN:3
+different_non_empty_combinations=3
+semantic_difference=NOT VERIFIED
+HEADER FATHER_SIZE
+actual_columns=BD#56,BR#70
+r20_columns=BD,BR
+r20_matches_workbook=YES
+column=BD non_empty=208 blank=9 formulas=0 types=BLANK:9,NUMBER:205,SHORT_TOKEN:3
+column=BR non_empty=204 blank=13 formulas=0 types=BLANK:13,NUMBER:201,SHORT_TOKEN:3
+different_non_empty_combinations=66
+semantic_difference=NOT VERIFIED
+HEADER FATHER_X
+actual_columns=BA#53,BO#67
+r20_columns=BA,BO
+r20_matches_workbook=YES
+column=BA non_empty=208 blank=9 formulas=0 types=BLANK:9,NUMBER:205,SHORT_TOKEN:3
+column=BO non_empty=202 blank=15 formulas=0 types=BLANK:15,NUMBER:199,SHORT_TOKEN:3
+different_non_empty_combinations=73
+semantic_difference=NOT VERIFIED
+HEADER FATHER_Y
+actual_columns=BB#54,BP#68
+r20_columns=BB,BP
+r20_matches_workbook=YES
+column=BB non_empty=208 blank=9 formulas=0 types=BLANK:9,NUMBER:205,SHORT_TOKEN:3
+column=BP non_empty=203 blank=14 formulas=0 types=BLANK:14,NUMBER:200,SHORT_TOKEN:3
+different_non_empty_combinations=74
+semantic_difference=NOT VERIFIED
+HEADER M
+actual_columns=BW#75,BX#76,BY#77,BZ#78,CA#79
+r20_columns=BW,BX,BY,BZ,CA
+r20_matches_workbook=YES
+column=BW non_empty=171 blank=46 formulas=0 types=BLANK:46,NUMBER:168,SHORT_TOKEN:3
+column=BX non_empty=171 blank=46 formulas=0 types=BLANK:46,SHORT_TOKEN:169,TEXT:2
+column=BY non_empty=171 blank=46 formulas=0 types=BLANK:46,NUMBER:168,SHORT_TOKEN:3
+column=BZ non_empty=171 blank=46 formulas=0 types=BLANK:46,COLOR:168,SHORT_TOKEN:3
+column=CA non_empty=133 blank=84 formulas=0 types=BLANK:84,SHORT_TOKEN:131,TEXT:2
+different_non_empty_combinations=171
+semantic_difference=NOT VERIFIED

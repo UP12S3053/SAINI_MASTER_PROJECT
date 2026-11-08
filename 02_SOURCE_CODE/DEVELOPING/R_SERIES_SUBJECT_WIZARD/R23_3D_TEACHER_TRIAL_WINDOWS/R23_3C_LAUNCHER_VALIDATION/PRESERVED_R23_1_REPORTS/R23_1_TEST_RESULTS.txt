@@ -1,0 +1,20 @@
+R23_1_TEST_RESULTS
+previous_r23_tests=14
+previous_r23_passed=14
+previous_r23_failed=0
+new_integration_tests=8
+new_integration_passed=8
+new_integration_failed=0
+total_tests=22
+passed=22
+failed=0
+skipped=0
+real_records_used=NO
+
+Previous file: tests/test_r23_engine.py
+New file: tests/test_r23_1_integration.py
+
+The new tests call the active writer functions and check their returned records.
+They are not only a count of old tests.
+Covered behavior: engine routing, blocked legacy creation, promotion, roll change, exact spelling, duplicate rejection, pending Nursery/LKG/UKG failure, hidden key, photo collision, stage/finalize/database recovery, generator path, unchanged R22 text, and concurrent enrollment.
+The preserved baseline writers were not executed.

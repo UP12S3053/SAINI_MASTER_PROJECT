@@ -1,0 +1,18 @@
+R23_3_USABILITY_ANALYSIS
+source=SIMULATED_REVIEW
+real_teacher_time=NOT_OBSERVED
+technical_assistance_from_a_teacher=NOT_OBSERVED
+independent_teacher_completion=NOT_OBSERVED
+
+Observed from the program and the automated run:
+The approved flow has six actions: open the program, choose the table, choose the photo folder, choose the class, choose the session, and start.
+The automated scenario completed in under one second of machine time. That is not a teacher's time.
+Messages are short and say whether the row was enrolled, already present, skipped, or rejected.
+No password prompt exists.
+The permanent key is not in the result.
+The program accepts class 1 and class I as the same choice.
+
+These are not teacher complaints. They are recommendations from the technical review:
+A file-picker window would avoid typed paths.
+The guide should keep saying that Nursery, LKG, and UKG are closed.
+A real teacher still needs to try the Hindi messages before their clarity can be claimed.

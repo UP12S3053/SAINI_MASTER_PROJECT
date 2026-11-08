@@ -1,0 +1,15 @@
+R19_FINAL_REPORT
+mode=DEVELOPMENT_ONLY
+status=R19_DEVELOPMENT_PATCH_VERIFIED
+production_deployment=NOT_DONE
+live_files_modified=NO
+r13_original_modified=NO
+workbook_saved=NO
+student_records_opened=NO
+photographs_opened=NO
+card_generated=NO
+schema_migration=NOT_DONE
+R19_RULES=PASS
+R13_ORIGINAL=PASS
+R4_ORIGINAL=PASS
+R14_ORIGINAL=PASS

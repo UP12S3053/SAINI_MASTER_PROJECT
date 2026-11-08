@@ -1,0 +1,12 @@
+R23_1_GENERATOR_COMPATIBILITY
+generator_modified=NO
+generator_executed=NO
+baseline_hash=EA1E637CD5FABF2E122BD84FCF275908D41B5A2929908D823A3C518FED95D187
+
+The baseline generator still reads student_unique_id and STUDENT_PHOTO_PATH.
+The active enrollment path prepares those two fields.
+A synthetic Class 10 record produced XYZX001 and a temporary file path ending in that visible ID.
+No card, QR image, or print layout was generated.
+R22 header text in a synthetic file stayed byte-identical.
+FATHER_X was not selected or renamed.
+BSM rows were not selected.

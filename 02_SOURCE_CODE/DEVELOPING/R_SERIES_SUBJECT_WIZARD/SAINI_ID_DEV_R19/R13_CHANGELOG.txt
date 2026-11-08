@@ -1,0 +1,36 @@
+R13_CHANGELOG
+Scope: development copy only. Live production was not modified.
+
+MODIFIED
+SAINI_ID_CARD.py
+  Calls resolve_config_workbook() instead of its own hard-coded workbook assignment.
+  BSM lookups call select_bsm_row(). A rejected BSM row stops that action.
+  Non-BSM lookups are the original first-row code.
+
+config_editor.py
+  Removed the hard-coded F: workbook path.
+  Reads and saves through editor_workbook_path(), which calls the same resolver as the generator.
+
+ADDED
+bsm_selector.py
+  Rejects empty and whitespace-only BSM SCHOOLNAME.
+  Selects the first remaining BSM row from top to bottom.
+  Returns that one row only.
+  Fails closed when no eligible row exists.
+  Fails closed when school_code, SCHOOLNAME or template is missing or duplicated.
+
+saini_config_path.py
+  Single workbook path. Default is the generator D: workbook.
+  SAINI_DEV_CONFIG_XLSX can point at a synthetic path.
+  The legacy F:\SHRI_JAI_SHRI_RAM path is refused before any file is opened.
+
+tests/test_r13_bsm_and_path.py
+  Synthetic tests A through G and path-alignment tests.
+
+UNCHANGED
+option_c_modules/gate.py
+option_c_modules/identity.py
+option_c_modules/journal.py
+option_c_modules/safety.py
+option_c_modules/sink_verifier.py
+baseline/ copies of the original source

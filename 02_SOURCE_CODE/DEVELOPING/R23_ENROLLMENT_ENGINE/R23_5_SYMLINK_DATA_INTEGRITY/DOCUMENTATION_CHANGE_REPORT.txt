@@ -1,0 +1,51 @@
+R23_4N_DOCUMENTATION_CHANGE_REPORT
+package=R23_4N_DOCUMENTATION_CLEANUP
+baseline=R23_4M_WINDOWS_SYMLINK_COMPATIBILITY
+baseline_overwritten=NO
+kind=DOCUMENTATION ONLY
+teacher_trial=NOT AUTHORIZED
+production=NOT APPROVED
+final_status=PATCH PREPARED
+
+QUICK_START: not present in R23.4M. None was added.
+USER_GUIDE: not present in R23.4M. None was added.
+
+Changed files
+1. STOP.txt
+   Package name is now R23.4N. The same stop rules remain. Skip is still not a pass.
+2. README.txt
+   Removed "HOW TO OPEN" and the double-click instruction for Open_Enrollment.bat.
+   States NOT AUTHORIZED, NOT APPROVED, and do not run the launchers or GUI.
+3. TEACHER_INSTRUCTIONS_HI_EN.txt
+   Removed the current order to double-click the BAT and press Start enrollment.
+   The old steps are marked FROZEN RECORD — DO NOT PERFORM.
+4. TRIAL_CHECKLIST.txt
+   Pending launch checks are now BLOCKED. Result is NOT AUTHORIZED, not PENDING.
+5. TEACHER_FEEDBACK_FORM.txt
+   Says do not fill the form and do not open the enrollment window.
+6. TRIAL_LOGS/README.txt
+   Says do not create a trial log and do not run the launchers.
+7. TRIAL_WORKSPACE/README.txt
+   Says enrollment must not write here now.
+8. R23_4_STATUS.txt
+   actual_teacher_trial changed from PENDING to NOT AUTHORIZED.
+9. R23_4A_STATUS.txt
+   States that "remains PENDING" is not permission to start.
+10. R23_4B_CALL_GRAPH.md
+    Adds a STOP banner. ACTIVE names a code path, not permission to launch.
+    The old Linux junction sentence stays marked as not a pass.
+
+Not changed
+- identity_engine.py
+- teacher_trial.py
+- every test file
+- database and photo handling
+- Open_Enrollment.bat and open_launcher.py remain on disk, but no document tells the user to run them
+- TEST_REPORT.txt still records R23.4M: 77 passed, 0 failed, 10 skipped
+- Historical security findings were not rewritten into passes
+
+Preserved disclosures
+Windows R23.4M: 87 run, 77 passed, 0 failed, 0 errors, 10 skipped.
+The ten skips are WinError 1314. They are not passes.
+The junction tests passed. They are not skips.
+The rmdir-failure assertion did not run because the symlink was not created. That is not a pass.

@@ -1,0 +1,10 @@
+R21_BACKWARD_COMPATIBILITY_PLAN
+implemented=NO
+1. Detect repeated headers before reading the workbook.
+2. Do not silently keep the first or last duplicate.
+3. If a required field name is ambiguous, fail closed.
+4. Do not write a workbook until every ambiguous field has an explicit column mapping.
+5. Keep the old workbook readable until that mapping is approved.
+6. Copy both duplicate columns into the development simulation so neither value is dropped.
+7. The current generator and editor reach the first physical column only because pandas renames later copies.
+library_check=columns=['FATHER_X', 'FATHER_X.1'] first_name_value=1 second_name=FATHER_X.1

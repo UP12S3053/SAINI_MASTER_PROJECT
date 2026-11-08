@@ -1,0 +1,29 @@
+Loading Option C slip OCR
+19:21:42 | Gemini API key configured from env:GEMINI_API_KEY; key material redacted.
+Starting MAIN_ASSISTANT JPSN mode C
+19:21:43 | INFO     | ======================================================================
+19:21:43 | INFO     | SAINI SCHOOL MASTER PROCESSOR - PERFECTED v2.0
+19:21:43 | INFO     | ======================================================================
+19:21:43 | INFO     | School: JPSN | Mode: RETURNED SLIPS OCR
+19:21:43 | INFO     | === STEP 5C: Returned teacher slips (Gemini OCR) ===
+19:21:43 | OCR: JPSN.jpeg
+19:21:56 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent "HTTP/1.1 200 OK"
+19:21:56 |   extracted 8 slips
+19:21:56 | OCR payload staged durably: batch=20261103T192156311466-38efe059; rows=8; sinks untouched
+19:21:56 | Loading local Piper Priyamvada voice...
+19:22:01 | Priyamvada voice: generated 8/8 student clips
+19:22:01 | Combined Priyamvada WAV created: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\WHATSAP\SLIP_AUDIO\JPSN_ALL_STUDENTS_PRIYAMVADA_20261103_192156.wav (install ffmpeg to also create MP3)
+
+PRIYAMVADA voice audio ready for slip:
+D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\WHATSAP\SLIP_AUDIO\JPSN_ALL_STUDENTS_PRIYAMVADA_20261103_192156.wav
+Please listen to the complete audio and verify this batch before approving.
+Approve this slip batch after listening? [Y/N]: 
+>> Y
+19:22:01 | slip audio approval validated for batch 20261103T192156311466-38efe059; fingerprints rechecked.
+19:22:01 | LOCK BLOCKED batch before any sink writes. Approved OCR payload remains in staging; do not delete lock or replay automatically.
+19:22:01 | ERROR    | school batch lock already exists; fail closed pending journal/sink reconciliation: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\OPTION_C_JOURNAL\locks\JPSN.lock
+19:22:01 | INFO     | Koi naya slip data nahi mila. Folder check karo.
+19:22:01 | WARNING  | No OCR records were approved in audio verification. Stopping: merge, sync, and ID card generation are blocked.
+Verification pending/rejected. Press Enter to exit...
+>> 
+ID card process finished.

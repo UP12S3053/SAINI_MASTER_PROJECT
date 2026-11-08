@@ -1,0 +1,13 @@
+R23_BASELINE_HASHES
+baseline_modified_during_tests=NO
+live_windows_files_opened=NO
+
+D155AB4AA029415A45C01350B586303A19D280BB5C2CC8DD21D9E3257433FD5A  baseline/MAIN_ASSISTANT.py  129910 bytes
+EA1E637CD5FABF2E122BD84FCF275908D41B5A2929908D823A3C518FED95D187  baseline/SAINI_ID_CARD.py  64371 bytes
+854891DD585263242D1B53B791D239034FD8BCAD2BDC2BB750A2B2F2E40B0C02  baseline/slip_ocr.py  72682 bytes
+394868884B9860FEF306B97C3D6486442EFC80BAC061087D8405C447D6CD9DB5  baseline/school_records.py  15588 bytes
+
+These copies were made from the workspace source that was inspected earlier.
+They are not claimed to be byte-identical to the live Windows files.
+The live paths were not opened or hashed.
+The baseline copies were unchanged after the synthetic tests.

@@ -1,0 +1,13 @@
+R23_3C_WINDOWS_HANDOFF
+action_taken_here=NONE
+do_not_copy_into_live_project=YES
+
+When you choose to try this on the Windows computer, unzip the package into a new development folder, not into the live project.
+Double-click Open_Enrollment.bat.
+That file checks Tk and then opens the same window as open_launcher.py.
+If the window says TK_WINDOW_OK is missing, do not remove the current Python.
+Install official python.org Python beside it, with tcl/tk and IDLE selected, and try the double-click again.
+Use only the synthetic pack.
+Class 1 and session 2026_27 should show ABC1001.
+Do not ask a teacher to use real names or real photos.
+A real teacher has still not tried this.

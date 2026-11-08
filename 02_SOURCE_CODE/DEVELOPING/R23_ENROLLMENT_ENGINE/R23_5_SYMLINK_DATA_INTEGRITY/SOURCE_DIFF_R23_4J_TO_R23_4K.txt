@@ -1,0 +1,164 @@
+--- R23.4J/src/teacher_trial.py
++++ R23.4K/src/teacher_trial.py
+@@ -57,7 +57,93 @@
+ _ENROLLMENT_LOCK = threading.Lock()
+ 
+ 
++def _owner_from_identity(recorded, current):
++    """Decide liveness without signaling the other process.
++
++    None means the process is confirmed gone. "unknown" is indeterminate
++    and must stay alive so a lock is never stolen by mistake.
++    """
++    if current is None:
++        return False
++    if current == "unknown":
++        return True
++    recorded = str(recorded or "")
++    if recorded and recorded != current:
++        return False
++    return True
++
++
++def _windows_identity_from_probe(opened, exit_code, creation, error):
++    """Map one non-blocking Windows process query to an identity token."""
++    error_invalid_parameter = 87
++    still_active = 259
++    if not opened:
++        if error == error_invalid_parameter:
++            return None
++        return "unknown"
++    if exit_code is None or creation is None:
++        return "unknown"
++    if int(exit_code) != still_active:
++        return None
++    return str(int(creation))
++
++
++def _windows_process_identity(pid):
++    """Return the creation stamp, None if gone, or "unknown". Never signals."""
++    import ctypes
++    from ctypes import wintypes
++
++    kernel = ctypes.WinDLL("kernel32", use_last_error=True)
++    open_process = kernel.OpenProcess
++    open_process.argtypes = [wintypes.DWORD, wintypes.BOOL, wintypes.DWORD]
++    open_process.restype = wintypes.HANDLE
++    get_exit = kernel.GetExitCodeProcess
++    get_exit.argtypes = [wintypes.HANDLE, ctypes.POINTER(wintypes.DWORD)]
++    get_exit.restype = wintypes.BOOL
++
++    class _FILETIME(ctypes.Structure):
++        _fields_ = [("dwLowDateTime", wintypes.DWORD), ("dwHighDateTime", wintypes.DWORD)]
++
++    get_times = kernel.GetProcessTimes
++    get_times.argtypes = [
++        wintypes.HANDLE,
++        ctypes.POINTER(_FILETIME),
++        ctypes.POINTER(_FILETIME),
++        ctypes.POINTER(_FILETIME),
++        ctypes.POINTER(_FILETIME),
++    ]
++    get_times.restype = wintypes.BOOL
++    close_handle = kernel.CloseHandle
++    close_handle.argtypes = [wintypes.HANDLE]
++    close_handle.restype = wintypes.BOOL
++
++    handle = open_process(0x1000, False, int(pid))
++    if not handle:
++        return _windows_identity_from_probe(False, None, None, ctypes.get_last_error())
++    try:
++        code = wintypes.DWORD()
++        if not get_exit(handle, ctypes.byref(code)):
++            return "unknown"
++        created = _FILETIME()
++        exited = _FILETIME()
++        kernel_time = _FILETIME()
++        user_time = _FILETIME()
++        if not get_times(handle, ctypes.byref(created), ctypes.byref(exited), ctypes.byref(kernel_time), ctypes.byref(user_time)):
++            return "unknown"
++        stamp = (int(created.dwHighDateTime) << 32) | int(created.dwLowDateTime)
++        return _windows_identity_from_probe(True, int(code.value), stamp, 0)
++    except OSError:
++        return "unknown"
++    finally:
++        close_handle(handle)
++
++
+ def _process_start(pid):
++    if os.name == "nt":
++        identity = _windows_process_identity(pid)
++        if not identity or identity == "unknown":
++            return ""
++        return identity
+     stat = Path(f"/proc/{pid}/stat")
+     try:
+         text = stat.read_text(encoding="utf-8")
+@@ -79,6 +165,8 @@
+         return False
+     if pid <= 0:
+         return False
++    if os.name == "nt":
++        return _owner_from_identity(info.get("start"), _windows_process_identity(pid))
+     try:
+         os.kill(pid, 0)
+     except ProcessLookupError:
+--- R23.4J/tests/test_r23_4h_cross_process.py
++++ R23.4K/tests/test_r23_4h_cross_process.py
+@@ -39,15 +39,21 @@
+     env["PYTHONPATH"] = str(ROOT / "src")
+     if extra_env:
+         env.update(extra_env)
+-    return subprocess.run(
++    process = subprocess.Popen(
+         [sys.executable, str(WORKER), command, *args],
+         cwd=str(ROOT),
+         env=env,
+         text=True,
+         stdout=subprocess.PIPE,
+         stderr=subprocess.PIPE,
+-        timeout=30,
+     )
++    try:
++        stdout, stderr = process.communicate(timeout=30)
++    except BaseException:
++        process.kill()
++        process.communicate(timeout=5)
++        raise
++    return subprocess.CompletedProcess(process.args, process.returncode, stdout, stderr)
+ 
+ 
+ class CrossProcessTest(unittest.TestCase):
+@@ -161,7 +167,15 @@
+                 self.assertEqual(STAGING.read_bytes(), payload)
+             finally:
+                 release.write_text("go", encoding="utf-8")
+-                holder.communicate(timeout=10)
++                try:
++                    holder.communicate(timeout=10)
++                except BaseException:
++                    holder.kill()
++                    holder.communicate(timeout=5)
++                    raise
++                if holder.poll() is None:
++                    holder.kill()
++                    holder.communicate(timeout=5)
+ 
+     def test_teacher_view_failure_after_link_keeps_the_photo(self):
+         self._presentation_failure(IdentityEngine, "teacher_view", "view-secret")
+--- R23.4J/tests/process_attempt.py
++++ R23.4K/tests/process_attempt.py
+@@ -33,7 +33,10 @@
+         staging.parent.mkdir(parents=True, exist_ok=True)
+         staging.write_bytes(payload)
+         ready.write_text("ready", encoding="utf-8")
++        deadline = time.monotonic() + 20
+         while not release.exists():
++            if time.monotonic() >= deadline:
++                break
+             time.sleep(0.05)
+     finally:
+         lock.release()
+
+# New file:
+# tests/test_r23_4k_lock_query.py

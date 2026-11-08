@@ -1,0 +1,19 @@
+R23_3_ISSUES_AND_FIXES
+
+Issue: No teacher was available.
+Fix in this phase: none. The absence is reported as TEACHER_NOT_AVAILABLE.
+The trial cannot be marked passed.
+
+Issue: A second run of the same student could have looked like a photo error.
+Fix: the trial launcher now says the student is already recorded and does not write another row or replace the photo.
+
+Issue: A bad or missing photo could have created a student before the photo failed.
+Fix: the trial launcher checks the file and opens the image before it creates a student.
+
+Issue: An existing destination photo could have been replaced.
+Fix: different bytes are refused before a student is created, and the old bytes stay in place.
+
+Issue: The screen is still a development command, not a file-picker window.
+Fix in this phase: none. This remains a recommendation, not a teacher request.
+
+No live file was changed to make these fixes.

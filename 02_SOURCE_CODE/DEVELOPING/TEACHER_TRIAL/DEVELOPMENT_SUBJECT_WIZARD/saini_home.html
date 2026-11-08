@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07366e">
+<title>SAINI PAPER SYSTEM</title>
+<style>
+:root {
+  --navy: #07366e;
+  --blue: #0864d8;
+  --red: #e51d2a;
+  --gold: #ffc928;
+  --text: #10264e;
+  --bg: #f4f7fb;
+  --muted: #5b6b82;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { max-width: 100%; overflow-x: hidden; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+a { color: inherit; }
+.wrap { width: min(1180px, 100%); margin: 0 auto; }
+
+.header {
+  background: #fff;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: 0 2px 12px #001b4014;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.brand { display: flex; align-items: center; gap: 10px; min-width: 0; text-decoration: none; }
+.brand img { width: 58px; height: 58px; object-fit: cover; border-radius: 50%; background: #fff; }
+.brand-name h1 { font-size: clamp(22px, 5vw, 36px); color: var(--red); font-weight: 900; line-height: .95; letter-spacing: .3px; }
+.brand-name h2 { font-size: clamp(14px, 3.2vw, 22px); color: var(--navy); font-weight: 900; letter-spacing: .4px; }
+.brand-name p { font-size: 10px; color: #68758a; margin-top: 3px; letter-spacing: .6px; }
+.tools { display: flex; align-items: center; gap: 10px; }
+.bell, .avatar {
+  width: 40px; height: 40px; border-radius: 50%;
+  display: grid; place-items: center; font-size: 18px; position: relative;
+}
+.bell { background: #eef4ff; }
+.bell i {
+  position: absolute; top: 6px; right: 7px; width: 9px; height: 9px;
+  background: var(--red); border-radius: 50%; border: 2px solid #fff;
+}
+.avatar { background: var(--blue); color: #fff; font-weight: 800; }
+.who { text-align: right; font-size: 12px; line-height: 1.25; }
+.who b { display: block; color: var(--navy); }
+.who span { color: var(--muted); font-weight: 700; }
+
+.hero {
+  margin: 14px 12px 6px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  background: linear-gradient(115deg, #052d61 0%, #0864d8 70%);
+  color: #fff;
+  min-height: 250px;
+}
+.hero-content { padding: 28px 24px; display: flex; flex-direction: column; justify-content: center; }
+.hero-content h1 { font-size: clamp(28px, 5vw, 46px); line-height: 1.05; font-weight: 900; }
+.hero-content h1 span { color: var(--gold); }
+.ticks { margin-top: 16px; display: grid; gap: 8px; font-size: 16px; font-weight: 700; }
+.ticks div { display: flex; align-items: center; gap: 8px; }
+.tick {
+  width: 22px; height: 22px; border-radius: 50%; background: var(--gold); color: var(--navy);
+  display: grid; place-items: center; font-size: 14px; font-weight: 900; flex: none;
+}
+.hero-image {
+  min-height: 230px;
+  background: url("saini-building.jpg") center 30%/cover no-repeat;
+}
+
+.section-heading { padding: 18px 16px 8px; display: flex; justify-content: space-between; align-items: end; gap: 10px; }
+.section-heading h2 { font-size: clamp(22px, 4vw, 32px); color: var(--navy); }
+.section-heading h2 span { color: var(--red); }
+.section-heading p { font-size: 13px; color: var(--muted); text-align: right; }
+
+.modules {
+  padding: 8px 12px 4px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.module {
+  min-height: 148px;
+  padding: 14px 10px 12px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid #fff;
+  box-shadow: 0 4px 14px #10264e12;
+}
+.module:active { transform: scale(.98); }
+.icon-badge {
+  width: 54px; height: 54px; border-radius: 14px;
+  display: grid; place-items: center; font-size: 28px; background: #fff;
+  box-shadow: 0 2px 8px #10264e14;
+}
+.module h3 { font-size: 15px; font-weight: 800; line-height: 1.25; margin-top: 8px; }
+.module p { font-size: 12px; line-height: 1.35; color: #40516b; margin-top: 4px; }
+.arrow {
+  width: 32px; height: 32px; border-radius: 50%;
+  display: grid; place-items: center; color: #fff; font-size: 22px; margin-top: 8px;
+  background: var(--accent);
+}
+.green { background: #e7f8ee; --accent: #079638; }
+.blue { background: #e7f2ff; --accent: #0864d8; }
+.yellow { background: #fff6dc; --accent: #ed9200; }
+.pink { background: #ffecee; --accent: #e51d2a; }
+.purple { background: #f3edff; --accent: #6633c7; }
+.cyan { background: #e5f8fa; --accent: #078a9e; }
+
+.stats {
+  margin: 16px 12px;
+  padding: 8px 4px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 5px 18px #001b4010;
+}
+.stat { text-align: center; padding: 14px 6px; border-bottom: 1px solid #e6edf5; }
+.stat:nth-child(odd) { border-right: 1px solid #e6edf5; }
+.stat:nth-child(3), .stat:nth-child(4) { border-bottom: none; }
+.stat-icon { font-size: 28px; }
+.stat h3 { font-size: 22px; margin: 4px 0 2px; color: var(--navy); }
+.stat p { font-size: 12px; color: var(--muted); }
+
+.about {
+  margin: 8px 12px 16px;
+  background: #eaf2fc;
+  border-radius: 20px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.about h2 { font-size: 22px; color: var(--navy); }
+.about h2 span { color: var(--red); }
+.about p { margin-top: 8px; line-height: 1.65; font-size: 15px; }
+.about img { width: 100%; height: 180px; object-fit: cover; border-radius: 14px; }
+
+.footer {
+  background: #062d60;
+  color: #fff;
+  padding: 22px 16px 28px;
+  text-align: center;
+}
+.footer .foot-brand { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 8px; }
+.footer img { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; background: #fff; }
+.footer h2 { font-size: 18px; letter-spacing: .4px; }
+.footer .tag { font-size: 12px; opacity: .85; margin: 4px 0 12px; }
+.contacts { display: grid; gap: 8px; font-size: 14px; }
+.contacts a { color: #fff; text-decoration: none; }
+.contacts span { opacity: .9; }
+
+@media (min-width: 700px) {
+  .modules { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; padding: 8px 16px; }
+  .module { min-height: 170px; }
+  .stats { grid-template-columns: repeat(4, 1fr); margin: 18px 16px; }
+  .stat { border-bottom: none; border-right: 1px solid #e6edf5; }
+  .stat:last-child { border-right: none; }
+  .about { flex-direction: row; align-items: center; margin: 8px 16px 20px; padding: 24px; }
+  .about img { width: 34%; height: 170px; }
+  .hero { margin: 16px; }
+}
+@media (min-width: 1100px) {
+  .modules { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .header { padding: 14px 24px; }
+  .brand img { width: 68px; height: 68px; }
+}
+@media (hover: hover) {
+  .module:hover { transform: translateY(-3px); box-shadow: 0 10px 22px #10264e22; }
+}
+</style>
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="/">
+    <img src="saini-logo.png" alt="Saini School Uniforms logo">
+    <div class="brand-name">
+      <h1>SAINI</h1>
+      <h2>PAPER SYSTEM</h2>
+      <p>SCHOOL MANAGEMENT SOLUTIONS</p>
+    </div>
+  </a>
+  <div class="tools">
+    <div class="bell" aria-hidden="true">🔔<i></i></div>
+    <div class="avatar" aria-hidden="true">A</div>
+    <div class="who"><b>Welcome</b><span>School Admin</span></div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Complete<br><span>School Solutions</span></h1>
+    <div class="ticks">
+      <div><span class="tick">✓</span> Easy to Use</div>
+      <div><span class="tick">✓</span> Trusted by Schools</div>
+      <div><span class="tick">✓</span> Fast & Reliable</div>
+    </div>
+  </div>
+  <div class="hero-image" role="img" aria-label="Saini School Uniforms building"></div>
+</section>
+
+<section>
+  <div class="section-heading">
+    <h2>System <span>Modules</span></h2>
+    <p>Quick access to all school tools</p>
+  </div>
+  <div class="modules" id="modules">
+    <a class="module green" data-module="school-master" href="/school-master">
+      <div class="icon-badge">🏫</div>
+      <h3>School Master</h3>
+      <p>Manage school details and masters</p>
+      <div class="arrow">›</div>
+    </a>
+    <a class="module blue" data-module="paper-setter" href="/paper">
+      <div class="icon-badge">📄</div>
+      <h3>Paper Setter</h3>
+      <p>Create and manage question papers</p>
+      <div class="arrow">›</div>
+    </a>
+    <a class="module yellow" data-module="enrollment" href="/admin/subjects">
+      <div class="icon-badge">🎓</div>
+      <h3>Subject Enrollment Wizard</h3>
+      <p>Manage subject enrollment</p>
+      <div class="arrow">›</div>
+    </a>
+    <a class="module pink" data-module="delivery" href="/saini-queue">
+      <div class="icon-badge">🚚</div>
+      <h3>Saini Delivery Queue</h3>
+      <p>Track and manage deliveries</p>
+      <div class="arrow">›</div>
+    </a>
+    <a class="module purple" data-module="registration" href="/admin/schools">
+      <div class="icon-badge">📝</div>
+      <h3>School Registration</h3>
+      <p>Register new schools</p>
+      <div class="arrow">›</div>
+    </a>
+    <a class="module cyan" data-module="portal" href="/school-login">
+      <div class="icon-badge">🌐</div>
+      <h3>School Portal</h3>
+      <p>Access school resources</p>
+      <div class="arrow">›</div>
+    </a>
+    <a class="module pink" data-module="rates" href="/saini/paper-rates">
+      <div class="icon-badge">₹</div>
+      <h3>Paper Rates (SAINI)</h3>
+      <p>Manage paper rates</p>
+      <div class="arrow">›</div>
+    </a>
+    <a class="module green" data-module="documents" href="/saini/archive">
+      <div class="icon-badge">📁</div>
+      <h3>Saved Documents</h3>
+      <p>Access saved documents</p>
+      <div class="arrow">›</div>
+    </a>
+    <a class="module yellow" data-module="paper-order" href="/saini/order">
+      <div class="icon-badge">📋</div>
+      <h3>Complete Paper Order</h3>
+      <p>Manage paper orders</p>
+      <div class="arrow">›</div>
+    </a>
+    <a class="module blue" data-module="id-cards" href="/saini/idcard">
+      <div class="icon-badge">🪪</div>
+      <h3>ID Cards</h3>
+      <p>Create and manage student ID cards</p>
+      <div class="arrow">›</div>
+    </a>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat"><div class="stat-icon">🏫</div><h3>500+</h3><p>Schools Trust Us</p></div>
+  <div class="stat"><div class="stat-icon">👥</div><h3>1,00,000+</h3><p>Students Served</p></div>
+  <div class="stat"><div class="stat-icon">👍</div><h3>Best</h3><p>Quality Products</p></div>
+  <div class="stat"><div class="stat-icon">🚚</div><h3>Pan India</h3><p>Delivery</p></div>
+</section>
+
+<section class="about">
+  <div>
+    <h2>About <span>Saini School Uniforms</span></h2>
+    <p>We provide school uniforms, stationery, ID cards and printing solutions for schools. Our focus is quality, reliable service and long-term relationships with schools.</p>
+  </div>
+  <img src="saini-building.jpg" alt="Saini School Uniforms building">
+</section>
+
+<footer class="footer">
+  <div class="foot-brand">
+    <img src="saini-logo.png" alt="">
+    <div>
+      <h2>SAINI SCHOOL UNIFORMS</h2>
+      <div class="tag">QUALITY UNIFORMS · STATIONERY · SCHOOL SOLUTIONS</div>
+    </div>
+  </div>
+  <div class="contacts">
+    <a href="tel:8059058868">☎ +91 80590 58868</a>
+    <a href="mailto:sainiidcard2020@gmail.com">✉ sainiidcard2020@gmail.com</a>
+    <span>⌖ Panipat, Haryana, India</span>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll("[data-module]").forEach(function (card) {
+  if (!card.getAttribute("href") || card.getAttribute("href") === "#") {
+    card.setAttribute("href", "/");
+  }
+});
+</script>
+</body>
+</html>

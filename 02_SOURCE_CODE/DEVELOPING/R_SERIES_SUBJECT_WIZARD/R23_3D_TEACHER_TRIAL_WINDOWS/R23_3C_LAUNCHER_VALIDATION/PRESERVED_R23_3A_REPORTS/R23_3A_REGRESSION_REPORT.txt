@@ -1,0 +1,17 @@
+R23_3A_REGRESSION_REPORT
+previous_tests=26
+previous_passed=26
+previous_failed=0
+new_tests=3
+new_passed=3
+new_failed=0
+total_tests=29
+passed=29
+failed=0
+skipped=0
+real_teacher_trial=NO
+
+New file: tests/test_r23_3a_launcher.py
+It executed file selection, folder selection, invalid selection, a missing file, a missing folder, cancel, double-start prevention, private-key hiding, success and error text, the synthetic pack, and the live-path block.
+The operating-system dialog could not be displayed in this sandbox.
+The test did confirm that the window code calls the real file picker and folder picker.

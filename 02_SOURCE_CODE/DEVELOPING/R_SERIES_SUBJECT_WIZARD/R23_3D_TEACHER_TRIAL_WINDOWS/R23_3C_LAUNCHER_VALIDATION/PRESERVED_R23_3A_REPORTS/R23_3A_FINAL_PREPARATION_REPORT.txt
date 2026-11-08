@@ -1,0 +1,17 @@
+R23_3A_FINAL_PREPARATION_REPORT
+status=R23_3A_PREPARATION_COMPLETE
+real_teacher_trial=NO
+production_ready=NO
+production_changes=NOT_AUTHORIZED
+
+The teacher package is ready for a later real trial.
+It contains the window, Hindi and English guides, the artificial practice pack, a blank feedback form, and a blank observer checklist.
+29 automated tests passed, with 0 failed and 0 skipped.
+No teacher has used it, and no teacher feedback has been collected.
+The observer checklist remains blank on purpose.
+
+Do not treat this preparation as a passed teacher trial.
+Do not copy it into the live project.
+Do not generate real ID cards.
+Nursery, LKG, and UKG remain closed.
+Stop here and wait for the next instruction.

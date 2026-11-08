@@ -1,0 +1,37 @@
+R23_1_BYPASS_AUDIT
+
+src/active_writers.py
+No call to the old allocator.
+student_unique_id is copied from the engine result into a local row or sheet response.
+permanent_key is read only inside the module to call promote, change_roll, or correct_name. It is not returned.
+No flat photo path is written.
+No direct identity table write.
+
+src/controlled_writers.py
+legacy_next_official_uid is disabled. It raises and creates nothing.
+The other functions return a teacher view.
+Their permanent_key arguments are internal inputs, not teacher output.
+
+src/identity_engine.py
+The old allocator is absent.
+INSERT and UPDATE statements are the approved engine writes.
+_public and history() include the key for internal use.
+teacher_view, export_teacher_csv, and generator_row do not.
+Photo writes use the session path and exclusive creation.
+
+baseline/MAIN_ASSISTANT.py
+The old allocator and the original writer bodies are still present.
+Classification: preserved legacy code, not an active R23.1 path.
+Risk if someone runs this baseline file directly: it can still bypass the engine.
+The active module does not import it.
+
+baseline/slip_ocr.py and baseline/school_records.py
+Classification: preserved legacy code.
+Their active replacements are update_student_excel, write_school_csv, _save_edit, and the disabled _delete.
+
+baseline/SAINI_ID_CARD.py
+Classification: read-only consumer of the prepared ID and photo path.
+It was not modified.
+
+saini_db
+Classification: NOT_VERIFIED. Source was not available. It is not called by R23.1.

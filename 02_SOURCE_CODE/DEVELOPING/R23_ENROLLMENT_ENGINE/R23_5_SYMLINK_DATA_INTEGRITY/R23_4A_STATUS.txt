@@ -1,0 +1,16 @@
+R23_4A_STATUS
+current_package=R23_4N_DOCUMENTATION_CLEANUP
+original_r23_4_modified=NO
+identity_allocation_changed=NO
+live_project_modified=NO
+teacher_trial=NOT AUTHORIZED
+production_deployment=NOT APPROVED
+do_not_launch=YES
+
+Current rule: do not run Open_Enrollment.bat, open_launcher.py, the enrollment GUI, or a production workflow.
+"Remains PENDING" is not permission to start the teacher trial.
+
+R23.3D Windows runtime checks remain user-reported PASS for that older run only.
+They do not authorize R23.4N.
+Independent source review is still required.
+A skip is not a pass.

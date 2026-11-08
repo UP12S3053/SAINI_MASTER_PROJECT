@@ -1,0 +1,61 @@
+Loading Option C slip OCR
+17:16:49 | Gemini API key configured from env:GEMINI_API_KEY; key material redacted.
+Starting MAIN_ASSISTANT NBFP mode E
+17:16:49 | INFO     | ======================================================================
+17:16:49 | INFO     | SAINI SCHOOL MASTER PROCESSOR - PERFECTED v2.0
+17:16:49 | INFO     | ======================================================================
+17:16:49 | INFO     | School: NBFP | Mode: ENROLL FROM GOOGLE SHEET
+
+Background Color (AI Lab / processed photo):
+  W=White  R=Red  B=Blue  G=Green  LG=Light Green  LB=Light Blue
+Background color [W]: 
+>> LB
+17:16:49 | INFO     | === MODE E: Enroll + RAW download + AI Lab + Drive replace ===
+17:16:49 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:16:54 | INFO     | Drive export sheets=['Form_Responses_1', 'SAINIJI_RESPONSE', 'SCHOOL_MASTER', 'GETID'] | using=Form_Responses_1
+17:16:54 | INFO     | Hub rows via Drive export: 8200
+17:16:54 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:16:58 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:16:59 | INFO     | School sheet rows: 10 (10y02SC8nYKjAJvqF8hSVA5ZZLBnPXJqtIH_DbWndUrA)
+17:16:59 | INFO     | School sheet se extra rows (Drive link, UID khali): 0
+17:17:00 | WARNING  | STATUS write handle skip (Sheets 500 ho sakti hai): APIError: [500]: Internal error encountered.
+17:17:02 | INFO     | Latest-only rows for NBFP: 10 (purani duplicate hata di)
+17:17:02 | INFO     |   NEW UID NBFP6002 â† form_id=- roll= class=VI
+17:17:02 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:17:05 | INFO     |   RAW â†“ NBFP6002  (147_wC3Fâ€¦)
+17:17:05 | INFO     |   NEW UID NBFP4001 â† form_id=- roll= class=IV
+17:17:05 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:17:07 | INFO     |   RAW â†“ NBFP4001  (1F8nhX3Uâ€¦)
+17:17:07 | INFO     |   NEW UID NBFP6003 â† form_id=- roll= class=VI
+17:17:07 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:17:10 | INFO     |   RAW â†“ NBFP6003  (1G8VqbWrâ€¦)
+17:17:10 | INFO     |   NEW UID NBFP1003 â† form_id=- roll= class=I
+17:17:10 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:17:12 | INFO     |   RAW â†“ NBFP1003  (1mikbk62â€¦)
+17:17:12 | INFO     |   NEW UID NBFP1004 â† form_id=- roll= class=I
+17:17:12 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:17:15 | INFO     |   RAW â†“ NBFP1004  (1wd0rWHaâ€¦)
+17:17:15 | INFO     |   NEW UID NBFP30002 â† form_id=- roll= class=UKG
+17:17:15 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:17:17 | INFO     |   RAW â†“ NBFP30002  (150nqhERâ€¦)
+17:17:17 | INFO     |   NEW UID NBFP30003 â† form_id=- roll= class=UKG
+17:17:17 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:17:19 | INFO     |   RAW â†“ NBFP30003  (1XPzII74â€¦)
+17:17:19 | INFO     |   NEW UID NBFP50001 â† form_id=- roll= class=PLAY
+17:17:19 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:17:22 | INFO     |   RAW â†“ NBFP50001  (1BjAePfCâ€¦)
+17:17:22 | INFO     |   NEW UID NBFP1005 â† form_id=- roll= class=I
+17:17:22 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:17:25 | INFO     |   RAW â†“ NBFP1005  (1hZwk5p5â€¦)
+17:17:25 | INFO     |   NEW UID NBFP20001 â† form_id=- roll= class=LKG
+17:17:25 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:17:27 | INFO     |   RAW â†“ NBFP20001  (1_AxcnLzâ€¦)
+17:17:27 | INFO     | Rows ready: 10 | RAW downloaded: 10
+17:17:27 | INFO     | === MODE E: Photo AI Lab (unprocessed â†’ finished) ===
+17:17:27 | INFO     | === STEP 2: Running ID_CARD_AI_STUDIO Pipeline ===
+17:17:27 | INFO     | Using NEW Advanced Studio Pipeline
+17:17:27 | INFO     | Command: C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\python.exe D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_AI_STUDIO\run_studio_pipeline.py --source D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\ENROLL_RAW\NBFP --output D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\OUTPUT --bg LB --gfpgan-blend 0.65 --skip-existing --quality 95
+17:24:01 | INFO     | âœ… Pipeline completed successfully.
+
+>>> OUTPUT folder mein processed photos CHECK karo, phir ENTER <<<
+

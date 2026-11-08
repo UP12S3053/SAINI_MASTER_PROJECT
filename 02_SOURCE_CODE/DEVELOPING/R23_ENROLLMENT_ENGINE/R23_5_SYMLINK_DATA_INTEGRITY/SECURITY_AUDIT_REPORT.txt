@@ -1,0 +1,21 @@
+R23_5_SECURITY_AUDIT_REPORT
+package=R23_5_SYMLINK_DATA_INTEGRITY
+baseline=R23_4N_DOCUMENTATION_CLEANUP
+baseline_overwritten=NO
+identity_engine_modified=NO
+teacher_trial_modified=NO
+photo_reconciliation_modified=NO
+path_chain_modified=NO
+lock_behavior_modified=NO
+gui_launched=NO
+bat_launched=NO
+real_student_data=NO
+production_modified=NO
+teacher_trial=NOT AUTHORIZED
+production=NOT APPROVED
+final_status=PATCH PREPARED
+
+This patch adds tests only.
+A Windows junction can prove directory-link cleanup and a failed rmdir.
+It cannot prove file-symlink rejection.
+Skipped symlink tests are not counted as passes.

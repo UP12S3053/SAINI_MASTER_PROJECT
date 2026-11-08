@@ -1,0 +1,22 @@
+R23_1_FINAL_READINESS_REPORT
+status=R23_1_INTEGRATION_COMPLETE
+production_ready=NO
+production_changes=NOT_AUTHORIZED
+
+Active R23.1 enrollment now creates and reassigns identities only through the Student Identity Engine.
+22 synthetic tests passed: 14 previous and 8 new. None failed and none were skipped.
+Teacher-facing returns and exports do not contain the permanent key.
+Photo recovery was tested for stage, finalize, database, duplicate, interrupted, and retry cases.
+The existing generator file was not rewritten.
+
+Do not run baseline/MAIN_ASSISTANT.py as the enrollment program. Its old functions are preserved on purpose and can still bypass the engine if launched directly.
+Do not copy this package into the live project.
+Do not generate real ID cards.
+
+Still pending, not hidden:
+Nursery, LKG, and UKG issuance remains fail closed until a roll limit is approved.
+The Class 1-9 maximum remains provisional at 999.
+saini_db source remains NOT_VERIFIED.
+Live Windows hashes were not compared.
+R22 duplicate columns and BSM rows remain unresolved.
+Production approval has not been given.

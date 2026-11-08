@@ -1,0 +1,5 @@
+R22_ROLLBACK_INSTRUCTIONS
+1. Delete the folder D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_R22
+2. Do not delete SAINI_ID_DEV_R19.
+3. Do not copy anything into D:\SHRI_JAI_SHRI_RAM\project_panels.
+4. No workbook restore is required. The installer did not save a workbook.

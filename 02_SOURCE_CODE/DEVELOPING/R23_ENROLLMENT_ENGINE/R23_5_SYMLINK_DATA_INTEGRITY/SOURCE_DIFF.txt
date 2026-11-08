@@ -1,0 +1,88 @@
+--- R23.4H/src/teacher_trial.py
++++ R23.4I/src/teacher_trial.py
+@@ -50,6 +50,7 @@
+     "photo_io_failed": "फोटो लिखी नहीं जा सकी। नया रिकॉर्ड नहीं रखा गया। / The photo could not be written. The new record was not kept.",
+     "photo_lock_busy": "यह फोटो किसी दूसरी प्रक्रिया में है। कोई फ़ाइल नहीं हटाई गई। / This photo is busy in another process. No file was removed.",
+     "photo_saved": "नामांकन और फोटो सुरक्षित हैं। / The enrollment and photo were kept.",
++    "photo_reconcile_failed": "फोटो का रिकॉर्ड और फ़ाइल मेल नहीं खाते। कुछ नहीं हटाया गया। / The photo record and file do not agree. Nothing was removed.",
+ })
+ 
+ _ENROLLMENT_LOCK = threading.Lock()
+@@ -266,6 +267,7 @@
+                     created = None
+                     created_by_us = False
+                     linked = False
++                    from_assign = False
+                     try:
+                         created = engine.create_student(school, session, row_class, roll, name, father)
+                         created_by_us = self._created_by_this_attempt(engine, created, owned_before, changes_before)
+@@ -278,10 +280,8 @@
+                             except Exception:
+                                 return self._saved_status(identifier, True)
+                         if not created.get("photo_path"):
+-                            try:
+-                                created = engine.assign_photo(school, session, created["visible_id"], source)
+-                            except OSError as exc:
+-                                raise IdentityError("photo_io_failed") from exc
++                            from_assign = True
++                            created = engine.assign_photo(school, session, created["visible_id"], source)
+                         linked = self._link_is_committed(engine, created, payload)
+                         if created.get("photo_path") and not linked:
+                             return self._saved_status(identifier, False)
+@@ -295,8 +295,14 @@
+                         except Exception:
+                             return self._saved_status(identifier, linked)
+                     except Exception as exc:
+-                        if linked:
+-                            return self._saved_status(identifier, self._link_is_committed(engine, created, payload))
++                        if from_assign:
++                            state = self._reconcile_committed_target(
++                                engine, school, session, identifier, target, payload
++                            )
++                            if state == "verified":
++                                return self._saved_status(identifier, True)
++                            if state == "broken":
++                                raise IdentityError("photo_reconcile_failed") from exc
+                         if created is not None:
+                             self._drop_new_without_photo(created, owned_before, created_by_us, identifier)
+                             self._remove_attempt_file(target, payload, target_existed, not target_existed)
+@@ -371,6 +377,36 @@
+                 engine._conn.rollback()
+                 raise
+ 
++    def _reconcile_committed_target(self, engine, school, session, visible_identifier, target, payload):
++        """Read the committed photo after a failure. Never treats matching bytes as ownership."""
++        row = engine._conn.execute(
++            """
++            SELECT photo_path FROM identities
++            WHERE school_code=? AND session=? AND visible_id=? AND status='current'
++            """,
++            (school, session, visible_identifier),
++        ).fetchone()
++        if row is None or not row["photo_path"]:
++            return "absent"
++        stored = Path(row["photo_path"])
++        if stored.is_symlink() or Path(target).is_symlink():
++            return "broken"
++        try:
++            references_target = stored.resolve() == Path(target).resolve()
++        except OSError:
++            references_target = str(stored) == str(target)
++        if not references_target:
++            return "broken"
++        if not stored.is_file():
++            return "broken"
++        try:
++            matches = stored.read_bytes() == payload
++        except OSError:
++            return "broken"
++        if not matches:
++            return "broken"
++        return "verified"
++
+     def _saved_status(self, visible_identifier, verified):
+         return {
+             "ok": bool(verified),
+
+# New file:
+# tests/test_r23_4i_reconcile.py

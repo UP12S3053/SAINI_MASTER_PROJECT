@@ -1,0 +1,11 @@
+R23_2_GENERATOR_CONTRACT_REPORT
+generator_modified=NO
+card_created=NO
+baseline_hash=EA1E637CD5FABF2E122BD84FCF275908D41B5A2929908D823A3C518FED95D187
+
+The preserved generator reads student_unique_id, student_name, father_name, class, roll_number, mob_number, address, school_code, and STUDENT_PHOTO_PATH.
+The launcher prepared those fields from the enrolled record and the source table.
+The contract check read them and opened the recorded JPEG.
+It confirmed the image size was 12 by 8 and then stopped.
+generate_front_card was not called, so no card, QR image, or print file was produced.
+The generator file hash stayed unchanged.

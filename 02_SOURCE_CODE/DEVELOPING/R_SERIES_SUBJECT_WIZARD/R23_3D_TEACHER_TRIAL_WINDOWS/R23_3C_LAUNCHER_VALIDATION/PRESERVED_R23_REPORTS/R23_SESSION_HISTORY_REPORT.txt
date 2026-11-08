@@ -1,0 +1,11 @@
+R23_SESSION_HISTORY_REPORT
+history_table=identities
+status_values=current,history
+
+A current visible ID finds its permanent key.
+The permanent key finds every older visible ID for that student.
+Promotion from Class 1 Roll 1 to Class 6 Roll 1 and then Roll 15 produced ABC1001, ABC6001, and ABC6015 under one key in the synthetic test.
+A missed session created a second key for the same exact name and class.
+The new key's result reports previous_key_linked=false.
+Uniqueness is school plus session plus visible ID, and school plus session plus class plus roll.
+Failed duplicate and out-of-range operations left the identity count unchanged.

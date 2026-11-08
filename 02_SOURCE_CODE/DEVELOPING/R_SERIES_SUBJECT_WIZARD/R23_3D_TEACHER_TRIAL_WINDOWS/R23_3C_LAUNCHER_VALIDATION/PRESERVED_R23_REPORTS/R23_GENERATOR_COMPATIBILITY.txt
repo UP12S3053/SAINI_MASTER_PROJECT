@@ -1,0 +1,13 @@
+R23_GENERATOR_COMPATIBILITY
+generator_modified=NO
+generator_executed=NO
+baseline_hash_after_tests=EA1E637CD5FABF2E122BD84FCF275908D41B5A2929908D823A3C518FED95D187
+
+The baseline generator still contains STUDENT_PHOTO_PATH and student_unique_id.
+The development generator_row function returns those prepared fields and does not return the permanent key.
+No card image was generated.
+Card design, print layout, and QR logic were not changed.
+R22 duplicate headers were not read. A synthetic header file remained byte-identical after an identity operation.
+FATHER_X, ADDR_COLOR, and FATHER_PREFIX do not appear in the engine source.
+BSM row selection was not changed.
+The engine refuses the live project path and the known live school codes BSM, NBFP, SDV, STVN, and BVM.

@@ -1,0 +1,13 @@
+R22_FINAL_REPORT
+mode=DEVELOPMENT_ONLY
+status=R22_USER_DECISION_REQUIRED
+production_deployment=NOT_DONE
+live_files_modified=NO
+r19_modified=NO
+workbook_saved=NO
+headers_renamed=NO
+columns_merged=NO
+authoritative_column_approved=NO
+cards_generated=NO
+student_records_opened=NO
+r23_requires_separate_approval=YES

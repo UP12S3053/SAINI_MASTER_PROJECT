@@ -1,0 +1,42 @@
+R23_5_TEST_REPORT
+package=R23_5_SYMLINK_DATA_INTEGRITY
+baseline=R23_4N_DOCUMENTATION_CLEANUP
+teacher_trial=NOT AUTHORIZED
+production=NOT APPROVED
+final_status=PATCH PREPARED
+
+Linux, this runner
+Ran 92
+passed=86
+failed=0
+errors=0
+skipped=6
+
+The six Linux skips are Windows junction checks. They are UNVERIFIED here, not passed.
+The older symlink assertions ran on Linux and passed. A skip was not turned into a pass.
+
+New tests that ran here
+test_real_directory_is_not_deleted: passed
+test_junction_creation_failure_is_not_a_pass: passed
+test_uncreated_symlink_skip_is_not_a_pass: passed
+
+New tests that skipped here
+test_windows_junction_removal_keeps_the_target
+test_windows_rmdir_failure_is_a_failure_not_a_skip
+
+Production source files were not changed.
+identity_engine.py and teacher_trial.py match R23.4N.
+
+Windows still has to run this package.
+The ten WinError 1314 symlink skips must remain skips.
+The two new junction checks should run on that PC. If they cannot create a junction,
+that is a failure, not a pass.
+
+PowerShell
+$dest = "$env:USERPROFILE\Downloads\R23_5_EXTRACTED"
+New-Item -ItemType Directory -Force -Path $dest | Out-Null
+Expand-Archive -LiteralPath "$env:USERPROFILE\Downloads\R23_5_SYMLINK_DATA_INTEGRITY.zip" -DestinationPath $dest -Force
+Set-Location "$dest\R23_5_SYMLINK_DATA_INTEGRITY"
+py -m unittest discover -s tests -v
+
+Do not launch Open_Enrollment.bat or open_launcher.py.

@@ -1,0 +1,62 @@
+R23_3D_WINDOWS_RUNTIME_REPORT
+prepared=2026-11-07
+source_code_changed=NO
+live_project_accessed=NO
+independent_verification=NO
+production_ready=NO
+
+These results were reported by the user from a Windows run.
+This report records them. It does not confirm them by a separate test.
+
+USER-REPORTED WINDOWS RESULTS
+
+1. Class 1, Roll 1
+Visible ID: ABC1001
+First run: Enrollment successful.
+Second run: यह छात्र पहले से दर्ज है। नया रिकॉर्ड नहीं बना।
+Mark: PASS (user-reported)
+
+2. Class 6, Roll 15
+Visible ID: ABC6015
+First run: Enrollment successful.
+Second run: यह छात्र पहले से दर्ज है। नया रिकॉर्ड नहीं बना।
+Mark: PASS (user-reported)
+
+3. Mixed-class Excel
+Rows that did not match the selected class or session were rejected with:
+यह पंक्ति चुनी हुई कक्षा या सेशन की नहीं है।
+Mark: PASS (user-reported)
+
+EVIDENCE TYPES
+
+Automated tests:
+Earlier development tests remain in the previous R23 folders.
+They were not rerun for this report and are not Windows proof.
+
+Windows GUI:
+The three results above are user-reported only.
+No screenshot, log file, or independent run was added for this report.
+
+Actual teacher trial:
+PENDING.
+No consenting teacher has completed the workflow.
+No teacher feedback is recorded.
+
+BOUNDARIES
+
+Production deployment: NOT APPROVED.
+No live file, real student record, production Excel file, or production photo was used.
+No real ID card was generated.
+Existing test evidence and logs were left unchanged.
+Source code was not modified while this report was prepared.
+
+FINAL MARKS
+
+Class 1 enrollment and duplicate check: PASS (user-reported)
+Class 6 enrollment and duplicate check: PASS (user-reported)
+Mixed-class rejection: PASS (user-reported)
+Actual teacher trial: PENDING
+Production deployment: NOT APPROVED
+
+This report does not make the project production-ready.
+Stop and wait for the next instruction.

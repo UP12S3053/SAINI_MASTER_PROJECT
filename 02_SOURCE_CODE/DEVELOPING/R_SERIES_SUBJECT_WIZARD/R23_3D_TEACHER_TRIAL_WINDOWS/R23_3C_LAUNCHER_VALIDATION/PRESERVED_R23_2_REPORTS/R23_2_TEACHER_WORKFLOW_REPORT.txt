@@ -1,0 +1,12 @@
+R23_2_TEACHER_WORKFLOW_REPORT
+steps=1 table plus 1 photo folder
+
+The teacher does not enter a permanent key and does not choose an old program.
+Successful rows say "नामांकन हो गया।" and show the visible ID.
+A repeated roll says the roll is already recorded.
+Nursery, LKG, and UKG say their roll limit is still closed.
+A missing photo says the record was not created.
+The returned text and JSON did not contain the permanent key.
+A prefilled legacy ID was not used.
+Promotion from the visible ID kept the same internal key and showed the old ID in history.
+A failed row left both the database count and the photo folder unchanged for that student.

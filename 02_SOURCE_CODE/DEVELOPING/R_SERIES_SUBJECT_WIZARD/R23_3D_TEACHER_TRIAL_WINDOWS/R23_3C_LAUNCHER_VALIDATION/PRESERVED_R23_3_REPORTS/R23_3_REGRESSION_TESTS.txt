@@ -1,0 +1,18 @@
+R23_3_REGRESSION_TESTS
+automated_only=YES
+previous_tests=25
+previous_passed=25
+previous_failed=0
+new_tests=1
+new_passed=1
+new_failed=0
+total_tests=26
+passed=26
+failed=0
+skipped=0
+
+The new test is tests/test_r23_3_teacher_trial.py.
+It executes scenarios A through O. It is not a real teacher observation.
+Real teacher observations=0
+Simulated review=1
+Those categories are not added together.

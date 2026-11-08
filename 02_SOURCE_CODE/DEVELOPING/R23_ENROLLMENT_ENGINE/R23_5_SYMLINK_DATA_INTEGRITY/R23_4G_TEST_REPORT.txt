@@ -1,0 +1,43 @@
+R23_4G_TEST_REPORT
+package=R23_4G_OWNERSHIP_PATCH
+baseline=R23_4F_TARGETED_SECURITY_PATCH
+baseline_overwritten=NO
+identity_engine_modified=NO
+identity_engine_sha256=e7d9b3626986e5aa287480ba9de5f2bb5d0d9efdbdf81ee9b9eaf633490910d2
+gui_launched=NO
+bat_launched=NO
+real_student_data=NO
+production_modified=NO
+windows_junction=UNVERIFIED
+teacher_trial=NOT AUTHORIZED
+production=NOT APPROVED
+final_status=PATCH PREPARED
+
+Existing suites
+test_r23_4a_path_safety.py: 11 passed, 0 failed, 0 skipped
+test_r23_4b_safety.py: 12 passed, 0 failed, 1 skipped
+test_r23_4c_remediation.py: 4 passed, 0 failed, 0 skipped
+test_r23_4d_staging.py: 3 passed, 0 failed, 0 skipped
+test_r23_4e_junction.py: 2 passed, 0 failed, 1 skipped
+test_r23_4f_rollback.py: 7 passed, 0 failed, 0 skipped
+test_r23_4f_junction.py: 4 passed, 0 failed, 0 skipped
+
+New R23.4G tests
+test_r23_4g_ownership.py: 5 passed, 0 failed, 0 skipped
+
+TOTAL
+passed=48
+failed=0
+skipped=2
+
+Skipped tests, neither is a pass:
+test_windows_junction_is_reported_when_unsupported
+test_linux_skips_live_junction_without_passing_it
+Reason: Windows junction verification was not executed on this Linux runner. Status: UNVERIFIED.
+
+Ownership checks that passed:
+An existing student without a photo survives when another connection inserts a different student and photo assignment raises OSError.
+An existing student with a photo, and that photo's bytes, stay unchanged.
+Two concurrent attempts do not delete an unrelated student.
+A new failed enrollment removes only the row created by that attempt.
+Uncertain ownership deletes nothing.

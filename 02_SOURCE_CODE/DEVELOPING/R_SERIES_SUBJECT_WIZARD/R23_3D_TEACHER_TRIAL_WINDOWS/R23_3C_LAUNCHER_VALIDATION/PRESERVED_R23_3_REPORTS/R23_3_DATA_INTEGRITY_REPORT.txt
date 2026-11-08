@@ -1,0 +1,14 @@
+R23_3_DATA_INTEGRITY_REPORT
+production_access=NONE
+partial_failed_rows=NONE
+photo_overwrite=NONE
+key_leak=NONE
+
+After the synthetic run, ABC1001, ABC6015, ABC2004, and ABC2005 were the expected visible IDs.
+The internal key was the same across promotion and the roll change.
+The session photo path was present and its bytes stayed unchanged on retry.
+The pre-existing occupied photo remained byte-for-byte identical.
+Missing, invalid, Nursery, and duplicate attempts did not add a student row.
+Teacher-facing JSON did not contain the permanent key.
+The live project path was not opened.
+No ID card image was generated.

@@ -1,0 +1,250 @@
+# R23.4N to R23.5
+# Changed or added files:
+# STOP.txt
+# SECURITY_AUDIT_REPORT.txt
+# TEST_REPORT.txt
+# README.txt
+# WINDOWS_VERIFY.ps1
+# tests/test_r23_5_data_integrity.py
+# tests/__pycache__/test_r23_4f_junction.cpython-310.pyc
+# tests/__pycache__/test_r23_4c_remediation.cpython-310.pyc
+# tests/__pycache__/test_r23_5_data_integrity.cpython-310.pyc
+# tests/__pycache__/test_r23_4k_lock_query.cpython-310.pyc
+# tests/__pycache__/test_r23_4e_junction.cpython-310.pyc
+# tests/__pycache__/test_r23_4j_path_chain.cpython-310.pyc
+# tests/__pycache__/test_r23_4f_rollback.cpython-310.pyc
+# tests/__pycache__/test_r23_4h_cross_process.cpython-310.pyc
+# tests/__pycache__/test_r23_4i_reconcile.cpython-310.pyc
+# tests/__pycache__/test_r23_4g_ownership.cpython-310.pyc
+# tests/__pycache__/test_r23_4d_staging.cpython-310.pyc
+# tests/__pycache__/junction_probe.cpython-310.pyc
+# tests/__pycache__/test_r23_4b_safety.cpython-310.pyc
+# tests/__pycache__/test_r23_4l_worker_io.cpython-310.pyc
+# tests/__pycache__/test_r23_4m_symlink_compat.cpython-310.pyc
+# tests/__pycache__/symlink_setup.cpython-310.pyc
+# tests/__pycache__/test_r23_4a_path_safety.cpython-310.pyc
+# src/__pycache__/path_guard.cpython-310.pyc
+# src/__pycache__/controlled_writers.cpython-310.pyc
+# src/__pycache__/identity_engine.cpython-310.pyc
+# src/__pycache__/development_launcher.cpython-310.pyc
+# src/__pycache__/teacher_trial.cpython-310.pyc
+# src/__pycache__/legacy_guard.cpython-310.pyc
+# src/__pycache__/active_writers.cpython-310.pyc
+# src/__pycache__/trial_window.cpython-310.pyc
+--- R23.4N/STOP.txt
++++ R23.5/STOP.txt
+@@ -1,22 +1,22 @@
+ STOP
+ 
+-यह R23.4N पैकेज है। शिक्षक ट्रायल अभी अधिकृत नहीं है।
+-This is the R23.4N package. The teacher trial is NOT AUTHORIZED.
++यह R23.5 पैकेज है। शिक्षक ट्रायल अभी अधिकृत नहीं है।
++This is the R23.5 package. The teacher trial is NOT AUTHORIZED.
+ 
+ प्रोडक्शन अभी मंजूर नहीं है।
+ Production is NOT APPROVED.
+ 
+-नामांकन विंडो, GUI या प्रोडक्शन वर्कफ़्लो न चलाएँ।
+-Do not run the enrollment window, the GUI, or a production workflow.
+-
+ Open_Enrollment.bat या open_launcher.py न चलाएँ।
+ Do not launch Open_Enrollment.bat or open_launcher.py.
+ 
++नामांकन विंडो न खोलें।
++Do not open the enrollment window.
++
+ स्किप का मतलब पास नहीं है।
+ A skip is not a pass.
+ 
+-Windows पर दस टेस्ट स्किप रहे। कारण WinError 1314 था। सिमलिंक बना ही नहीं।
+-On Windows, ten tests stayed skipped. The cause was WinError 1314. No symlink was created.
++जिन सिमलिंक टेस्ट को Windows ने WinError 1314 दिया, वे अब भी स्किप हैं।
++Symlink tests refused with WinError 1314 remain skipped.
+ 
+-जंक्शन टेस्ट पास हुए। उन्हें स्किप न समझें।
+-The junction tests passed. Do not describe those passes as skips, or the skips as passes.
++जंक्शन टेस्ट पास होने का मतलब सिमलिंक टेस्ट पास नहीं है।
++A passed junction test does not make a skipped symlink test a pass.
+--- R23.4N/README.txt
++++ R23.5/README.txt
+@@ -1,4 +1,4 @@
+-R23.4N DOCUMENTATION CLEANUP
++R23.5 SYMLINK AND DATA INTEGRITY
+ final_status=PATCH PREPARED
+ teacher_trial=NOT AUTHORIZED
+ production=NOT APPROVED
+@@ -7,38 +7,22 @@
+ STOP
+ Teacher Trial is NOT AUTHORIZED.
+ Production is NOT APPROVED.
+-Do not run Open_Enrollment.bat.
+-Do not run open_launcher.py.
+-Do not open the enrollment GUI.
+-Do not start a production workflow.
+-Read STOP.txt. This file does not give permission to start.
++Do not run Open_Enrollment.bat, open_launcher.py, or the enrollment GUI.
+ 
+-QUICK_START and USER_GUIDE are not in this package.
+-The old "HOW TO OPEN" section told the reader to double-click Open_Enrollment.bat.
+-That instruction is withdrawn. It must not be followed.
++WHAT CHANGED
++R23.4N was copied and not overwritten.
++No production source file was changed.
++identity_engine.py and teacher_trial.py are unchanged.
++New tests use a real Windows directory junction for two checks that the
++symlink tests could not reach on this PC:
++- removing the junction does not delete the outside target
++- a failed rmdir stays a failure, not a skip or a pass
++
++WHAT DID NOT CHANGE
++The ten WinError 1314 symlink skips are still skips.
++A file symlink still cannot be created on this PC without the missing privilege.
++Those file-symlink assertions stay unverified. They are not passed.
++A junction is not a symlink.
+ 
+-WHAT THIS PACKAGE IS
+-This is a documentation-only copy of R23.4M.
+-R23.4M was not overwritten.
+-No identity rule, test, database path, or photo rule was changed.
+-
+-WHERE THE FILES MAY SIT
+-The zip may be extracted into a new empty folder for reading.
+-Do not extract it into the live project.
+-Do not extract it on top of an older trial folder.
+-Extracting it is not permission to enroll anyone.
+-
+-WHAT IS STILL TRUE FROM THE WINDOWS RUN
+-R23.4M on the review PC: 87 tests, 77 passed, 0 failed, 0 errors, 10 skipped.
+-A skip is not a pass.
+-The ten skips are WinError 1314. Symlink creation was refused before the assertion.
+-The Windows junction tests ran and passed. They are not skips.
+-The rmdir-failure assertion did not run on that PC because the symlink was not created.
+-That skip is not a pass.
+-
+-CLASS CODES, IF A LATER REVIEW EVER ALLOWS A TRIAL
+-Class 1 is I. Class 6 is VI. Session is 2026_27.
+-Those codes are a reference only. Do not enroll now.
+-
+-This package does not prove that a teacher has completed a trial.
+-Production remains NOT APPROVED.
++Linux cannot run the new junction checks. Those two tests skip here as UNVERIFIED.
++That skip is not a pass. The older Linux symlink checks still run their assertions.
+--- R23.4N/SECURITY_AUDIT_REPORT.txt
++++ R23.5/SECURITY_AUDIT_REPORT.txt
+@@ -1,12 +1,11 @@
+-R23_4M_SECURITY_AUDIT_REPORT
+-package=R23_4M_WINDOWS_SYMLINK_COMPATIBILITY
+-baseline=R23_4L_WORKER_IO
++R23_5_SECURITY_AUDIT_REPORT
++package=R23_5_SYMLINK_DATA_INTEGRITY
++baseline=R23_4N_DOCUMENTATION_CLEANUP
+ baseline_overwritten=NO
+ identity_engine_modified=NO
+-identity_engine_sha256=e7d9b3626986e5aa287480ba9de5f2bb5d0d9efdbdf81ee9b9eaf633490910d2
+ teacher_trial_modified=NO
+ photo_reconciliation_modified=NO
+-path_chain_validation_modified=NO
++path_chain_modified=NO
+ lock_behavior_modified=NO
+ gui_launched=NO
+ bat_launched=NO
+@@ -16,16 +15,7 @@
+ production=NOT APPROVED
+ final_status=PATCH PREPARED
+ 
+-What changed
+-Only the test harness. require_symlink() skips a test when Windows returns
+-WinError 1314, or the exact privilege message, and no link was created.
+-The reason says SKIPPED, not passed, and that the assertion was not executed.
+-
+-What did not change
+-If the link exists, the same OSError is raised again.
+-Any other OSError, including WinError 5, is raised again.
+-JunctionCleanupError is not caught and is not a skip.
+-The rmdir-failure test still requires status "failed" after a real link exists.
+-Windows junction tests still call create_directory_junction. They are not skipped
+-by this patch.
+-No production code was changed.
++This patch adds tests only.
++A Windows junction can prove directory-link cleanup and a failed rmdir.
++It cannot prove file-symlink rejection.
++Skipped symlink tests are not counted as passes.
+--- R23.4N/WINDOWS_VERIFY.ps1
++++ R23.5/WINDOWS_VERIFY.ps1
+@@ -1,4 +1,4 @@
+-# R23.4M. Run this file. A skip is not a pass.
++# R23.5. Run this file. A skip is not a pass.
+ # Do not launch Open_Enrollment.bat or open_launcher.py.
+ Set-Location -LiteralPath (Split-Path -Parent $MyInvocation.MyCommand.Path)
+ py -m unittest discover -s tests -v
+--- R23.4N/TEST_REPORT.txt
++++ R23.5/TEST_REPORT.txt
+@@ -1,39 +1,42 @@
+-R23_4M_TEST_REPORT
+-package=R23_4M_WINDOWS_SYMLINK_COMPATIBILITY
+-baseline=R23_4L_WORKER_IO
++R23_5_TEST_REPORT
++package=R23_5_SYMLINK_DATA_INTEGRITY
++baseline=R23_4N_DOCUMENTATION_CLEANUP
+ teacher_trial=NOT AUTHORIZED
+ production=NOT APPROVED
+ final_status=PATCH PREPARED
+ 
+ Linux, this runner
+-Ran 87
+-passed=83
++Ran 92
++passed=86
+ failed=0
+ errors=0
+-skipped=4
++skipped=6
+ 
+-The four Linux skips are live Windows junction tests. They are UNVERIFIED here,
+-not passed. On Linux the symlink tests create real symlinks and their assertions run.
++The six Linux skips are Windows junction checks. They are UNVERIFIED here, not passed.
++The older symlink assertions ran on Linux and passed. A skip was not turned into a pass.
+ 
+-Skipped on Linux
+-test_windows_junction_is_reported_when_unsupported
+-test_linux_skips_live_junction_without_passing_it
+-test_windows_directory_junction_is_rejected
+-test_nested_windows_junction_is_rejected
+-
+-Windows expectation for this PC, not yet run
+-R23.4L was 74 passed, 6 errors, 2 skipped.
+-The 6 errors were WinError 1314 before any assertion. This patch should report
+-those six as SKIPPED, not passed.
+-Junction tests stay enabled and must still pass.
+-A skip is not a pass. If a symlink is created and a later check fails, that
+-remains a failure.
++New tests that ran here
++test_real_directory_is_not_deleted: passed
++test_junction_creation_failure_is_not_a_pass: passed
++test_uncreated_symlink_skip_is_not_a_pass: passed
++
++New tests that skipped here
++test_windows_junction_removal_keeps_the_target
++test_windows_rmdir_failure_is_a_failure_not_a_skip
++
++Production source files were not changed.
++identity_engine.py and teacher_trial.py match R23.4N.
++
++Windows still has to run this package.
++The ten WinError 1314 symlink skips must remain skips.
++The two new junction checks should run on that PC. If they cannot create a junction,
++that is a failure, not a pass.
+ 
+ PowerShell
+-$dest = "$env:USERPROFILE\Downloads\R23_4M_EXTRACTED"
++$dest = "$env:USERPROFILE\Downloads\R23_5_EXTRACTED"
+ New-Item -ItemType Directory -Force -Path $dest | Out-Null
+-Expand-Archive -LiteralPath "$env:USERPROFILE\Downloads\R23_4M_WINDOWS_SYMLINK_COMPATIBILITY.zip" -DestinationPath $dest -Force
+-Set-Location "$dest\R23_4M_WINDOWS_SYMLINK_COMPATIBILITY"
++Expand-Archive -LiteralPath "$env:USERPROFILE\Downloads\R23_5_SYMLINK_DATA_INTEGRITY.zip" -DestinationPath $dest -Force
++Set-Location "$dest\R23_5_SYMLINK_DATA_INTEGRITY"
+ py -m unittest discover -s tests -v
+ 
+ Do not launch Open_Enrollment.bat or open_launcher.py.
+
+# Added: tests/test_r23_5_data_integrity.py

@@ -1,0 +1,17 @@
+R23_3C_REGRESSION_REPORT
+previous_tests=31
+previous_passed=31
+previous_failed=0
+new_tests=1
+new_passed=1
+new_failed=0
+total_tests=32
+passed=32
+failed=0
+skipped=0
+teacher_observations=0
+
+The new test is tests/test_r23_3c_deployment.py.
+It checks the package contents and the live-destination refusal.
+The real window tests were run again and passed.
+They are not teacher observations.

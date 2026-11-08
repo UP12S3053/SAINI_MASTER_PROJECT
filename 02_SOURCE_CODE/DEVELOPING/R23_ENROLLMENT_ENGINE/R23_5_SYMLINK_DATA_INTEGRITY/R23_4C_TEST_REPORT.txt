@@ -1,0 +1,49 @@
+R23_4C_TEST_REPORT
+package=R23_4C_TARGETED_REMEDIATION
+gui_launched=NO
+real_student_data=NO
+identity_engine_modified=NO
+r23_4a_modified=NO
+r23_4b_modified=NO
+production_modified=NO
+teacher_trial=NOT AUTHORIZED
+production=NOT APPROVED
+final_status=PATCH PREPARED — WINDOWS RUNTIME VERIFICATION REQUIRED
+
+tests/test_r23_4a_path_safety.py
+Ran 11 tests
+OK
+Failed: 0
+Skipped: 0
+
+tests/test_r23_4b_safety.py
+Ran 13 tests
+OK
+Passed: 12
+Skipped: 1
+Failed: 0
+Skipped test: test_windows_junction_is_reported_when_unsupported
+Reason: Windows junction/reparse creation is not supported on this Linux runner.
+This skip is not a pass.
+
+tests/test_r23_4c_remediation.py
+Ran 4 tests
+OK
+Failed: 0
+Skipped: 0
+
+Total executed: 27 passed, 0 failed, 1 skipped.
+
+New checks that passed:
+photo_database_failed leaves no student row and no ABC1001.jpg or staging file
+photo_stage_failed leaves no student row and no attempt file
+photo_finalize_failed leaves no student row and no attempt file
+a pre-existing different photo is not deleted
+a replaced photo with different bytes is not deleted
+a pre-existing decoy photo is not deleted
+visible_history, enroll_table, promote, run_legacy_baseline, _enroll_row, _success, and _engine create no database
+a failed Windows reparse check raises IdentityError
+Linux reparse check stays explicit and does not claim junction protection
+
+No identity.sqlite remained after the tests.
+Windows junction protection is not verified.

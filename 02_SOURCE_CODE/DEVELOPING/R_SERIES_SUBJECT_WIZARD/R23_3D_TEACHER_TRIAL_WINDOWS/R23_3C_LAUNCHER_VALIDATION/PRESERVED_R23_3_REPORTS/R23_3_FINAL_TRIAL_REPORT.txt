@@ -1,0 +1,19 @@
+R23_3_FINAL_TRIAL_REPORT
+status=R23_3_TEACHER_TRIAL_INCOMPLETE
+reason=TEACHER_NOT_AVAILABLE
+automated_integrity=PASSED
+production_ready=NO
+production_changes=NOT_AUTHORIZED
+
+The synthetic data checks passed, including all 26 automated tests.
+No real teacher completed the trial, so this is not a passed teacher trial.
+No teacher feedback exists.
+The simulated review is separate and was not counted as participation.
+The approved route is teacher_trial.py.
+Direct use of the old MAIN_ASSISTANT.py was refused and is not an approved route.
+
+Do not deploy this trial.
+Do not copy it into the live project.
+Do not generate real ID cards.
+Nursery, LKG, and UKG remain closed until a roll limit is approved.
+Stop and wait for a real teacher trial or another explicit approval.

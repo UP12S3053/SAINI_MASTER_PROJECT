@@ -1,0 +1,10 @@
+R23_1_KEY_PRIVACY_REPORT
+database_key_removed=NO
+teacher_responses_contain_key=NO
+
+The permanent key remains in the synthetic database.
+Authorized internal engine operations still read it there.
+Active enrollment returns, the development entry returns, teacher CSV export, teacher history, generator rows, ordinary log text, and error codes were tested without the key.
+The generator row does not contain the key, and no card layout was changed.
+history() on the engine object is internal. A teacher-facing view strips the key before that result is shown.
+The key is not printed by the active writers.

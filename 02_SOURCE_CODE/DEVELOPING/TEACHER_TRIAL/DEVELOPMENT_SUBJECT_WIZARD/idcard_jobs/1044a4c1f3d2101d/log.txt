@@ -1,0 +1,164 @@
+Loading Option C slip OCR
+21:33:45 | Gemini API key configured from env:GEMINI_API_KEY; key material redacted.
+Starting MAIN_ASSISTANT BVM mode A
+21:33:45 | INFO     | ======================================================================
+21:33:45 | INFO     | SAINI SCHOOL MASTER PROCESSOR - PERFECTED v2.0
+21:33:45 | INFO     | ======================================================================
+21:33:45 | INFO     | School: BVM | Mode: FULL PROCESS
+
+Background Color Options:
+  W  = White
+  R  = Red
+  B  = Blue
+  G  = Green
+  LG = Light Green
+  LB = Light Blue
+Background color [W]: 
+>> LB
+21:33:45 | INFO     | Selected Background: LB
+21:33:45 | INFO     | === STEP 1: Smart Renaming + Highest Number Logic ===
+21:33:45 | INFO     | Originals backed up to: BVM_Originals_2026-11-02_21-33
+21:33:45 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-03 (normalized: APBHORIGINALS202610091603)
+21:33:45 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-14 (normalized: APBHORIGINALS202610091614)
+21:33:45 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-29 (normalized: APBHORIGINALS202610091629)
+21:33:45 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-33 (normalized: APBHORIGINALS202610091633)
+21:33:45 | WARNING  | Skipping unknown class folder: BSM_Originals_2026-10-12_09-25 (normalized: BSMORIGINALS202610120925)
+21:33:45 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0700 (normalized: DCMMIXUNCROPPED202610190700)
+21:33:45 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0737 (normalized: DCMMIXUNCROPPED202610190737)
+21:33:45 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0833 (normalized: DCMMIXUNCROPPED202610190833)
+21:33:45 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0847 (normalized: DCMMIXUNCROPPED202610190847)
+21:33:45 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0855 (normalized: DCMMIXUNCROPPED202610190855)
+21:33:45 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0859 (normalized: DCMMIXUNCROPPED202610190859)
+21:33:45 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0903 (normalized: DCMMIXUNCROPPED202610190903)
+21:33:45 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0918 (normalized: DCMMIXUNCROPPED202610190918)
+21:33:45 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_1117 (normalized: DCMMIXUNCROPPED202610191117)
+21:33:45 | WARNING  | Skipping unknown class folder: DCM_Originals_2026-10-17_21-06 (normalized: DCMORIGINALS202610172106)
+21:33:45 | WARNING  | Skipping unknown class folder: DCM_Originals_2026-10-28_20-39 (normalized: DCMORIGINALS202610282039)
+21:33:45 | WARNING  | Skipping unknown class folder: GAPS_Originals_2026-11-02_12-11 (normalized: GAPSORIGINALS202611021211)
+21:33:45 | WARNING  | Skipping unknown class folder: GPSK_Originals_2026-10-05_09-21 (normalized: GPSKORIGINALS202610050921)
+21:33:45 | WARNING  | Skipping unknown class folder: GPSK_Originals_2026-10-05_10-48 (normalized: GPSKORIGINALS202610051048)
+21:33:45 | WARNING  | Skipping unknown class folder: JPSN_Originals_2026-10-27_19-37 (normalized: JPSNORIGINALS202610271937)
+21:33:45 | INFO     | Processing Class: MIX (range 50000-59999)
+21:33:45 | INFO     |    Last used: 50245 â†’ Starting new from: 50246
+21:33:45 | INFO     |   1 (1).jpeg â†’ BVM50246.jpg
+21:33:45 | INFO     |   1 (10).jpeg â†’ BVM50247.jpg
+21:33:45 | INFO     |   1 (11).jpeg â†’ BVM50248.jpg
+21:33:45 | INFO     |   1 (12).jpeg â†’ BVM50249.jpg
+21:33:45 | INFO     |   1 (13).jpeg â†’ BVM50250.jpg
+21:33:45 | INFO     |   1 (14).jpeg â†’ BVM50251.jpg
+21:33:45 | INFO     |   1 (15).jpeg â†’ BVM50252.jpg
+21:33:45 | INFO     |   1 (16).jpeg â†’ BVM50253.jpg
+21:33:45 | INFO     |   1 (17).jpeg â†’ BVM50254.jpg
+21:33:45 | INFO     |   1 (18).jpeg â†’ BVM50255.jpg
+21:33:45 | INFO     |   1 (19).jpeg â†’ BVM50256.jpg
+21:33:46 | INFO     |   1 (2).jpeg â†’ BVM50257.jpg
+21:33:46 | INFO     |   1 (20).jpeg â†’ BVM50258.jpg
+21:33:46 | INFO     |   1 (21).jpeg â†’ BVM50259.jpg
+21:33:46 | INFO     |   1 (22).jpeg â†’ BVM50260.jpg
+21:33:46 | INFO     |   1 (23).jpeg â†’ BVM50261.jpg
+21:33:46 | INFO     |   1 (24).jpeg â†’ BVM50262.jpg
+21:33:46 | INFO     |   1 (25).jpeg â†’ BVM50263.jpg
+21:33:46 | INFO     |   1 (26).jpeg â†’ BVM50264.jpg
+21:33:46 | INFO     |   1 (27).jpeg â†’ BVM50265.jpg
+21:33:46 | INFO     |   1 (28).jpeg â†’ BVM50266.jpg
+21:33:46 | INFO     |   1 (29).jpeg â†’ BVM50267.jpg
+21:33:46 | INFO     |   1 (3).jpeg â†’ BVM50268.jpg
+21:33:46 | INFO     |   1 (30).jpeg â†’ BVM50269.jpg
+21:33:46 | INFO     |   1 (31).jpeg â†’ BVM50270.jpg
+21:33:46 | INFO     |   1 (32).jpeg â†’ BVM50271.jpg
+21:33:46 | INFO     |   1 (33).jpeg â†’ BVM50272.jpg
+21:33:46 | INFO     |   1 (34).jpeg â†’ BVM50273.jpg
+21:33:46 | INFO     |   1 (35).jpeg â†’ BVM50274.jpg
+21:33:46 | INFO     |   1 (36).jpeg â†’ BVM50275.jpg
+21:33:46 | INFO     |   1 (37).jpeg â†’ BVM50276.jpg
+21:33:46 | INFO     |   1 (38).jpeg â†’ BVM50277.jpg
+21:33:46 | INFO     |   1 (39).jpeg â†’ BVM50278.jpg
+21:33:46 | INFO     |   1 (4).jpeg â†’ BVM50279.jpg
+21:33:46 | INFO     |   1 (40).jpeg â†’ BVM50280.jpg
+21:33:46 | INFO     |   1 (41).jpeg â†’ BVM50281.jpg
+21:33:46 | INFO     |   1 (42).jpeg â†’ BVM50282.jpg
+21:33:46 | INFO     |   1 (43).jpeg â†’ BVM50283.jpg
+21:33:46 | INFO     |   1 (44).jpeg â†’ BVM50284.jpg
+21:33:46 | INFO     |   1 (45).jpeg â†’ BVM50285.jpg
+21:33:46 | INFO     |   1 (46).jpeg â†’ BVM50286.jpg
+21:33:46 | INFO     |   1 (47).jpeg â†’ BVM50287.jpg
+21:33:46 | INFO     |   1 (48).jpeg â†’ BVM50288.jpg
+21:33:46 | INFO     |   1 (49).jpeg â†’ BVM50289.jpg
+21:33:46 | INFO     |   1 (5).jpeg â†’ BVM50290.jpg
+21:33:46 | INFO     |   1 (50).jpeg â†’ BVM50291.jpg
+21:33:46 | INFO     |   1 (6).jpeg â†’ BVM50292.jpg
+21:33:46 | INFO     |   1 (7).jpeg â†’ BVM50293.jpg
+21:33:46 | INFO     |   1 (8).jpeg â†’ BVM50294.jpg
+21:33:46 | INFO     |   1 (9).jpeg â†’ BVM50295.jpg
+21:33:46 | INFO     |   2 (1).jpeg â†’ BVM50296.jpg
+21:33:46 | INFO     |   2 (10).jpeg â†’ BVM50297.jpg
+21:33:46 | INFO     |   2 (11).jpeg â†’ BVM50298.jpg
+21:33:46 | INFO     |   2 (12).jpeg â†’ BVM50299.jpg
+21:33:46 | INFO     |   2 (13).jpeg â†’ BVM50300.jpg
+21:33:46 | INFO     |   2 (14).jpeg â†’ BVM50301.jpg
+21:33:46 | INFO     |   2 (15).jpeg â†’ BVM50302.jpg
+21:33:46 | INFO     |   2 (16).jpeg â†’ BVM50303.jpg
+21:33:46 | INFO     |   2 (17).jpeg â†’ BVM50304.jpg
+21:33:46 | INFO     |   2 (18).jpeg â†’ BVM50305.jpg
+21:33:46 | INFO     |   2 (19).jpeg â†’ BVM50306.jpg
+21:33:46 | INFO     |   2 (2).jpeg â†’ BVM50307.jpg
+21:33:46 | INFO     |   2 (20).jpeg â†’ BVM50308.jpg
+21:33:46 | INFO     |   2 (3).jpeg â†’ BVM50309.jpg
+21:33:46 | INFO     |   2 (4).jpeg â†’ BVM50310.jpg
+21:33:46 | INFO     |   2 (5).jpeg â†’ BVM50311.jpg
+21:33:46 | INFO     |   2 (6).jpeg â†’ BVM50312.jpg
+21:33:46 | INFO     |   2 (7).jpeg â†’ BVM50313.jpg
+21:33:46 | INFO     |   2 (8).jpeg â†’ BVM50314.jpg
+21:33:46 | INFO     |   2 (9).jpeg â†’ BVM50315.jpg
+21:33:46 | INFO     |   3 (1).jpeg â†’ BVM50316.jpg
+21:33:46 | INFO     |   3 (10).jpeg â†’ BVM50317.jpg
+21:33:46 | INFO     |   3 (11).jpeg â†’ BVM50318.jpg
+21:33:46 | INFO     |   3 (12).jpeg â†’ BVM50319.jpg
+21:33:46 | INFO     |   3 (13).jpeg â†’ BVM50320.jpg
+21:33:46 | INFO     |   3 (14).jpeg â†’ BVM50321.jpg
+21:33:46 | INFO     |   3 (15).jpeg â†’ BVM50322.jpg
+21:33:46 | INFO     |   3 (16).jpeg â†’ BVM50323.jpg
+21:33:46 | INFO     |   3 (17).jpeg â†’ BVM50324.jpg
+21:33:46 | INFO     |   3 (18).jpeg â†’ BVM50325.jpg
+21:33:46 | INFO     |   3 (19).jpeg â†’ BVM50326.jpg
+21:33:46 | INFO     |   3 (2).jpeg â†’ BVM50327.jpg
+21:33:46 | INFO     |   3 (20).jpeg â†’ BVM50328.jpg
+21:33:46 | INFO     |   3 (21).jpeg â†’ BVM50329.jpg
+21:33:46 | INFO     |   3 (22).jpeg â†’ BVM50330.jpg
+21:33:46 | INFO     |   3 (23).jpeg â†’ BVM50331.jpg
+21:33:46 | INFO     |   3 (24).jpeg â†’ BVM50332.jpg
+21:33:46 | INFO     |   3 (25).jpeg â†’ BVM50333.jpg
+21:33:46 | INFO     |   3 (26).jpeg â†’ BVM50334.jpg
+21:33:46 | INFO     |   3 (27).jpeg â†’ BVM50335.jpg
+21:33:46 | INFO     |   3 (28).jpeg â†’ BVM50336.jpg
+21:33:46 | INFO     |   3 (29).jpeg â†’ BVM50337.jpg
+21:33:46 | INFO     |   3 (3).jpeg â†’ BVM50338.jpg
+21:33:46 | INFO     |   3 (30).jpeg â†’ BVM50339.jpg
+21:33:46 | INFO     |   3 (31).jpeg â†’ BVM50340.jpg
+21:33:46 | INFO     |   3 (32).jpeg â†’ BVM50341.jpg
+21:33:46 | INFO     |   3 (33).jpeg â†’ BVM50342.jpg
+21:33:46 | INFO     |   3 (34).jpeg â†’ BVM50343.jpg
+21:33:46 | INFO     |   3 (35).jpeg â†’ BVM50344.jpg
+21:33:46 | INFO     |   3 (36).jpeg â†’ BVM50345.jpg
+21:33:46 | INFO     |   3 (37).jpeg â†’ BVM50346.jpg
+21:33:46 | INFO     |   3 (38).jpeg â†’ BVM50347.jpg
+21:33:46 | INFO     |   3 (39).jpeg â†’ BVM50348.jpg
+21:33:46 | INFO     |   3 (4).jpeg â†’ BVM50349.jpg
+21:33:46 | INFO     |   3 (5).jpeg â†’ BVM50350.jpg
+21:33:46 | INFO     |   3 (6).jpeg â†’ BVM50351.jpg
+21:33:46 | INFO     |   3 (7).jpeg â†’ BVM50352.jpg
+21:33:46 | INFO     |   3 (8).jpeg â†’ BVM50353.jpg
+21:33:46 | INFO     |   3 (9).jpeg â†’ BVM50354.jpg
+21:33:46 | WARNING  | Skipping unknown class folder: RECORD (normalized: RECORD)
+21:33:46 | WARNING  | Skipping unknown class folder: SDV_Originals_2026-10-11_15-56 (normalized: SDVORIGINALS202610111556)
+21:33:46 | WARNING  | Skipping unknown class folder: SDV_Originals_2026-10-26_07-35 (normalized: SDVORIGINALS202610260735)
+21:33:46 | WARNING  | Skipping unknown class folder: SLIP_AUDIO (normalized: SLIPAUDIO)
+21:33:46 | WARNING  | Skipping unknown class folder: SPBUCH_Originals_2026-10-08_13-14 (normalized: SPBUCHORIGINALS202610081314)
+21:33:46 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-05_09-02 (normalized: TAGOREORIGINALS202610050902)
+21:33:46 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-05_10-52 (normalized: TAGOREORIGINALS202610051052)
+21:33:46 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-07_10-17 (normalized: TAGOREORIGINALS202610071017)
+21:33:46 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-09_12-24 (normalized: TAGOREORIGINALS202610091224)
+21:33:46 | INFO     | âœ… Step 1 done. Total photos renamed: 109
+21:33:46 | INFO     | === STEP 2: Running ID_CARD_AI_STUDIO Pipeline ===
+21:33:46 | INFO     | Using NEW Advanced Studio Pipeline
+21:33:46 | INFO     | Command: C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\python.exe D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_AI_STUDIO\run_studio_pipeline.py --source D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\INPUT --output D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\OUTPUT --bg LB --gfpgan-blend 0.65 --skip-existing --quality 95

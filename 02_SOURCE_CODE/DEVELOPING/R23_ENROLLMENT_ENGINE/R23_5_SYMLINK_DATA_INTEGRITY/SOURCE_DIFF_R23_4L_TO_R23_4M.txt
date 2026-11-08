@@ -1,0 +1,78 @@
+--- R23.4L/tests/test_r23_4f_junction.py
++++ R23.4M/tests/test_r23_4f_junction.py
+@@ -16,6 +16,7 @@
+     JunctionUnavailable,
+     remove_directory_junction,
+ )
++from symlink_setup import require_symlink
+ 
+ 
+ class JunctionCleanupTest(unittest.TestCase):
+@@ -30,7 +31,7 @@
+ 
+     def test_successful_symlink_removal_does_not_delete_the_target(self):
+         link = self.temp / "link"
+-        link.symlink_to(self.outside, target_is_directory=True)
++        require_symlink(link, self.outside, target_is_directory=True)
+         remove_directory_junction(link)
+         self.assertFalse(link.exists())
+         self.assertFalse(link.is_symlink())
+@@ -38,7 +39,7 @@
+ 
+     def test_successful_rmdir_result_removes_only_the_link(self):
+         link = self.temp / "link"
+-        link.symlink_to(self.outside, target_is_directory=True)
++        require_symlink(link, self.outside, target_is_directory=True)
+ 
+         def rmdir(path):
+             Path(path).unlink()
+@@ -50,7 +51,7 @@
+ 
+     def test_rmdir_failure_is_a_failure_not_a_skip(self):
+         link = self.temp / "link"
+-        link.symlink_to(self.outside, target_is_directory=True)
++        require_symlink(link, self.outside, target_is_directory=True)
+ 
+         def rmdir(_path):
+             return 1, "access denied"
+--- R23.4L/tests/test_r23_4j_path_chain.py
++++ R23.4M/tests/test_r23_4j_path_chain.py
+@@ -15,6 +15,7 @@
+ import teacher_trial
+ from identity_engine import IdentityEngine, IdentityError
+ from path_guard import TEST_EXCEL, TEST_PHOTOS, TRIAL_WORKSPACE
++from symlink_setup import require_symlink
+ from teacher_trial import TeacherTrial
+ 
+ PHOTO = TRIAL_WORKSPACE / "PHOTO_LIBRARY" / "ABC" / "2026_27" / "ABC1001.jpg"
+@@ -128,7 +129,7 @@
+             outside = Path(temp) / "outside.jpg"
+             outside.write_bytes(payload)
+             PHOTO.parent.mkdir(parents=True)
+-            PHOTO.symlink_to(outside)
++            require_symlink(PHOTO, outside)
+             trial = self._plant(PHOTO)
+             try:
+                 self.assertEqual(self._state(trial, PHOTO, payload), "broken")
+@@ -147,7 +148,7 @@
+             outside.write_bytes(payload)
+             parent = TRIAL_WORKSPACE / "PHOTO_LIBRARY" / "ABC"
+             parent.parent.mkdir(parents=True, exist_ok=True)
+-            parent.symlink_to(outside_dir, target_is_directory=True)
++            require_symlink(parent, outside_dir, target_is_directory=True)
+             photo = parent / "ABC1001.jpg"
+             trial = self._plant(photo)
+             try:
+@@ -244,7 +245,7 @@
+             try:
+                 self.assertEqual(self._state(trial, PHOTO, payload), "verified")
+                 PHOTO.unlink()
+-                PHOTO.symlink_to(outside)
++                require_symlink(PHOTO, outside)
+                 trial._remove_attempt_file(PHOTO, payload, False, True)
+                 self.assertTrue(outside.is_file())
+                 self.assertEqual(outside.read_bytes(), payload)
+
+# New files:
+# tests/symlink_setup.py
+# tests/test_r23_4m_symlink_compat.py

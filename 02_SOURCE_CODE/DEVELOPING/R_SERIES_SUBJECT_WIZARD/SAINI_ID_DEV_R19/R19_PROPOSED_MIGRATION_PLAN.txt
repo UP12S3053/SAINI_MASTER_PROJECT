@@ -1,0 +1,7 @@
+R19_PROPOSED_MIGRATION_PLAN
+migration_executed=NO
+production_deployment=NOT_DONE
+1. Keep every duplicate header until the user chooses the authoritative column.
+2. Do not invent SCHOOLNAME values for BSM rows.
+3. Do not invent or rewrite missing template paths.
+4. Deploy no R19 file to the live project until a separate approval.

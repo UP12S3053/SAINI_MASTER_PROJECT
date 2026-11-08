@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "subject_code": "NURSERY-MATH",
+  "board_code": "HR",
+  "class_level": "NURSERY",
+  "subject": "MATH",
+  "content_type": "worksheet_images",
+  "template_policy": "separate_master",
+  "status": "DRAFT",
+  "activated": false,
+  "notes": "Development scaffold only. Add and validate approved template assets before activation."
+}

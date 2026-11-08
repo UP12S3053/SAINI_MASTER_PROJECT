@@ -1,0 +1,38 @@
+R23.3A शिक्षक प्रतिक्रिया फ़ॉर्म / Teacher Feedback Form
+Development version: R23.3A
+Date / तारीख: ____________________
+Optional participant code / वैकल्पिक कोड: ____________________
+Optional role / वैकल्पिक भूमिका: Teacher / In-charge / ________
+Do not write a student name, phone number, address, or password.
+छात्र का नाम, फ़ोन, पता या पासवर्ड न लिखें।
+
+1. Was it easy to open the software? / क्या सॉफ़्टवेयर खोलना आसान था?
+   Yes / हाँ ____    No / नहीं ____
+
+2. Was selecting the Excel or CSV file easy? / क्या फ़ाइल चुनना आसान था?
+   Yes / हाँ ____    No / नहीं ____
+
+3. Was selecting the photo folder easy? / क्या फोटो फ़ोल्डर चुनना आसान था?
+   Yes / हाँ ____    No / नहीं ____
+
+4. Were the instructions clear? / क्या निर्देश स्पष्ट थे?
+   Yes / हाँ ____    No / नहीं ____
+
+5. Was the enrollment result understandable? / क्या परिणाम समझ आया?
+   Yes / हाँ ____    No / नहीं ____
+
+6. Were the error messages easy to understand? / क्या गलती के संदेश आसान थे?
+   Yes / हाँ ____    No / नहीं ____
+
+7. Did you need technical assistance? / क्या तकनीकी मदद चाहिए पड़ी?
+   Yes / हाँ ____    No / नहीं ____
+
+8. Which step was difficult? / कौन सा कदम कठिन था?
+   ____________________________________________________
+
+9. What improvement would you suggest? / क्या सुधार सुझाएँगे?
+   ____________________________________________________
+
+Optional comments / वैकल्पिक टिप्पणी:
+____________________________________________________________
+____________________________________________________________

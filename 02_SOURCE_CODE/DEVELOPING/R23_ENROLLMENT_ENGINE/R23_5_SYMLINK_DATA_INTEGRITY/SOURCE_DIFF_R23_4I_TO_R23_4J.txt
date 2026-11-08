@@ -1,0 +1,158 @@
+--- R23.4I/src/teacher_trial.py
++++ R23.4J/src/teacher_trial.py
+@@ -26,6 +26,7 @@
+ )
+ from legacy_guard import refuse_legacy_entry
+ from path_guard import (
++    _is_reparse_point,
+     preflight_required_photos,
+     require_excel,
+     require_photo_dir,
+@@ -377,33 +378,83 @@
+                 engine._conn.rollback()
+                 raise
+ 
++    def _lexical_path(self, path):
++        """Absolute path with . and .. removed. This does not follow links."""
++        raw = Path(path)
++        text = str(raw)
++        if text.startswith("\\\\") or text.startswith("//"):
++            return None
++        if not raw.is_absolute():
++            raw = self.workspace / raw
++        parts = []
++        for part in raw.parts:
++            if part == ".":
++                continue
++            if part == "..":
++                if len(parts) <= 1:
++                    return None
++                parts.pop()
++                continue
++            parts.append(part)
++        if not parts:
++            return None
++        return Path(*parts)
++
++    def _chain_is_safe(self, path):
++        """True only when every component from the workspace to the file is a real path."""
++        try:
++            candidate = self._lexical_path(path)
++            root = self._lexical_path(self.workspace)
++        except Exception:
++            return False
++        if candidate is None or root is None:
++            return False
++        current = candidate
++        seen = set()
++        while current not in seen:
++            seen.add(current)
++            try:
++                if _is_reparse_point(current, "photo_reconcile_failed"):
++                    return False
++            except Exception:
++                return False
++            if current == root:
++                return True
++            if current == current.parent:
++                return False
++            current = current.parent
++        return False
++
+     def _reconcile_committed_target(self, engine, school, session, visible_identifier, target, payload):
+-        """Read the committed photo after a failure. Never treats matching bytes as ownership."""
+-        row = engine._conn.execute(
+-            """
+-            SELECT photo_path FROM identities
+-            WHERE school_code=? AND session=? AND visible_id=? AND status='current'
+-            """,
+-            (school, session, visible_identifier),
+-        ).fetchone()
++        """Read the committed photo after a failure. A redirected parent is never verified."""
++        try:
++            row = engine._conn.execute(
++                """
++                SELECT photo_path FROM identities
++                WHERE school_code=? AND session=? AND visible_id=? AND status='current'
++                """,
++                (school, session, visible_identifier),
++            ).fetchone()
++        except Exception:
++            return "broken"
+         if row is None or not row["photo_path"]:
++            if not self._chain_is_safe(target):
++                return "broken"
+             return "absent"
+         stored = Path(row["photo_path"])
+-        if stored.is_symlink() or Path(target).is_symlink():
++        if not self._chain_is_safe(stored) or not self._chain_is_safe(target):
+             return "broken"
+-        try:
+-            references_target = stored.resolve() == Path(target).resolve()
+-        except OSError:
+-            references_target = str(stored) == str(target)
+-        if not references_target:
++        if self._lexical_path(stored) != self._lexical_path(target):
++            return "broken"
++        if stored.is_symlink() or not stored.is_file():
+             return "broken"
+-        if not stored.is_file():
++        if not self._chain_is_safe(stored):
+             return "broken"
+         try:
+             matches = stored.read_bytes() == payload
+         except OSError:
+             return "broken"
+-        if not matches:
++        if not matches or not self._chain_is_safe(stored):
+             return "broken"
+         return "verified"
+ 
+@@ -429,10 +480,14 @@
+         if row is None or not row["photo_path"]:
+             return False
+         photo = Path(row["photo_path"])
++        if not self._chain_is_safe(photo):
++            return False
+         if photo.is_symlink() or not photo.is_file():
+             return False
++        if not self._chain_is_safe(photo):
++            return False
+         try:
+-            return photo.read_bytes() == payload
++            return photo.read_bytes() == payload and self._chain_is_safe(photo)
+         except OSError:
+             return False
+ 
+@@ -441,24 +496,15 @@
+         if existed_before or not owned:
+             return
+         path = Path(path)
+-        if path.is_symlink() or not path.is_file():
++        if not self._chain_is_safe(path) or path.is_symlink() or not path.is_file():
+             return
+-        root = (self.workspace / "PHOTO_LIBRARY").resolve()
+-        try:
+-            final = path.resolve()
+-        except OSError:
+-            return
+-        if final == root:
+-            return
+-        try:
+-            final.relative_to(root)
+-        except ValueError:
++        if not self._chain_is_safe(path):
+             return
+         try:
+             current = path.read_bytes()
+         except OSError:
+             return
+-        if current != payload:
++        if current != payload or not self._chain_is_safe(path) or path.is_symlink():
+             return
+         path.unlink()
+ 
+
+# New files:
+# tests/test_r23_4j_path_chain.py
+# WINDOWS_VERIFY.ps1

@@ -1,0 +1,18 @@
+R23_3B_FINAL_REPORT
+status=R23_3B_TEACHER_TRIAL_INCOMPLETE
+reason=REAL_TEACHER_NOT_AVAILABLE_AND_WINDOWS_DOUBLE_CLICK_NOT_TESTED
+local_gui=OPENED
+production_ready=NO
+production_changes=NOT_AUTHORIZED
+
+A real Tk window opened in this Linux workspace and showed the teacher controls.
+The Windows development computer was not connected here, so the physical double-click was not verified.
+No real teacher took part, so the teacher trial is not passed.
+31 tests passed, with 0 failed and 0 skipped.
+Those tests are not teacher observations.
+
+Do not deploy this package.
+Do not copy it into the live project.
+Do not generate real ID cards.
+On the Windows computer, run the Tk check in the runtime report before asking a teacher to double-click open_launcher.py.
+Stop and wait for the next instruction.

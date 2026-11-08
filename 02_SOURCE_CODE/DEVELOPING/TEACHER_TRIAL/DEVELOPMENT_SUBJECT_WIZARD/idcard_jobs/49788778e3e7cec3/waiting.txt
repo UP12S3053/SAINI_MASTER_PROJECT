@@ -1,0 +1,2 @@
+
+>>> CHECK & FIX photos in OUTPUT folder if needed, then press ENTER to continue... <<<

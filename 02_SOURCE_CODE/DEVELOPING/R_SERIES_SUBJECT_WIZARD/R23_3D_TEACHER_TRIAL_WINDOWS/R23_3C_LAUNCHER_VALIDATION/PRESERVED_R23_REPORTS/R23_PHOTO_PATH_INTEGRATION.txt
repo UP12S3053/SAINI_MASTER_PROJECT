@@ -1,0 +1,12 @@
+R23_PHOTO_PATH_INTEGRATION
+path=PHOTO_ROOT/SCHOOL_CODE/ACADEMIC_SESSION/STUDENT_UID.jpg
+synthetic_only=YES
+existing_photos_deleted=NO
+existing_photos_renamed=NO
+
+assign_photo stores the full path on the current identity.
+If that path already exists, the write is refused and the existing bytes stay unchanged.
+A second assignment to the same current identity is also refused.
+The same visible ID in another session uses another directory.
+The old flat writers remain in the untouched baseline and are not called by the development entry.
+The real PHOTO_LIBRARY was not opened.

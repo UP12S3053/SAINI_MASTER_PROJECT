@@ -1,0 +1,165 @@
+Loading Option C slip OCR
+11:54:52 | Gemini API key configured from env:GEMINI_API_KEY; key material redacted.
+Starting MAIN_ASSISTANT BVM mode A
+11:54:53 | INFO     | ======================================================================
+11:54:53 | INFO     | SAINI SCHOOL MASTER PROCESSOR - PERFECTED v2.0
+11:54:53 | INFO     | ======================================================================
+11:54:53 | INFO     | School: BVM | Mode: FULL PROCESS
+
+Background Color Options:
+  W  = White
+  R  = Red
+  B  = Blue
+  G  = Green
+  LG = Light Green
+  LB = Light Blue
+Background color [W]: 
+>> LB
+11:54:53 | INFO     | Selected Background: LB
+11:54:53 | INFO     | === STEP 1: Smart Renaming + Highest Number Logic ===
+11:54:53 | INFO     | Originals backed up to: BVM_Originals_2026-11-02_11-54
+11:54:53 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-03 (normalized: APBHORIGINALS202610091603)
+11:54:53 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-14 (normalized: APBHORIGINALS202610091614)
+11:54:53 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-29 (normalized: APBHORIGINALS202610091629)
+11:54:53 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-33 (normalized: APBHORIGINALS202610091633)
+11:54:53 | WARNING  | Skipping unknown class folder: BSM_Originals_2026-10-12_09-25 (normalized: BSMORIGINALS202610120925)
+11:54:53 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0700 (normalized: DCMMIXUNCROPPED202610190700)
+11:54:53 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0737 (normalized: DCMMIXUNCROPPED202610190737)
+11:54:53 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0833 (normalized: DCMMIXUNCROPPED202610190833)
+11:54:53 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0847 (normalized: DCMMIXUNCROPPED202610190847)
+11:54:53 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0855 (normalized: DCMMIXUNCROPPED202610190855)
+11:54:53 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0859 (normalized: DCMMIXUNCROPPED202610190859)
+11:54:53 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0903 (normalized: DCMMIXUNCROPPED202610190903)
+11:54:53 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0918 (normalized: DCMMIXUNCROPPED202610190918)
+11:54:53 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_1117 (normalized: DCMMIXUNCROPPED202610191117)
+11:54:53 | WARNING  | Skipping unknown class folder: DCM_Originals_2026-10-17_21-06 (normalized: DCMORIGINALS202610172106)
+11:54:53 | WARNING  | Skipping unknown class folder: DCM_Originals_2026-10-28_20-39 (normalized: DCMORIGINALS202610282039)
+11:54:53 | WARNING  | Skipping unknown class folder: GPSK_Originals_2026-10-05_09-21 (normalized: GPSKORIGINALS202610050921)
+11:54:53 | WARNING  | Skipping unknown class folder: GPSK_Originals_2026-10-05_10-48 (normalized: GPSKORIGINALS202610051048)
+11:54:53 | WARNING  | Skipping unknown class folder: JPSN_Originals_2026-10-27_19-37 (normalized: JPSNORIGINALS202610271937)
+11:54:53 | INFO     | Processing Class: MIX (range 50000-59999)
+11:54:53 | INFO     |    Last used: 50137 â†’ Starting new from: 50138
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.11 AM.jpeg â†’ BVM50138.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.12 AM (1).jpeg â†’ BVM50139.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.12 AM (2).jpeg â†’ BVM50140.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.12 AM.jpeg â†’ BVM50141.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.13 AM (1).jpeg â†’ BVM50142.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.13 AM (2).jpeg â†’ BVM50143.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.13 AM.jpeg â†’ BVM50144.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.14 AM (1).jpeg â†’ BVM50145.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.14 AM.jpeg â†’ BVM50146.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.15 AM.jpeg â†’ BVM50147.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.16 AM.jpeg â†’ BVM50148.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.17 AM (1).jpeg â†’ BVM50149.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.17 AM.jpeg â†’ BVM50150.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.18 AM (1).jpeg â†’ BVM50151.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.18 AM.jpeg â†’ BVM50152.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.19 AM (1).jpeg â†’ BVM50153.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.19 AM.jpeg â†’ BVM50154.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.20 AM (1).jpeg â†’ BVM50155.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.20 AM.jpeg â†’ BVM50156.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.22 AM (1).jpeg â†’ BVM50157.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.22 AM.jpeg â†’ BVM50158.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.23 AM.jpeg â†’ BVM50159.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.24 AM.jpeg â†’ BVM50160.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.25 AM.jpeg â†’ BVM50161.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.27 AM (1).jpeg â†’ BVM50162.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.27 AM (2).jpeg â†’ BVM50163.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.27 AM.jpeg â†’ BVM50164.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.28 AM (1).jpeg â†’ BVM50165.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.28 AM.jpeg â†’ BVM50166.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.29 AM (1).jpeg â†’ BVM50167.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.29 AM.jpeg â†’ BVM50168.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.30 AM.jpeg â†’ BVM50169.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.31 AM (1).jpeg â†’ BVM50170.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.31 AM.jpeg â†’ BVM50171.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.33 AM (1).jpeg â†’ BVM50172.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.33 AM (2).jpeg â†’ BVM50173.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.33 AM.jpeg â†’ BVM50174.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.34 AM.jpeg â†’ BVM50175.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.35 AM (1).jpeg â†’ BVM50176.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.35 AM (2).jpeg â†’ BVM50177.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.35 AM.jpeg â†’ BVM50178.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.36 AM.jpeg â†’ BVM50179.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.37 AM (1).jpeg â†’ BVM50180.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.37 AM (2).jpeg â†’ BVM50181.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.37 AM.jpeg â†’ BVM50182.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.38 AM (1).jpeg â†’ BVM50183.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.38 AM (2).jpeg â†’ BVM50184.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.38 AM.jpeg â†’ BVM50185.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.39 AM (1).jpeg â†’ BVM50186.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.39 AM.jpeg â†’ BVM50187.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.46 AM (1).jpeg â†’ BVM50188.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.46 AM (2).jpeg â†’ BVM50189.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.46 AM.jpeg â†’ BVM50190.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.47 AM.jpeg â†’ BVM50191.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.48 AM.jpeg â†’ BVM50192.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.50 AM (1).jpeg â†’ BVM50193.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.50 AM (2).jpeg â†’ BVM50194.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.50 AM.jpeg â†’ BVM50195.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.53 AM (1).jpeg â†’ BVM50196.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.53 AM.jpeg â†’ BVM50197.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.54 AM (1).jpeg â†’ BVM50198.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.54 AM (2).jpeg â†’ BVM50199.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.54 AM.jpeg â†’ BVM50200.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.56 AM (1).jpeg â†’ BVM50201.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.56 AM.jpeg â†’ BVM50202.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.57 AM (1).jpeg â†’ BVM50203.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.57 AM (2).jpeg â†’ BVM50204.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.57 AM.jpeg â†’ BVM50205.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.58 AM (1).jpeg â†’ BVM50206.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.58 AM.jpeg â†’ BVM50207.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.14.59 AM.jpeg â†’ BVM50208.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.00 AM (1).jpeg â†’ BVM50209.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.00 AM.jpeg â†’ BVM50210.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.02 AM (1).jpeg â†’ BVM50211.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.02 AM.jpeg â†’ BVM50212.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.03 AM.jpeg â†’ BVM50213.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.04 AM (1).jpeg â†’ BVM50214.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.04 AM.jpeg â†’ BVM50215.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.05 AM (1).jpeg â†’ BVM50216.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.05 AM.jpeg â†’ BVM50217.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.06 AM (1).jpeg â†’ BVM50218.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.06 AM.jpeg â†’ BVM50219.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.08 AM (1).jpeg â†’ BVM50220.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.08 AM.jpeg â†’ BVM50221.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.09 AM.jpeg â†’ BVM50222.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.10 AM (1).jpeg â†’ BVM50223.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.10 AM.jpeg â†’ BVM50224.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.11 AM (1).jpeg â†’ BVM50225.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.11 AM.jpeg â†’ BVM50226.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.12 AM.jpeg â†’ BVM50227.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.13 AM (1).jpeg â†’ BVM50228.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.13 AM.jpeg â†’ BVM50229.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.15 AM (1).jpeg â†’ BVM50230.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.15 AM.jpeg â†’ BVM50231.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.16 AM (1).jpeg â†’ BVM50232.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.16 AM.jpeg â†’ BVM50233.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.17 AM (1).jpeg â†’ BVM50234.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.17 AM.jpeg â†’ BVM50235.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.18 AM (1).jpeg â†’ BVM50236.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.18 AM (2).jpeg â†’ BVM50237.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.18 AM.jpeg â†’ BVM50238.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.19 AM.jpeg â†’ BVM50239.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.20 AM (1).jpeg â†’ BVM50240.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.20 AM (2).jpeg â†’ BVM50241.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.20 AM.jpeg â†’ BVM50242.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.21 AM (1).jpeg â†’ BVM50243.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.21 AM.jpeg â†’ BVM50244.jpg
+11:54:53 | INFO     |   WhatsApp Image 2026-11-02 at 11.15.22 AM.jpeg â†’ BVM50245.jpg
+11:54:53 | WARNING  | Skipping unknown class folder: RECORD (normalized: RECORD)
+11:54:53 | WARNING  | Skipping unknown class folder: SDV_Originals_2026-10-11_15-56 (normalized: SDVORIGINALS202610111556)
+11:54:53 | WARNING  | Skipping unknown class folder: SDV_Originals_2026-10-26_07-35 (normalized: SDVORIGINALS202610260735)
+11:54:53 | WARNING  | Skipping unknown class folder: SLIP_AUDIO (normalized: SLIPAUDIO)
+11:54:53 | WARNING  | Skipping unknown class folder: SPBUCH_Originals_2026-10-08_13-14 (normalized: SPBUCHORIGINALS202610081314)
+11:54:53 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-05_09-02 (normalized: TAGOREORIGINALS202610050902)
+11:54:53 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-05_10-52 (normalized: TAGOREORIGINALS202610051052)
+11:54:53 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-07_10-17 (normalized: TAGOREORIGINALS202610071017)
+11:54:53 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-09_12-24 (normalized: TAGOREORIGINALS202610091224)
+11:54:53 | INFO     | âœ… Step 1 done. Total photos renamed: 108
+11:54:53 | INFO     | === STEP 2: Running ID_CARD_AI_STUDIO Pipeline ===
+11:54:53 | INFO     | Using NEW Advanced Studio Pipeline
+11:54:53 | INFO     | Command: C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\python.exe D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_AI_STUDIO\run_studio_pipeline.py --source D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\INPUT --output D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\OUTPUT --bg LB --gfpgan-blend 0.65 --skip-existing --quality 95
+13:31:37 | INFO     | âœ… Pipeline completed successfully.
+
+>>> CHECK & FIX photos in OUTPUT folder if needed, then press ENTER to continue... <<<

@@ -1,0 +1,22 @@
+R23_1_WRITER_INTEGRATION_REPORT
+active_module=src/active_writers.py
+baseline_functions_modified=NO
+
+The active R23.1 path is this module. The preserved baseline file is not executed by it.
+
+stepE_enroll_from_sheet calls IdentityEngine.create_student and, only after that succeeds, assign_photo.
+step1_smart_rename no longer uses the highest number. It asks the engine for the ID and then stores the session photo.
+step4_update_photo_db refuses a filename that the engine has not already issued.
+step3_copy_to_library and step7_sync_photos use that same photo interface. They do not copy to a flat school/UID path.
+step6_data_merge and update_student_excel call correct_name for a confirmed current identity. They do not create an ID.
+step7b_update_photo_path accepts only the path already stored by the engine. Any other path is refused.
+step_reassign_mixed calls promote or change_roll. It does not move or rename the old photo.
+write_enroll_to_local_xlsx writes only an identity the engine already has, and its row has no permanent key.
+_write_uids_to_school_google_sheet does not open a network. It returns that same engine-issued visible ID.
+write_school_csv exports the teacher columns only.
+_save_edit can correct a name or father. A class change through this function is refused, so it cannot pretend to be promotion.
+_delete is disabled.
+write_by_name is unchanged and generic. The active enrollment functions do not call it. A direct call can put text in a sheet, but it creates no engine identity.
+
+The old allocator remains only in the preserved baseline. It is not an active R23.1 path.
+saini_db was not present in the workspace and is NOT_VERIFIED. The active module does not call it.

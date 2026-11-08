@@ -1,0 +1,62 @@
+R13_TEST_REPORT
+environment=isolated development copy
+python_compile=PASS for SAINI_ID_CARD.py, config_editor.py, bsm_selector.py, saini_config_path.py and option_c_modules
+card_generation=NOT RUN
+live_application=NOT RUN
+config_editor_gui=NOT LAUNCHED
+student_data=NOT OPENED
+PHOTO_LIBRARY=NOT OPENED
+
+R13 SYNTHETIC AND PROTECTION TESTS
+command=python3 -m unittest discover -s tests -v
+result=OK
+tests_run=17
+passed=17
+failed=0
+skipped=0
+errors=0
+Test B covers six whitespace values ("", space, two spaces, tab, newline, mixed whitespace) as subtests. The test passed.
+
+test_a_both_known_empty_rows_fail_closed (test_r13_bsm_and_path.BsmSelectionTests) ... ok
+test_b_whitespace_only_names_are_rejected (test_r13_bsm_and_path.BsmSelectionTests) ... ok
+test_c_first_eligible_row_top_to_bottom (test_r13_bsm_and_path.BsmSelectionTests) ... ok
+test_d_every_field_comes_from_the_same_row (test_r13_bsm_and_path.BsmSelectionTests) ... ok
+test_e_no_eligible_row_has_no_template_fallback (test_r13_bsm_and_path.BsmSelectionTests) ... ok
+test_f_other_schools_are_not_selected_as_bsm (test_r13_bsm_and_path.BsmSelectionTests) ... ok
+test_g_duplicate_required_headers_fail_closed (test_r13_bsm_and_path.BsmSelectionTests) ... ok
+test_g_synthetic_workbook_duplicate_header (test_r13_bsm_and_path.BsmSelectionTests) ... ok
+test_g_unrelated_duplicate_father_header_does_not_change_row (test_r13_bsm_and_path.BsmSelectionTests) ... ok
+test_bsm_selector_is_wired_and_non_bsm_branch_remains (test_r13_bsm_and_path.PathAlignmentTests) ... ok
+test_default_path_matches_generator_workbook (test_r13_bsm_and_path.PathAlignmentTests) ... ok
+test_editor_and_generator_call_the_same_resolver (test_r13_bsm_and_path.PathAlignmentTests) ... ok
+test_legacy_f_path_is_refused_without_opening_it (test_r13_bsm_and_path.PathAlignmentTests) ... ok
+test_temporary_override_is_shared_and_not_opened (test_r13_bsm_and_path.PathAlignmentTests) ... ok
+test_baseline_matches_recorded_live_hashes (test_r13_bsm_and_path.ProtectionTests) ... ok
+test_development_sources_do_not_reference_photo_library (test_r13_bsm_and_path.ProtectionTests) ... ok
+test_option_c_modules_were_not_modified (test_r13_bsm_and_path.ProtectionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.053s
+
+OK
+
+R4 COMPATIBILITY REGRESSION
+command=python3 SAINI_ID_DEV_000I_R4/tests/test_compat_r4.py
+result=OK
+tests_run=5
+passed=5
+failed=0
+skipped=0
+errors=0
+These tests read the untouched reference copies, including a read-only workbook hash check. They do not write.
+
+test_callers_pass_gate_keywords (__main__.CompatibilityTests) ... ok
+test_first_bsm_row_only (__main__.CompatibilityTests) ... ok
+test_public_call_signatures_stay_compatible (__main__.CompatibilityTests) ... ok
+test_recorded_hashes_unchanged (__main__.CompatibilityTests) ... ok
+test_v5_journal_and_gate_match_live (__main__.CompatibilityTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.244s
+
+OK

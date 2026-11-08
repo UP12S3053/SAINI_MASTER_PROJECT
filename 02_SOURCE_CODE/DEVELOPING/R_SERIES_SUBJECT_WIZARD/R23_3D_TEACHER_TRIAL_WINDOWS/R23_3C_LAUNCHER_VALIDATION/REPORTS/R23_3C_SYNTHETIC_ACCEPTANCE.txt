@@ -1,0 +1,13 @@
+R23_3C_SYNTHETIC_ACCEPTANCE
+data=artificial
+cards=NONE
+
+Class 1 Roll 1 remains ABC1001.
+Class 6 Roll 15 remains ABC6015.
+A repeated roll is rejected.
+A missing photo is rejected.
+An unreadable photo is rejected.
+An existing different photo is not replaced.
+A failed row does not create a student.
+Nursery, LKG, and UKG stay closed.
+No real student record was used.

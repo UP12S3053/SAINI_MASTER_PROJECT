@@ -1,0 +1,18 @@
+R23_3B_REGRESSION_REPORT
+previous_automated_tests=29
+previous_passed=29
+previous_failed=0
+gui_runtime_tests=2
+gui_runtime_passed=2
+gui_runtime_failed=0
+total_tests=31
+passed=31
+failed=0
+skipped=0
+
+Automated tests and the real window test are separate from teacher observations.
+Teacher observations=0
+The two new tests are in tests/test_r23_3b_gui_runtime.py.
+One started open_launcher.py and read the live window.
+The other pressed the live buttons on the synthetic pack.
+Neither test is a teacher trial.

@@ -1,0 +1,10 @@
+SAINI PRODUCTION TICKET
+School: BSM
+Work: ID cards
+Program stays on this computer:
+D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\MAIN_ASSISTANT.py
+Do not send this program or this ticket to the school.
+Run only this school. The photo folder, Excel, and printer are shared.
+Command:
+py "D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\MAIN_ASSISTANT.py" --school BSM --mode B --no-launch
+The desktop program may still ask a question. Answer it on this computer.

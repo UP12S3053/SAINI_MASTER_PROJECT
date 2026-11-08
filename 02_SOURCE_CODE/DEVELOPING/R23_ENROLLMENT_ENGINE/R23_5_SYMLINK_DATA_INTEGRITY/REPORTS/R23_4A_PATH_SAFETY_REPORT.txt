@@ -1,0 +1,47 @@
+R23_4A_PATH_SAFETY_REPORT
+package=R23_4A_PATH_SAFETY
+original_r23_4_modified=NO
+identity_engine_modified=NO
+live_project_modified=NO
+teacher_trial=NOT AUTHORIZED
+production_deployment=NOT APPROVED
+
+The original R23.4 package was not overwritten.
+Identity allocation, visible IDs, and duplicate handling were not changed.
+identity_engine.py matches the original R23.4 file byte for byte.
+
+SAFETY RULES
+Excel files must resolve inside this package's TEST_EXCEL directory.
+The photo folder must resolve to this package's TEST_PHOTOS directory.
+A photo cell must be one plain file name. Absolute paths, drive prefixes,
+separators, and '..' are refused.
+A symbolic link is refused when its resolved target leaves the allowed directory.
+SQLite, photo output, and staging are created only after those checks pass,
+and only under this package's TRIAL_WORKSPACE.
+The same checks run for the window and for the command-line arguments.
+An invalid path stops the run. It is not replaced with another path.
+
+TEST RESULT
+Ran 11 tests in 0.041s
+OK
+Failures: 0
+Skipped: 0
+
+test_absolute_photo_path_is_rejected ... ok
+test_cli_bypass_is_rejected_without_creating_files ... ok
+test_external_excel_is_rejected ... ok
+test_external_photo_folder_is_rejected ... ok
+test_external_workspace_is_rejected ... ok
+test_gui_rejects_external_paths_before_start ... ok
+test_parent_filename_is_rejected ... ok
+test_symlink_escape_is_rejected_where_supported ... ok
+test_valid_test_excel_path ... ok
+test_valid_test_photos_path ... ok
+test_visible_id_rule_is_unchanged ... ok
+
+No identity.sqlite and no PHOTO_LIBRARY were created.
+No real student record or production photo was used.
+
+This patch does not authorize the teacher trial.
+Independent source review is still required.
+Production deployment remains NOT APPROVED.

@@ -1,0 +1,58 @@
+शिक्षक निर्देश / Teacher instructions
+R23.4N
+
+STOP। यह ट्रायल अभी अधिकृत नहीं है।
+STOP. This trial is NOT AUTHORIZED.
+
+प्रोडक्शन मंजूर नहीं है।
+Production is NOT APPROVED.
+
+अभी कुछ न चलाएँ।
+Do not run anything now.
+
+न चलाएँ / Do not run:
+- Open_Enrollment.bat
+- open_launcher.py
+- नामांकन विंडो / the enrollment window
+- कोई प्रोडक्शन वर्कफ़्लो / any production workflow
+
+असली छात्र की Excel या फ़ोटो न खोलें।
+Do not open a real student's Excel file or photo.
+
+नीचे पुराने कदम सिर्फ़ रिकॉर्ड के लिए जमे हुए हैं।
+The old steps below are frozen as a record only.
+वे वर्तमान आदेश नहीं हैं। उन्हें पूरा न करें।
+They are not current instructions. Do not carry them out.
+
+FROZEN RECORD — DO NOT PERFORM / जमा रिकॉर्ड — न करें
+
+1. प्रोग्राम खोलना मना है। Open_Enrollment.bat पर डबल-क्लिक न करें।
+   Opening the program is forbidden. Do not double-click Open_Enrollment.bat.
+
+2. Excel चुनना मना है। असली स्कूल की फ़ाइल न चुनें।
+   Choosing an Excel file is forbidden. Do not choose a real school file.
+
+3. फ़ोटो फ़ोल्डर चुनना मना है। TEST_PHOTOS में सिर्फ़ नकली फ़ोटो हैं।
+   Choosing a photo folder is forbidden. TEST_PHOTOS has dummy photos only.
+
+4. कक्षा कोड, सिर्फ़ संदर्भ: कक्षा 1 = I, कक्षा 6 = VI, सेशन = 2026_27।
+   Class codes, reference only: Class 1 = I, Class 6 = VI, session = 2026_27.
+   अभी चुनें नहीं। / Do not select them now.
+
+5. "नामांकन शुरू करें / Start enrollment" न दबाएँ।
+   Do not press "नामांकन शुरू करें / Start enrollment".
+
+6. सफलता का वाक्य "नामांकन हो गया।" अभी किसी स्क्रीन पर साबित नहीं करना है।
+   Do not try to produce the sentence "नामांकन हो गया।"
+
+7. डुप्लिकेट वाक्य की जाँच अभी न करें।
+   Do not repeat a run to look for the duplicate sentence.
+
+8. TEST_MIXED.xlsx अभी न चलाएँ।
+   Do not run TEST_MIXED.xlsx.
+
+स्किप पास नहीं है। / A skip is not a pass.
+Windows पर दस टेस्ट WinError 1314 से स्किप रहे। सिमलिंक बना ही नहीं।
+On Windows, ten tests were skipped because of WinError 1314. No symlink was created.
+जंक्शन टेस्ट पास हुए। स्किप को पास न लिखें।
+The junction tests passed. Do not record a skip as a pass.

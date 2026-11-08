@@ -1,0 +1,10 @@
+R23_2_LAUNCHER_REPORT
+module=src/development_launcher.py
+live_connection=NO
+
+The teacher gives one synthetic CSV or Excel file and one photo folder.
+The launcher reads the table, checks the photo before any identity is created, and calls the R23.1 enrollment function.
+Each row returns either "नामांकन हो गया।" or a clear reason.
+A failed row does not remove earlier successful rows and does not create its own record.
+The launcher does not import the preserved baseline.
+The workspace path is refused if it points at the live project.

@@ -1,0 +1,11 @@
+R23_2_LEGACY_PROTECTION_REPORT
+baseline_modified=NO
+baseline_hash=D155AB4AA029415A45C01350B586303A19D280BB5C2CC8DD21D9E3257433FD5A
+
+The workflow raises legacy_entry_blocked before the preserved baseline file can run.
+The test called that guard with the baseline path. No identity row was added.
+Separately, only the old next_official_uid function was executed against an empty temporary folder.
+It returned ABC1000, which is the old highest-plus-one result.
+The workflow did not store ABC1000.
+The engine's Class 1 Roll 1 result remained ABC1001.
+The live baseline file was not edited and was not imported as a module.

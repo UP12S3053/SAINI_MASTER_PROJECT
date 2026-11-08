@@ -1,0 +1,72 @@
+R20_USER_DECISIONS_REQUIRED
+answers_filled=NO
+DECISION header=ADDR_COLOR
+problem=two workbook columns share this header
+evidence=columns CP,CW; differing non-blank pairs=2
+options=keep both with new distinct names; choose one authoritative column; leave unchanged
+wrong_choice_effect=the generator can keep reading the wrong column or a save can hide the other column
+DECISION header=ADDR_SIZE
+problem=two workbook columns share this header
+evidence=columns CO,CV; differing non-blank pairs=42
+options=keep both with new distinct names; choose one authoritative column; leave unchanged
+wrong_choice_effect=the generator can keep reading the wrong column or a save can hide the other column
+DECISION header=FATHER_COLOR
+problem=two workbook columns share this header
+evidence=columns BE,BS; differing non-blank pairs=13
+options=keep both with new distinct names; choose one authoritative column; leave unchanged
+wrong_choice_effect=the generator can keep reading the wrong column or a save can hide the other column
+DECISION header=FATHER_FONT
+problem=two workbook columns share this header
+evidence=columns BC,BQ; differing non-blank pairs=2
+options=keep both with new distinct names; choose one authoritative column; leave unchanged
+wrong_choice_effect=the generator can keep reading the wrong column or a save can hide the other column
+DECISION header=FATHER_PREFIX
+problem=two workbook columns share this header
+evidence=columns BF,BT; differing non-blank pairs=2
+options=keep both with new distinct names; choose one authoritative column; leave unchanged
+wrong_choice_effect=the generator can keep reading the wrong column or a save can hide the other column
+DECISION header=FATHER_SHOW
+problem=two workbook columns share this header
+evidence=columns AZ,BU; differing non-blank pairs=3
+options=keep both with new distinct names; choose one authoritative column; leave unchanged
+wrong_choice_effect=the generator can keep reading the wrong column or a save can hide the other column
+DECISION header=FATHER_SIZE
+problem=two workbook columns share this header
+evidence=columns BD,BR; differing non-blank pairs=66
+options=keep both with new distinct names; choose one authoritative column; leave unchanged
+wrong_choice_effect=the generator can keep reading the wrong column or a save can hide the other column
+DECISION header=FATHER_X
+problem=two workbook columns share this header
+evidence=columns BA,BO; differing non-blank pairs=73
+options=keep both with new distinct names; choose one authoritative column; leave unchanged
+wrong_choice_effect=the generator can keep reading the wrong column or a save can hide the other column
+DECISION header=FATHER_Y
+problem=two workbook columns share this header
+evidence=columns BB,BP; differing non-blank pairs=74
+options=keep both with new distinct names; choose one authoritative column; leave unchanged
+wrong_choice_effect=the generator can keep reading the wrong column or a save can hide the other column
+DECISION header=M
+problem=two workbook columns share this header
+evidence=columns BW,BX,BY,BZ,CA; differing non-blank pairs=0
+options=keep both with new distinct names; choose one authoritative column; leave unchanged
+wrong_choice_effect=the generator can keep reading the wrong column or a save can hide the other column
+DECISION bsm_row=13
+problem=this BSM row is not eligible without user-supplied configuration
+evidence=SCHOOLNAME BLANK; template exists=True
+options=supply the real school name and an existing template path; retire the row; leave it unchanged
+wrong_choice_effect=the wrong template or a blank name can be selected, or a real row can be discarded
+DECISION bsm_row=82
+problem=this BSM row is not eligible without user-supplied configuration
+evidence=SCHOOLNAME BLANK; template exists=False
+options=supply the real school name and an existing template path; retire the row; leave it unchanged
+wrong_choice_effect=the wrong template or a blank name can be selected, or a real row can be discarded
+DECISION bsm_row=129
+problem=this BSM row is not eligible without user-supplied configuration
+evidence=SCHOOLNAME BLANK; template exists=False
+options=supply the real school name and an existing template path; retire the row; leave it unchanged
+wrong_choice_effect=the wrong template or a blank name can be selected, or a real row can be discarded
+DECISION bsm_row=214
+problem=this BSM row is not eligible without user-supplied configuration
+evidence=SCHOOLNAME BLANK; template exists=False
+options=supply the real school name and an existing template path; retire the row; leave it unchanged
+wrong_choice_effect=the wrong template or a blank name can be selected, or a real row can be discarded

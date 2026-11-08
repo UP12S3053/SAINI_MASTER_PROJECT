@@ -1,0 +1,11 @@
+R22_DUPLICATE_HEADER_IMPLEMENTATION_REPORT
+module=saini_column_map.py
+validator=assert_unambiguous and reference_differences in the same module
+generator_change=config load fails closed when a tracked header is duplicated
+editor_change=config load and all three sheet writes fail closed when a tracked header is duplicated
+first_match=REJECTED
+last_match=REJECTED
+explicit_read=read_explicit requires a column letter and refuses the live and R22 workbooks
+explicit_write=write_explicit writes only a blank, non-formula cell in a synthetic workbook
+m_columns=five separate columns, not merged
+patch_errors=NONE

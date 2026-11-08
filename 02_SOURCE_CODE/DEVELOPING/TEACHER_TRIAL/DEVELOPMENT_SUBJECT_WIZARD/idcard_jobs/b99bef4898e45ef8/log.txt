@@ -1,0 +1,254 @@
+Loading Option C slip OCR
+06:41:01 | Gemini API key configured from env:GEMINI_API_KEY; key material redacted.
+Starting MAIN_ASSISTANT CDS mode A
+06:41:01 | INFO     | ======================================================================
+06:41:01 | INFO     | SAINI SCHOOL MASTER PROCESSOR - PERFECTED v2.0
+06:41:01 | INFO     | ======================================================================
+06:41:01 | INFO     | School: CDS | Mode: FULL PROCESS
+
+Background Color Options:
+  W  = White
+  R  = Red
+  B  = Blue
+  G  = Green
+  LG = Light Green
+  LB = Light Blue
+Background color [W]: 
+>> LB
+06:41:01 | INFO     | Selected Background: LB
+06:41:01 | INFO     | === STEP 1: Smart Renaming + Highest Number Logic ===
+06:41:01 | INFO     | Originals backed up to: CDS_Originals_2026-11-03_06-41
+06:41:01 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-03 (normalized: APBHORIGINALS202610091603)
+06:41:01 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-14 (normalized: APBHORIGINALS202610091614)
+06:41:01 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-29 (normalized: APBHORIGINALS202610091629)
+06:41:01 | WARNING  | Skipping unknown class folder: APBH_Originals_2026-10-09_16-33 (normalized: APBHORIGINALS202610091633)
+06:41:01 | WARNING  | Skipping unknown class folder: BSM_Originals_2026-10-12_09-25 (normalized: BSMORIGINALS202610120925)
+06:41:01 | WARNING  | Skipping unknown class folder: BVM_Originals_2026-11-02_11-47 (normalized: BVMORIGINALS202611021147)
+06:41:01 | WARNING  | Skipping unknown class folder: BVM_Originals_2026-11-02_11-54 (normalized: BVMORIGINALS202611021154)
+06:41:01 | WARNING  | Skipping unknown class folder: BVM_Originals_2026-11-02_21-33 (normalized: BVMORIGINALS202611022133)
+06:41:01 | WARNING  | Skipping unknown class folder: BVM_Originals_2026-11-02_21-35 (normalized: BVMORIGINALS202611022135)
+06:41:01 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0700 (normalized: DCMMIXUNCROPPED202610190700)
+06:41:01 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0737 (normalized: DCMMIXUNCROPPED202610190737)
+06:41:01 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0833 (normalized: DCMMIXUNCROPPED202610190833)
+06:41:01 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0847 (normalized: DCMMIXUNCROPPED202610190847)
+06:41:01 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0855 (normalized: DCMMIXUNCROPPED202610190855)
+06:41:01 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0859 (normalized: DCMMIXUNCROPPED202610190859)
+06:41:01 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0903 (normalized: DCMMIXUNCROPPED202610190903)
+06:41:01 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_0918 (normalized: DCMMIXUNCROPPED202610190918)
+06:41:01 | WARNING  | Skipping unknown class folder: DCM_MIX_UNCROPPED_20261019_1117 (normalized: DCMMIXUNCROPPED202610191117)
+06:41:01 | WARNING  | Skipping unknown class folder: DCM_Originals_2026-10-17_21-06 (normalized: DCMORIGINALS202610172106)
+06:41:01 | WARNING  | Skipping unknown class folder: DCM_Originals_2026-10-28_20-39 (normalized: DCMORIGINALS202610282039)
+06:41:01 | WARNING  | Skipping unknown class folder: GAPS_Originals_2026-11-02_12-11 (normalized: GAPSORIGINALS202611021211)
+06:41:01 | WARNING  | Skipping unknown class folder: GPSK_Originals_2026-10-05_09-21 (normalized: GPSKORIGINALS202610050921)
+06:41:01 | WARNING  | Skipping unknown class folder: GPSK_Originals_2026-10-05_10-48 (normalized: GPSKORIGINALS202610051048)
+06:41:01 | INFO     | Processing Class: I (range 1000-1999)
+06:41:01 | INFO     |    Last used: 1085 â†’ Starting new from: 1086
+06:41:01 | INFO     | Processing Class: II (range 2000-2999)
+06:41:01 | INFO     |    Last used: 2111 â†’ Starting new from: 2112
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.36.09 AM.jpeg â†’ CDS2112.jpg
+06:41:01 | INFO     | Processing Class: III (range 3000-3999)
+06:41:01 | INFO     |    Last used: 3067 â†’ Starting new from: 3068
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.35.51 AM.jpeg â†’ CDS3068.jpg
+06:41:01 | INFO     | Processing Class: IV (range 4000-4999)
+06:41:01 | INFO     |    Last used: 4064 â†’ Starting new from: 4065
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.33.31 AM.jpeg â†’ CDS4065.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.33.44 AM.jpeg â†’ CDS4066.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.33.54 AM.jpeg â†’ CDS4067.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.34.02 AM.jpeg â†’ CDS4068.jpg
+06:41:01 | INFO     | Processing Class: IX (range 9000-9999)
+06:41:01 | INFO     |    Last used: 9069 â†’ Starting new from: 9070
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.08.11 AM.jpeg â†’ CDS9070.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.08.20 AM.jpeg â†’ CDS9071.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.08.30 AM.jpeg â†’ CDS9072.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.08.38 AM.jpeg â†’ CDS9073.jpg
+06:41:01 | WARNING  | Skipping unknown class folder: JPSN_Originals_2026-10-27_19-37 (normalized: JPSNORIGINALS202610271937)
+06:41:01 | INFO     | Processing Class: LKG (range 20000-20999)
+06:41:01 | INFO     |    Last used: 20057 â†’ Starting new from: 20058
+06:41:01 | INFO     |   II.jpeg â†’ CDS20058.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.42.02 AM.jpeg â†’ CDS20059.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.42.26 AM.jpeg â†’ CDS20060.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.42.34 AM.jpeg â†’ CDS20061.jpg
+06:41:01 | INFO     | Processing Class: NUR (range 10000-10999)
+06:41:01 | INFO     |    Last used: 10062 â†’ Starting new from: 10063
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.46.25 AM.jpeg â†’ CDS10063.jpg
+06:41:01 | WARNING  | Skipping unknown class folder: PLAY (normalized: PLAY)
+06:41:01 | WARNING  | Skipping unknown class folder: RECORD (normalized: RECORD)
+06:41:01 | WARNING  | Skipping unknown class folder: SDV_Originals_2026-10-11_15-56 (normalized: SDVORIGINALS202610111556)
+06:41:01 | WARNING  | Skipping unknown class folder: SDV_Originals_2026-10-26_07-35 (normalized: SDVORIGINALS202610260735)
+06:41:01 | WARNING  | Skipping unknown class folder: SLIP_AUDIO (normalized: SLIPAUDIO)
+06:41:01 | WARNING  | Skipping unknown class folder: SPBUCH_Originals_2026-10-08_13-14 (normalized: SPBUCHORIGINALS202610081314)
+06:41:01 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-05_09-02 (normalized: TAGOREORIGINALS202610050902)
+06:41:01 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-05_10-52 (normalized: TAGOREORIGINALS202610051052)
+06:41:01 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-07_10-17 (normalized: TAGOREORIGINALS202610071017)
+06:41:01 | WARNING  | Skipping unknown class folder: TAGORE_Originals_2026-10-09_12-24 (normalized: TAGOREORIGINALS202610091224)
+06:41:01 | INFO     | Processing Class: UKG (range 30000-30999)
+06:41:01 | INFO     |    Last used: 30101 â†’ Starting new from: 30102
+06:41:01 | INFO     |   WhatsApp Image 2026-11-02 at 11.16.41 AM.jpeg â†’ CDS30102.jpg
+06:41:01 | INFO     | Processing Class: V (range 5000-5999)
+06:41:01 | INFO     |    Last used: 5071 â†’ Starting new from: 5072
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.30.01 AM.jpeg â†’ CDS5072.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.33.01 AM.jpeg â†’ CDS5073.jpg
+06:41:01 | INFO     | Processing Class: VI (range 6000-6999)
+06:41:01 | INFO     |    Last used: 6067 â†’ Starting new from: 6068
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.25.04 AM.jpeg â†’ CDS6068.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.25.20 AM.jpeg â†’ CDS6069.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.25.29 AM.jpeg â†’ CDS6070.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.25.37 AM.jpeg â†’ CDS6071.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.25.44 AM.jpeg â†’ CDS6072.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.25.50 AM.jpeg â†’ CDS6073.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.25.58 AM.jpeg â†’ CDS6074.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.26.25 AM.jpeg â†’ CDS6075.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.26.32 AM.jpeg â†’ CDS6076.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.26.39 AM.jpeg â†’ CDS6077.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.26.45 AM.jpeg â†’ CDS6078.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.26.51 AM.jpeg â†’ CDS6079.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.26.57 AM.jpeg â†’ CDS6080.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.27.03 AM.jpeg â†’ CDS6081.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.28.15 AM.jpeg â†’ CDS6082.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.28.27 AM.jpeg â†’ CDS6083.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.28.37 AM.jpeg â†’ CDS6084.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.29.26 AM.jpeg â†’ CDS6085.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.29.33 AM.jpeg â†’ CDS6086.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.29.47 AM.jpeg â†’ CDS6087.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.29.54 AM.jpeg â†’ CDS6088.jpg
+06:41:01 | INFO     | Processing Class: VIII (range 8000-8999)
+06:41:01 | INFO     |    Last used: 8123 â†’ Starting new from: 8124
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.12.10 AM.jpeg â†’ CDS8124.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.12.18 AM.jpeg â†’ CDS8125.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.12.25 AM.jpeg â†’ CDS8126.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.12.33 AM.jpeg â†’ CDS8127.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.12.52 AM.jpeg â†’ CDS8128.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.13.20 AM.jpeg â†’ CDS8129.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.13.28 AM.jpeg â†’ CDS8130.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.13.35 AM.jpeg â†’ CDS8131.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.13.48 AM.jpeg â†’ CDS8132.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.14.11 AM.jpeg â†’ CDS8133.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.14.31 AM.jpeg â†’ CDS8134.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.14.40 AM.jpeg â†’ CDS8135.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.20.55 AM.jpeg â†’ CDS8136.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.21.07 AM.jpeg â†’ CDS8137.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.21.17 AM.jpeg â†’ CDS8138.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.21.25 AM.jpeg â†’ CDS8139.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.21.32 AM.jpeg â†’ CDS8140.jpg
+06:41:01 | INFO     |   WhatsApp Image 2026-10-16 at 10.21.39 AM.jpeg â†’ CDS8141.jpg
+06:41:01 | INFO     | âœ… Step 1 done. Total photos renamed: 57
+06:41:01 | INFO     | === STEP 2: Running ID_CARD_AI_STUDIO Pipeline ===
+06:41:01 | INFO     | Using NEW Advanced Studio Pipeline
+06:41:01 | INFO     | Command: C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\python.exe D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_AI_STUDIO\run_studio_pipeline.py --source D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\INPUT --output D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\OUTPUT --bg LB --gfpgan-blend 0.65 --skip-existing --quality 95
+06:57:46 | INFO     | âœ… Pipeline completed successfully.
+
+>>> CHECK & FIX photos in OUTPUT folder if needed, then press ENTER to continue... <<<
+>> 
+07:23:08 | INFO     | === STEP 3: Copying processed photos to Library + Google Drive ===
+07:23:08 | INFO     | Google Drive path available: D:\SHRI_JAI_SHRI_RAM\PHOTOCHAMBER\CDS
+07:23:08 | INFO     |   âœ“ Local: CDS10063.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS20058.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS20059.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS20060.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS20061.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS2112.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS30102.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS3068.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS4065.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS4066.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS4067.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS4068.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS5072.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS5073.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6068.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6069.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6070.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6071.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6072.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6073.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6074.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6075.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6076.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6077.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6078.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6079.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6080.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6081.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6082.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6083.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6084.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6085.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6086.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6087.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS6088.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8124.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8125.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8126.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8127.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8128.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8129.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8130.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8131.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8132.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8133.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8134.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8135.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8136.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8137.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8138.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8139.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8140.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS8141.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS9070.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS9071.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS9072.jpg
+07:23:08 | INFO     |   âœ“ Local: CDS9073.jpg
+07:23:08 | INFO     | âœ… 57 photos copied to local library.
+07:23:08 | INFO     | âœ… 57 photos also copied to Google Drive.
+07:23:08 | INFO     | === STEP 4: Updating Database (Sequence Preserved + Series Wise + Formatting Safe) ===
+07:23:11 | INFO     | Found 1346 photos in library for CDS
+07:23:11 | WARNING  | Skipping invalid photo (wrong school): DCM50000.jpg
+07:23:11 | WARNING  | Skipping invalid photo (wrong school): nan.jpg
+07:23:13 | INFO     | âœ… 369 new records added successfully in correct series order.
+07:23:13 | INFO     | âœ… Old records sequence and formatting preserved 100%.
+07:23:13 | INFO     | === STEP 5: Generating Teacher Slips (10 per A4, photo + address) ===
+07:23:13 | INFO     | Total classes/buckets: 10 | Total photos: 57
+07:23:13 | INFO     | Big classes (â‰¥5): 2 | Small classes (<5): 8
+07:23:13 | INFO     |   Big Class VI: 21 students â†’ 3 page(s)
+07:23:13 | INFO     |     Saved: PRINT_SHEET_CDS_VI_P1.jpg
+07:23:13 | INFO     |     Saved: PRINT_SHEET_CDS_VI_P2.jpg
+07:23:13 | INFO     |     Saved: PRINT_SHEET_CDS_VI_P3.jpg
+07:23:13 | INFO     |   Big Class VIII: 18 students â†’ 2 page(s)
+07:23:13 | INFO     |     Saved: PRINT_SHEET_CDS_VIII_P1.jpg
+07:23:13 | INFO     |     Saved: PRINT_SHEET_CDS_VIII_P2.jpg
+07:23:13 | INFO     |   Small Classes Combined: II(1) + III(1) + IV(4) + V(2) + IX(4) + NUR(1) + LKG(4) + UKG(1) â†’ Total 18 students â†’ 2 page(s)
+07:23:13 | INFO     |     Saved: PRINT_SHEET_CDS_SMALL_CLASSES_P1.jpg
+07:23:14 | INFO     |     Saved: PRINT_SHEET_CDS_SMALL_CLASSES_P2.jpg
+07:23:14 | INFO     | âœ… Combined PDF created: SAINI_ALL_PRINT_SHEETS_CDS.pdf (7 pages)
+07:23:14 | INFO     | === STEP 6: Data merge (FILL-EMPTY ONLY, no refine) ===
+07:23:14 | WARNING  | Individual CSV not found for school code CDS: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\CSV\CDS.csv
+07:23:14 | INFO     | Backup: student_data_BACKUP_2026-11-03_07-23-14.xlsx
+07:23:17 | INFO     | Step6 fill-empty: updated_rows=27 added=0 kept_manual_cells=1236
+07:23:17 | INFO     | === STEP 7: Syncing Photos into PHOTO_LIBRARY ===
+07:23:22 | INFO     | âœ… Step 7 done. 904 photos synced/verified in PHOTO_LIBRARY.
+07:23:22 | INFO     | === STEP 7B: Smart Photo Path Update (Local Preferred + Drive Fallback) ===
+07:23:22 | INFO     | Local photos found: 1346
+07:23:23 | INFO     | Drive links from GETID: 1713
+07:23:25 | INFO     | âœ… Total Updated : 1886
+07:23:25 | INFO     |    â†’ Local Path  : 1886
+07:23:25 | INFO     |    â†’ Drive Link  : 0
+07:23:25 | INFO     | 
+--- SCHOOL STATUS ---
+school_status.py not found next to MAIN_ASSISTANT.py
+07:23:25 | INFO     | ID source = LOCAL EXCEL ONLY -> student_data.xlsx
+
+ID card source: PRIMARY local Excel â†’ student_data.xlsx
+Launch ID card generator? [Y/n]: 
+>> y
+07:23:25 | INFO     | === STEP 8: Launching SAINI ID Card Generator (Excel-only) ===
+07:23:25 | INFO     | ID source = LOCAL EXCEL ONLY -> student_data.xlsx
+07:23:25 | ERROR    | ID-card launch blocked: validated Gate evidence unavailable: Validated Option C handoff missing: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\OPTION_C_JOURNAL\latest_verified_batch.handoff
+07:23:25 | INFO     | 
+======================================================================
+07:23:25 | INFO     | Workflow ended. Review per-step logs; Mode B uses master-roster authorization, while OCR modes retain Option C Gate verification.
+07:23:25 | INFO     | Log file: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\LOGS
+07:23:25 | INFO     | ======================================================================
+
+Press Enter to exit...
+>> 
+ID card process finished.

@@ -1,0 +1,149 @@
+
+test_01_all_tracked_headers_are_in_scope (__main__.DuplicateHeaderTests.test_01_all_tracked_headers_are_in_scope) ... ok
+test_02_real_workbook_reference_positions (__main__.DuplicateHeaderTests.test_02_real_workbook_reference_positions) ... ok
+test_03_generator_uses_guarded_loader (__main__.DuplicateHeaderTests.test_03_generator_uses_guarded_loader) ... ok
+test_04_editor_uses_guarded_loader (__main__.DuplicateHeaderTests.test_04_editor_uses_guarded_loader) ... ok
+test_05_editor_write_is_guarded (__main__.DuplicateHeaderTests.test_05_editor_write_is_guarded) ... ok
+test_06_first_match_is_rejected (__main__.DuplicateHeaderTests.test_06_first_match_is_rejected) ... ok
+test_07_last_match_is_rejected (__main__.DuplicateHeaderTests.test_07_last_match_is_rejected) ... ok
+test_08_ambiguous_read_is_rejected (__main__.DuplicateHeaderTests.test_08_ambiguous_read_is_rejected) ... ok
+test_09_ambiguous_write_is_rejected (__main__.DuplicateHeaderTests.test_09_ambiguous_write_is_rejected) ... ok
+test_10_different_values_are_preserved (__main__.DuplicateHeaderTests.test_10_different_values_are_preserved) ... ok
+test_11_both_columns_blank (__main__.DuplicateHeaderTests.test_11_both_columns_blank) ... ok
+test_12_one_column_populated_is_still_ambiguous (__main__.DuplicateHeaderTests.test_12_one_column_populated_is_still_ambiguous) ... ok
+test_13_different_populated_columns_are_not_merged (__main__.DuplicateHeaderTests.test_13_different_populated_columns_are_not_merged) ... ok
+test_14_explicit_mapping_writes_only_the_blank_approved_cell (__main__.DuplicateHeaderTests.test_14_explicit_mapping_writes_only_the_blank_approved_cell) ... ok
+test_15_wrong_column_is_rejected (__main__.DuplicateHeaderTests.test_15_wrong_column_is_rejected) ... ok
+test_16_header_moved_to_another_column_fails_closed (__main__.DuplicateHeaderTests.test_16_header_moved_to_another_column_fails_closed) ... ok
+test_17_missing_header_fails_closed (__main__.DuplicateHeaderTests.test_17_missing_header_fails_closed) ... ok
+test_18_legacy_f_path_is_rejected (__main__.DuplicateHeaderTests.test_18_legacy_f_path_is_rejected) ... ok
+test_19_live_workbook_path_is_rejected (__main__.DuplicateHeaderTests.test_19_live_workbook_path_is_rejected) ... ok
+test_20_generator_and_editor_share_the_r22_workbook (__main__.DuplicateHeaderTests.test_20_generator_and_editor_share_the_r22_workbook) ... ok
+test_21_existing_non_empty_cell_is_preserved (__main__.DuplicateHeaderTests.test_21_existing_non_empty_cell_is_preserved) ... ok
+test_22_blank_value_does_not_clear_data (__main__.DuplicateHeaderTests.test_22_blank_value_does_not_clear_data) ... ok
+test_23_formula_cell_is_preserved (__main__.DuplicateHeaderTests.test_23_formula_cell_is_preserved) ... ok
+test_24_m_columns_are_not_merged (__main__.DuplicateHeaderTests.test_24_m_columns_are_not_merged) ... ok
+test_25_option_c_sources_match_their_baseline (__main__.DuplicateHeaderTests.test_25_option_c_sources_match_their_baseline) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.233s
+
+OK
+
+ORIGINAL
+COMMAND py "D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_000I_R13\tests\test_r13_bsm_and_path.py" EXIT 0
+
+test_a_both_known_empty_rows_fail_closed (__main__.BsmSelectionTests.test_a_both_known_empty_rows_fail_closed) ... ok
+test_b_whitespace_only_names_are_rejected (__main__.BsmSelectionTests.test_b_whitespace_only_names_are_rejected) ... ok
+test_c_first_eligible_row_top_to_bottom (__main__.BsmSelectionTests.test_c_first_eligible_row_top_to_bottom) ... ok
+test_d_every_field_comes_from_the_same_row (__main__.BsmSelectionTests.test_d_every_field_comes_from_the_same_row) ... ok
+test_e_no_eligible_row_has_no_template_fallback (__main__.BsmSelectionTests.test_e_no_eligible_row_has_no_template_fallback) ... ok
+test_f_other_schools_are_not_selected_as_bsm (__main__.BsmSelectionTests.test_f_other_schools_are_not_selected_as_bsm) ... ok
+test_g_duplicate_required_headers_fail_closed (__main__.BsmSelectionTests.test_g_duplicate_required_headers_fail_closed) ... ok
+test_g_synthetic_workbook_duplicate_header (__main__.BsmSelectionTests.test_g_synthetic_workbook_duplicate_header) ... ok
+test_g_unrelated_duplicate_father_header_does_not_change_row (__main__.BsmSelectionTests.test_g_unrelated_duplicate_father_header_does_not_change_row) ... ok
+test_bsm_selector_is_wired_and_non_bsm_branch_remains (__main__.PathAlignmentTests.test_bsm_selector_is_wired_and_non_bsm_branch_remains) ... ok
+test_default_path_matches_generator_workbook (__main__.PathAlignmentTests.test_default_path_matches_generator_workbook) ... ok
+test_editor_and_generator_call_the_same_resolver (__main__.PathAlignmentTests.test_editor_and_generator_call_the_same_resolver) ... ok
+test_legacy_f_path_is_refused_without_opening_it (__main__.PathAlignmentTests.test_legacy_f_path_is_refused_without_opening_it) ... ok
+test_temporary_override_is_shared_and_not_opened (__main__.PathAlignmentTests.test_temporary_override_is_shared_and_not_opened) ... ok
+test_baseline_matches_recorded_live_hashes (__main__.ProtectionTests.test_baseline_matches_recorded_live_hashes) ... ok
+test_development_sources_do_not_reference_photo_library (__main__.ProtectionTests.test_development_sources_do_not_reference_photo_library) ... ok
+test_option_c_modules_were_not_modified (__main__.ProtectionTests.test_option_c_modules_were_not_modified) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.053s
+
+OK
+
+COMMAND py "D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_R19\tests\test_r13_bsm_and_path.py" EXIT 1
+, 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'draw_text', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'download_image', 'print', 'normalize_key', 'normalize_key', 'range', 'FileExistsError', 'len', 'draw_page', 'range', 'print', 'safe_int', 'safe_int', 'hex_to_rgb', 'safe_int', 'safe_int', 'safe_int', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'download_image', 'safe_int', 'iter', '_master_roster_school_ids', 'normalize_key', 'Listbox', 'Frame', 'DateEntry', 'Entry', 'Frame', 'Frame', 'Frame', 'len', 'open_config_editor', 'next', 'authorize_selected_student_rows', 'len', 'range', 'authorize_school_generation', 'authorize_school_generation', 'authorize_school_generation', 'generate_pdf_layout', 'IDCardGenerator', 'str', 'str', 'print', 'safe_int', 'draw_text', 'safe_int', 'safe_int', 'str', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'draw_text', 'str', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'draw_text', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'draw_text', 'str', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'draw_text', 'str', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'draw_text', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'draw_wrapped_text', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'print', 'print', 'set', 'set', 'len', 'draw_page', 'print', 'float', 'round', 'isinstance', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'load_font', 'draw_text', 'safe_int', 'safe_int', 'draw_text', 'str', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'str', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'str', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'str', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'str', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'load_font', 'hex_to_rgb', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'str', 'safe_int', 'safe_int', 'print', 'Path', 'Path', 'Path', '_sha256_file', '_sha256_file', 'isinstance', 'str', 'any', 'select_bsm_row', 'dict', 'iter', 'authorize_school_generation', 'dict', 'generate_front_card', 'sorted_images', '_validate_school_image_roster', 'generate_pdf_layout', 'len', 'len', 'dict', 'str', 'generate_marksheet', 'len', 'sorted_images', 'input', '_SainiPath', 'open', 'print', 'print', 'int', 'str', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'safe_int', 'str', 'print', 'int', 'len', 'range', 'range', 'int', 'datetime', 'safe_int', 'safe_int', 'draw_text', 'safe_int', 'draw_text', 'safe_int', 'draw_text', 'safe_int', 'draw_text', 'safe_int', 'draw_text', 'safe_int', 'draw_text', 'safe_int', 'draw_text', 'safe_int', 'draw_text', 'safe_int', 'draw_text', 'print', 'draw_text', 'Path', 'isinstance', 'str', 'str', 'len', 'Label', 'Label', 'Label', 'Label', 'Button', 'Button', 'Button', 'list', 'Button', 'Button', 'Button', 'Button', 'Button', 'Button', 'zip', 'len', 'zip', 'sorted_images', '_validate_school_image_roster', 'collect_pairs', 'zip', 'Exception', 'str', 'str', 'print', 'print', 'str', 'str', 'str', 'round', 'timedelta', 'str', 'str', 'str', 'str', 'len', 'str', 'str', 'open', 'filter', 'list', 'len', 'list', 'len', 'str', 'str', 'str', 'str', 'len', 'float', 'str', 'str', 'str', 'str', 'str', 'str', 'str', 'str', 'str', 'str', 'str', 'int', 'str', 'str', 'str', 'str', 'str', 'str', 'str', 'str', 'str', 'str', 'str', 'str']
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.053s
+
+FAILED (failures=2, errors=4)
+
+COMMAND py "D:\SAINI_SUBJECT_WIZARD_PATCH\R17B_TEST_BUNDLE\original\test_compat_r4.py" EXIT 1
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '\\workspace\\SAINI_ID_DEV_000I_R4\\live_root\\school_config_front.xlsx'
+
+======================================================================
+ERROR: test_public_call_signatures_stay_compatible (__main__.CompatibilityTests.test_public_call_signatures_stay_compatible)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\SAINI_SUBJECT_WIZARD_PATCH\R17B_TEST_BUNDLE\original\test_compat_r4.py", line 50, in test_public_call_signatures_stay_compatible
+    live_safety = public_signatures(LIVE / "option_c_modules/safety.py")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SAINI_SUBJECT_WIZARD_PATCH\R17B_TEST_BUNDLE\original\test_compat_r4.py", line 22, in public_signatures
+    tree = ast.parse(path.read_text(encoding="utf-8-sig"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '\\workspace\\SAINI_ID_DEV_000I_R4\\live_root\\option_c_modules\\safety.py'
+
+======================================================================
+ERROR: test_recorded_hashes_unchanged (__main__.CompatibilityTests.test_recorded_hashes_unchanged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\SAINI_SUBJECT_WIZARD_PATCH\R17B_TEST_BUNDLE\original\test_compat_r4.py", line 35, in test_recorded_hashes_unchanged
+    for line in (ROOT / "SHA256.txt").read_text(encoding="utf-8").splitlines():
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '\\workspace\\SAINI_ID_DEV_000I_R4\\SHA256.txt'
+
+======================================================================
+ERROR: test_v5_journal_and_gate_match_live (__main__.CompatibilityTests.test_v5_journal_and_gate_match_live)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\SAINI_SUBJECT_WIZARD_PATCH\R17B_TEST_BUNDLE\original\test_compat_r4.py", line 44, in test_v5_journal_and_gate_match_live
+    self.assertEqual((LIVE / "option_c_modules/journal.py").read_bytes(), (V5 / "journal.py").read_bytes())
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '\\workspace\\SAINI_ID_DEV_000I_R4\\live_root\\option_c_modules\\journal.py'
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.007s
+
+FAILED (errors=5)
+
+COMMAND py "D:\SAINI_SUBJECT_WIZARD_PATCH\R17B_TEST_BUNDLE\original\test_r14_integration.py" EXIT 1
+
+Traceback (most recent call last):
+  File "D:\SAINI_SUBJECT_WIZARD_PATCH\R17B_TEST_BUNDLE\original\test_r14_integration.py", line 15, in <module>
+    from bsm_selector import ConfigSelectionError, select_bsm_row
+ModuleNotFoundError: No module named 'bsm_selector'
+
+COMMAND py "D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_R19\regression_r14_view\tests\test_r14_integration.py" EXIT 0
+
+=== PHOTO DEBUG ===
+Path from Excel : [D:\SAINI_SUBJECT_WIZARD_PATCH\SAINI_ID_DEV_R19\regression_r14_view\synthetic_output\synthetic_color_block.png]
+Exists?         : True
+Photo pasted successfully!
+====================
+
+ERROR: Template file missing!
+
+test_copied_patch_hashes_match_r13 (__main__.R14IntegrationTests.test_copied_patch_hashes_match_r13) ... ok
+test_gate_calls_remain_and_non_bsm_branch_remains (__main__.R14IntegrationTests.test_gate_calls_remain_and_non_bsm_branch_remains) ... ok
+test_option_c_modules_match_baseline (__main__.R14IntegrationTests.test_option_c_modules_match_baseline) ... ok
+test_synthetic_render_uses_only_the_selected_row (__main__.R14IntegrationTests.test_synthetic_render_uses_only_the_selected_row) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.361s
+
+OK

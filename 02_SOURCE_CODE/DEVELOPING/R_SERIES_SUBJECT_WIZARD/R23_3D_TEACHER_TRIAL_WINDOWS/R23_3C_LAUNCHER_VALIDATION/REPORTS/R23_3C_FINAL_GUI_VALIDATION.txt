@@ -1,0 +1,12 @@
+R23_3C_FINAL_GUI_VALIDATION
+local_window=OPENED_AGAIN
+windows_double_click=NOT_TESTED
+
+The same real Tk startup test was run again in this Linux workspace.
+open_launcher.py opened a window.
+The window showed the file button, folder button, session, class, Start, Cancel, and Exit.
+No file or folder was preselected.
+The Start button produced ABC1001 for the Class 1 synthetic example and ABC6015 for Class 6.
+Duplicate, missing, and invalid photo examples were rejected in the window text.
+The permanent key was not shown.
+This was not a physical double-click on the Windows computer.

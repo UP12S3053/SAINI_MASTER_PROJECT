@@ -1,0 +1,16 @@
+R23_3B_DATA_SAFETY_REPORT
+records=synthetic
+photos=synthetic
+production_access=NONE
+cards_created=NO
+
+Through the real window buttons:
+Class 1 Roll 1 produced ABC1001.
+Class 6 Roll 15 produced ABC6015.
+The duplicate roll was rejected.
+The missing photo was rejected.
+The invalid photo was rejected.
+The summary did not contain the permanent key.
+The earlier automated tests also showed that a different existing photo is not overwritten and that a rejected row does not leave a student record.
+No live Excel file, live photo folder, or production database was opened.
+The preserved baseline hashes were checked again by the existing safety test and still matched.

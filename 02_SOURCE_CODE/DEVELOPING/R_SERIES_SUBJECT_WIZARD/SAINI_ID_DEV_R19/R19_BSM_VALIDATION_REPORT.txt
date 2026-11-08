@@ -1,0 +1,9 @@
+R19_BSM_VALIDATION_REPORT
+school_names_invented=NO
+templates_invented=NO
+workbook_modified=NO
+required_header_ambiguity=NO
+row=13 SCHOOLNAME=BLANK template=D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\templates\IDCARD\BSM.png exists=True eligibility=REJECTED reason=SCHOOLNAME missing or whitespace-only
+row=82 SCHOOLNAME=BLANK template=D:/ID_CARD_PROJECT/templates/BSM_F.png exists=False eligibility=REJECTED reason=SCHOOLNAME missing or whitespace-only; template file missing
+row=129 SCHOOLNAME=BLANK template=D:/ID_CARD_PROJECT/templates/BSM_F.png exists=False eligibility=REJECTED reason=SCHOOLNAME missing or whitespace-only; template file missing
+row=214 SCHOOLNAME=BLANK template=D:/ID_CARD_PROJECT/templates/BSM_F.png exists=False eligibility=REJECTED reason=SCHOOLNAME missing or whitespace-only; template file missing

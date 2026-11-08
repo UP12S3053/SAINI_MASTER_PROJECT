@@ -1,0 +1,34 @@
+R23_IDENTITY_ENGINE_IMPLEMENTATION
+module=src/identity_engine.py
+entry=src/controlled_writers.py
+database=temporary synthetic sqlite during tests
+live_database_created=NO
+
+The permanent key is a UUID created inside the engine.
+The generator row does not contain it.
+Option A is implemented for Classes 1-12 and for the pure formatter of Nursery, LKG, and UKG.
+Nursery, LKG, and UKG records are not issued. Their roll limit is still pending, so create_student fails closed for those classes.
+Classes 1-9 and 10-12 accept rolls 1 through 999 only.
+A roll outside that range raises roll_out_of_range before a row is inserted.
+No roll is truncated or wrapped.
+
+Exact matching compares the original student name, father name, and canonical class token.
+Ram Kumar and Ramkumar are different.
+Ram Kumar and RAM KUMAR are different.
+Ram Kumar and Ram  Kumar are different.
+A.B. Sharma and AB Sharma are different.
+The same original characters match.
+The instruction listed identical Ram Kumar pairs as different. That would make an exact match impossible, so identical values match.
+normalize_key and clean_for_display are not used.
+Class tokens 1 and I both mean Class 1. No other alias, punctuation, or fuzzy class mapping is used.
+
+Name and father corrections require the existing permanent key and session.
+They do not create a student and do not change the visible ID.
+Promotion and roll changes require the same confirmed key.
+They create a new visible ID and keep the old ID as history.
+Same-session re-entry returns the current record.
+A return after at least one missed session, measured as a session-start gap of two or more years, creates a new key and does not link the old history.
+A consecutive session keeps the key.
+Duplicate school, session, class, and roll raises duplicate_identity and rolls back the transaction.
+The same visible ID may exist in a different session.
+next_official_uid cannot be used through the development entry.

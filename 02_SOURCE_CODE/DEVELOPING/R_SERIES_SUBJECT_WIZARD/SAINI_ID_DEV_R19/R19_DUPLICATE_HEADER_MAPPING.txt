@@ -1,0 +1,63 @@
+R19_DUPLICATE_HEADER_MAPPING
+schema_migration=NOT_DONE
+headers_were_not_changed=YES
+HEADER ADDR_COLOR
+positions=94,101
+source_usage=SAINI_ID_CARD.py,config_editor.py
+ambiguity=pandas keeps the first column under this name and renames later copies
+proposed_resolution=do not delete, rename, merge, or shift; user must choose the authoritative column
+required_user_decision=YES
+HEADER ADDR_SIZE
+positions=93,100
+source_usage=SAINI_ID_CARD.py,config_editor.py
+ambiguity=pandas keeps the first column under this name and renames later copies
+proposed_resolution=do not delete, rename, merge, or shift; user must choose the authoritative column
+required_user_decision=YES
+HEADER FATHER_COLOR
+positions=57,71
+source_usage=SAINI_ID_CARD.py,config_editor.py
+ambiguity=pandas keeps the first column under this name and renames later copies
+proposed_resolution=do not delete, rename, merge, or shift; user must choose the authoritative column
+required_user_decision=YES
+HEADER FATHER_FONT
+positions=55,69
+source_usage=SAINI_ID_CARD.py,config_editor.py
+ambiguity=pandas keeps the first column under this name and renames later copies
+proposed_resolution=do not delete, rename, merge, or shift; user must choose the authoritative column
+required_user_decision=YES
+HEADER FATHER_PREFIX
+positions=58,72
+source_usage=SAINI_ID_CARD.py,config_editor.py
+ambiguity=pandas keeps the first column under this name and renames later copies
+proposed_resolution=do not delete, rename, merge, or shift; user must choose the authoritative column
+required_user_decision=YES
+HEADER FATHER_SHOW
+positions=52,73
+source_usage=SAINI_ID_CARD.py,config_editor.py
+ambiguity=pandas keeps the first column under this name and renames later copies
+proposed_resolution=do not delete, rename, merge, or shift; user must choose the authoritative column
+required_user_decision=YES
+HEADER FATHER_SIZE
+positions=56,70
+source_usage=SAINI_ID_CARD.py,config_editor.py
+ambiguity=pandas keeps the first column under this name and renames later copies
+proposed_resolution=do not delete, rename, merge, or shift; user must choose the authoritative column
+required_user_decision=YES
+HEADER FATHER_X
+positions=53,67
+source_usage=SAINI_ID_CARD.py,config_editor.py
+ambiguity=pandas keeps the first column under this name and renames later copies
+proposed_resolution=do not delete, rename, merge, or shift; user must choose the authoritative column
+required_user_decision=YES
+HEADER FATHER_Y
+positions=54,68
+source_usage=SAINI_ID_CARD.py,config_editor.py
+ambiguity=pandas keeps the first column under this name and renames later copies
+proposed_resolution=do not delete, rename, merge, or shift; user must choose the authoritative column
+required_user_decision=YES
+HEADER M
+positions=75,76,77,78,79
+source_usage=NO_EXACT_STRING_MATCH
+ambiguity=pandas keeps the first column under this name and renames later copies
+proposed_resolution=do not delete, rename, merge, or shift; user must choose the authoritative column
+required_user_decision=YES

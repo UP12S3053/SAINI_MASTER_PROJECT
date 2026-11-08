@@ -1,0 +1,18 @@
+R23.3A Observer Checklist
+Leave every answer blank until a real teacher trial happens.
+Do not copy the simulated technical review into this sheet.
+Do not invent clicks, times, or feedback.
+
+Trial date: ____________________
+Development version: R23.3A
+Synthetic dataset used: ____________________
+Start time: ____________________
+Finish time: ____________________
+Number of clicks or actions: ____________________
+Teacher completed it independently: Yes / No / Not observed
+Errors encountered: ____________________
+Assistance required: ____________________
+Teacher feedback, written by the teacher or quoted exactly:
+____________________________________________________________
+Final result: ____________________
+Observer name, optional: ____________________

@@ -1,0 +1,122 @@
+Loading Option C slip OCR
+17:38:43 | Gemini API key configured from env:GEMINI_API_KEY; key material redacted.
+Starting MAIN_ASSISTANT NBFP mode E
+17:38:44 | INFO     | ======================================================================
+17:38:44 | INFO     | SAINI SCHOOL MASTER PROCESSOR - PERFECTED v2.0
+17:38:44 | INFO     | ======================================================================
+17:38:44 | INFO     | School: NBFP | Mode: ENROLL FROM GOOGLE SHEET
+
+Background Color (AI Lab / processed photo):
+  W=White  R=Red  B=Blue  G=Green  LG=Light Green  LB=Light Blue
+Background color [W]: 
+>> LB
+17:38:44 | INFO     | === MODE E: Enroll + RAW download + AI Lab + Drive replace ===
+17:38:44 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:38:49 | INFO     | Drive export sheets=['Form_Responses_1', 'SAINIJI_RESPONSE', 'SCHOOL_MASTER', 'GETID'] | using=Form_Responses_1
+17:38:50 | INFO     | Hub rows via Drive export: 8200
+17:38:50 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:38:54 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:38:55 | INFO     | School sheet rows: 10 (10y02SC8nYKjAJvqF8hSVA5ZZLBnPXJqtIH_DbWndUrA)
+17:38:55 | INFO     | School sheet se extra rows (Drive link, UID khali): 0
+17:38:56 | WARNING  | STATUS write handle skip (Sheets 500 ho sakti hai): APIError: [500]: Internal error encountered.
+17:38:58 | INFO     | Latest-only rows for NBFP: 10 (purani duplicate hata di)
+17:38:58 | INFO     |   NEW UID NBFP6004 â† form_id=- roll= class=VI
+17:38:58 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:39:00 | INFO     |   RAW â†“ NBFP6004  (147_wC3Fâ€¦)
+17:39:00 | INFO     |   NEW UID NBFP4002 â† form_id=- roll= class=IV
+17:39:00 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:39:02 | INFO     |   RAW â†“ NBFP4002  (1F8nhX3Uâ€¦)
+17:39:02 | INFO     |   NEW UID NBFP6005 â† form_id=- roll= class=VI
+17:39:02 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:39:04 | INFO     |   RAW â†“ NBFP6005  (1G8VqbWrâ€¦)
+17:39:04 | INFO     |   NEW UID NBFP1009 â† form_id=- roll= class=I
+17:39:04 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:39:06 | INFO     |   RAW â†“ NBFP1009  (1mikbk62â€¦)
+17:39:06 | INFO     |   NEW UID NBFP1010 â† form_id=- roll= class=I
+17:39:06 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:39:08 | INFO     |   RAW â†“ NBFP1010  (1wd0rWHaâ€¦)
+17:39:08 | INFO     |   NEW UID NBFP30005 â† form_id=- roll= class=UKG
+17:39:08 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:39:10 | INFO     |   RAW â†“ NBFP30005  (150nqhERâ€¦)
+17:39:10 | INFO     |   NEW UID NBFP30006 â† form_id=- roll= class=UKG
+17:39:10 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:39:12 | INFO     |   RAW â†“ NBFP30006  (1XPzII74â€¦)
+17:39:12 | INFO     |   NEW UID NBFP50002 â† form_id=- roll= class=PLAY
+17:39:12 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:39:14 | INFO     |   RAW â†“ NBFP50002  (1BjAePfCâ€¦)
+17:39:14 | INFO     |   NEW UID NBFP1011 â† form_id=- roll= class=I
+17:39:14 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:39:16 | INFO     |   RAW â†“ NBFP1011  (1hZwk5p5â€¦)
+17:39:16 | INFO     |   NEW UID NBFP20003 â† form_id=- roll= class=LKG
+17:39:16 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:39:19 | INFO     |   RAW â†“ NBFP20003  (1_AxcnLzâ€¦)
+17:39:19 | INFO     | Rows ready: 10 | RAW downloaded: 10
+17:39:19 | INFO     | === MODE E: Photo AI Lab (unprocessed â†’ finished) ===
+17:39:19 | INFO     | === STEP 2: Running ID_CARD_AI_STUDIO Pipeline ===
+17:39:19 | INFO     | Using NEW Advanced Studio Pipeline
+17:39:19 | INFO     | Command: C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\python.exe D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_AI_STUDIO\run_studio_pipeline.py --source D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\ENROLL_RAW\NBFP --output D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\OUTPUT --bg LB --gfpgan-blend 0.65 --skip-existing --quality 95
+17:43:17 | INFO     | âœ… Pipeline completed successfully.
+
+>>> OUTPUT folder mein processed photos CHECK karo, phir ENTER <<<
+
+>> Y
+17:43:29 | WARNING  |   LOCAL XLSX no row for NBFP SARIK VI
+17:43:29 | INFO     |   OK NBFP6004 | SARIK | VI | ENROLLED_PHOTO_OK
+17:43:32 | WARNING  |   LOCAL XLSX no row for NBFP SAHIL IV
+17:43:32 | INFO     |   OK NBFP4002 | SAHIL | IV | ENROLLED_PHOTO_OK
+17:43:34 | WARNING  |   LOCAL XLSX no row for NBFP AMAN VI
+17:43:34 | INFO     |   OK NBFP6005 | AMAN | VI | ENROLLED_PHOTO_OK
+17:43:36 | WARNING  |   LOCAL XLSX no row for NBFP AKSHA I
+17:43:36 | INFO     |   OK NBFP1009 | AKSHA | I | ENROLLED_PHOTO_OK
+17:43:39 | WARNING  |   LOCAL XLSX no row for NBFP SUMAIYA I
+17:43:39 | INFO     |   OK NBFP1010 | SUMAIYA | I | ENROLLED_PHOTO_OK
+17:43:41 | WARNING  |   LOCAL XLSX no row for NBFP ABDUL AHMAD UKG
+17:43:41 | INFO     |   OK NBFP30005 | ABDUL AHMAD | UKG | ENROLLED_PHOTO_OK
+17:43:43 | WARNING  |   LOCAL XLSX no row for NBFP ABBUZAR UKG
+17:43:43 | INFO     |   OK NBFP30006 | ABBUZAR | UKG | ENROLLED_PHOTO_OK
+17:43:45 | WARNING  |   LOCAL XLSX no row for NBFP SHAN MOHD PLAY
+17:43:45 | INFO     |   OK NBFP50002 | SHAN MOHD | PLAY | ENROLLED_PHOTO_OK
+17:43:48 | WARNING  |   LOCAL XLSX no row for NBFP MAYRA I
+17:43:48 | INFO     |   OK NBFP1011 | MAYRA | I | ENROLLED_PHOTO_OK
+17:43:50 | WARNING  |   LOCAL XLSX no row for NBFP JOYA LKG
+17:43:50 | INFO     |   OK NBFP20003 | JOYA | LKG | ENROLLED_PHOTO_OK
+17:43:50 | INFO     | file_cache is only supported with oauth2client<4.0.0
+17:43:59 | INFO     |   SHEET UID NBFP6004 â†’ SARIK row 2
+17:44:00 | INFO     |   SHEET UID NBFP4002 â†’ SAHIL row 3
+17:44:02 | INFO     |   SHEET UID NBFP6005 â†’ AMAN row 4
+17:44:03 | INFO     |   SHEET UID NBFP1009 â†’ AKSHA row 5
+17:44:05 | INFO     |   SHEET UID NBFP1010 â†’ SUMAIYA row 6
+17:44:06 | INFO     |   SHEET UID NBFP30005 â†’ ABDUL AHMAD row 7
+17:44:07 | INFO     |   SHEET UID NBFP30006 â†’ ABBUZAR row 8
+17:44:09 | INFO     |   SHEET UID NBFP50002 â†’ SHAN MOHD row 9
+17:44:10 | INFO     |   SHEET UID NBFP1011 â†’ MAYRA row 10
+17:44:11 | INFO     |   SHEET UID NBFP20003 â†’ JOYA row 11
+17:44:11 | INFO     | NBFP STUDENTS sheet updated rows: 10
+17:44:11 | INFO     | Google school sheet UID write: 10
+17:44:11 | ERROR    | student_data.xlsx Excel mein khuli hai. Band karke dubara chalao.
+17:44:11 | INFO     | Is school ke liye koi NEW row nahi mili (ya garbage code skip ho gaya).
+17:44:11 | INFO     | === STEP 6: Data merge (FILL-EMPTY ONLY, no refine) ===
+17:44:11 | INFO     | Individual school CSV: D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\CSV\NBFP.csv
+17:44:11 | INFO     | Step6 incoming = daily CSV None (NBFP.csv)
+17:44:11 | INFO     | Backup: student_data_BACKUP_2026-10-31_17-44-11.xlsx
+17:44:14 | ERROR    | Unexpected fatal error: [Errno 13] Permission denied: 'D:\\SHRI_JAI_SHRI_RAM\\project_panels\\student_data.xlsx'
+Traceback (most recent call last):
+  File "D:\SHRI_JAI_SHRI_RAM\project_panels\MAIN_ASSISTANT.py", line 3195, in <module>
+    main()
+  File "D:\SHRI_JAI_SHRI_RAM\project_panels\MAIN_ASSISTANT.py", line 3166, in main
+    step6_data_merge(school_code)
+  File "D:\SHRI_JAI_SHRI_RAM\project_panels\MAIN_ASSISTANT.py", line 1206, in step6_data_merge
+    book.save(master)
+  File "C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+  File "C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\WIN-11 PRO\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1336, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'D:\\SHRI_JAI_SHRI_RAM\\project_panels\\student_data.xlsx'
+
+An error occurred. Check log file. Press Enter to exit...
+>> 
+ID card process finished.

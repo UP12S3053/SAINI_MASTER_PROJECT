@@ -1,0 +1,14 @@
+R23_2_DATABASE_VERIFICATION
+active_database=synthetic sqlite created by IdentityEngine
+saini_db_source=NOT_VERIFIED
+
+No file named saini_db.py or saini.db was present in the workspace.
+The preserved baseline mentions these calls, and their behavior was not invented:
+baseline/MAIN_ASSISTANT.py line 53 imports saini_db and sets it to None when the import fails.
+Line 2367 calls import_xlsx_if_empty.
+Line 2371 calls count.
+Line 2393 calls school_uids.
+Line 2634 calls upsert.
+The R23.2 launcher and active writers do not call any of those functions.
+Every active identity insert and update goes through IdentityEngine.
+The end-to-end test checked the row count, the stored key, and the visible-ID history in that database.

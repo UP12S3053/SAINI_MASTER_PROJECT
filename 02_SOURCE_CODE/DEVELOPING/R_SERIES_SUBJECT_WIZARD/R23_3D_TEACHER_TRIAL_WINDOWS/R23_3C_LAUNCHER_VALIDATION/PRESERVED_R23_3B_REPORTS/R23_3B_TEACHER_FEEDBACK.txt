@@ -1,0 +1,7 @@
+R23_3B_TEACHER_FEEDBACK
+status=REAL_TEACHER_NOT_AVAILABLE
+feedback_collected=NONE
+
+No teacher wrote or said anything.
+No comment in this file is teacher feedback.
+The window test is recorded separately and is not feedback.

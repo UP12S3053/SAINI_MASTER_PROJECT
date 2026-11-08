@@ -1,0 +1,17 @@
+R23_2_END_TO_END_REPORT
+execution=ACTUAL
+records=synthetic
+photos=synthetic
+
+An Excel file was read with openpyxl.
+A CSV file was read with the standard CSV reader.
+A real 12 by 8 JPEG was written with PIL and then opened again during generator-input consumption.
+The successful Class 1 Roll 1 row became ABC1001.
+Its permanent key stayed the same after promotion to ABC2004.
+History returned ABC1001 then ABC2004.
+The photo file was on disk at PHOTO_LIBRARY/ABC/2026_27/ABC1001.jpg.
+The prepared generator input contained the visible ID, name, father, class, roll, mobile, address, and that full photo path.
+A legacy_uid column containing ABC9999 was ignored.
+The Class 6 Roll 15 row became ABC6015.
+The CSV row for Class 10 Roll 1 became XYZX001.
+No ID card image was written.

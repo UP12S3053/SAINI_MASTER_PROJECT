@@ -1,0 +1,9 @@
+R23_3C_LAUNCHER_PACKAGE
+ready=YES
+open_launcher_sha256=9C939595204D6EEB510A02A3182853B7B1EF5B198AC3AF305759411B331F8921
+
+The package check found every required file:
+the window entry, the Windows double-click batch file, the identity modules, both teacher guides, and the five synthetic examples.
+The window source still calls the real file picker and folder picker.
+It does not call the card generator or the missing saini_db module.
+No file or folder is selected by default.

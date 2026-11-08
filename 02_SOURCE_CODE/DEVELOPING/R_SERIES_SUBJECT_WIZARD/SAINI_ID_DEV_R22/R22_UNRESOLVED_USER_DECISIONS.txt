@@ -1,0 +1,137 @@
+R22_UNRESOLVED_USER_DECISIONS
+answers_filled=NO
+no_column_was_declared_authoritative=YES
+reference_differences=NONE
+HEADER ADDR_COLOR
+columns=CP#94,CW#101
+column=CP blank=9 formula=0 non_empty=208
+column=CW blank=47 formula=0 non_empty=170
+different_non_empty_combinations=2
+purpose_of_later_columns=NOT VERIFIED
+authoritative_column=NOT APPROVED
+HEADER ADDR_SIZE
+columns=CO#93,CV#100
+column=CO blank=9 formula=0 non_empty=208
+column=CV blank=47 formula=0 non_empty=170
+different_non_empty_combinations=42
+purpose_of_later_columns=NOT VERIFIED
+authoritative_column=NOT APPROVED
+HEADER FATHER_COLOR
+columns=BE#57,BS#71
+column=BE blank=9 formula=0 non_empty=208
+column=BS blank=13 formula=0 non_empty=204
+different_non_empty_combinations=13
+purpose_of_later_columns=NOT VERIFIED
+authoritative_column=NOT APPROVED
+HEADER FATHER_FONT
+columns=BC#55,BQ#69
+column=BC blank=9 formula=0 non_empty=208
+column=BQ blank=13 formula=0 non_empty=204
+different_non_empty_combinations=2
+purpose_of_later_columns=NOT VERIFIED
+authoritative_column=NOT APPROVED
+HEADER FATHER_PREFIX
+columns=BF#58,BT#72
+column=BF blank=85 formula=0 non_empty=132
+column=BT blank=85 formula=0 non_empty=132
+different_non_empty_combinations=2
+purpose_of_later_columns=NOT VERIFIED
+authoritative_column=NOT APPROVED
+HEADER FATHER_SHOW
+columns=AZ#52,BU#73
+column=AZ blank=9 formula=0 non_empty=208
+column=BU blank=47 formula=0 non_empty=170
+different_non_empty_combinations=3
+purpose_of_later_columns=NOT VERIFIED
+authoritative_column=NOT APPROVED
+HEADER FATHER_SIZE
+columns=BD#56,BR#70
+column=BD blank=9 formula=0 non_empty=208
+column=BR blank=13 formula=0 non_empty=204
+different_non_empty_combinations=66
+purpose_of_later_columns=NOT VERIFIED
+authoritative_column=NOT APPROVED
+HEADER FATHER_X
+columns=BA#53,BO#67
+column=BA blank=9 formula=0 non_empty=208
+column=BO blank=15 formula=0 non_empty=202
+different_non_empty_combinations=73
+purpose_of_later_columns=NOT VERIFIED
+authoritative_column=NOT APPROVED
+HEADER FATHER_Y
+columns=BB#54,BP#68
+column=BB blank=9 formula=0 non_empty=208
+column=BP blank=14 formula=0 non_empty=203
+different_non_empty_combinations=74
+purpose_of_later_columns=NOT VERIFIED
+authoritative_column=NOT APPROVED
+HEADER M
+columns=BW#75,BX#76,BY#77,BZ#78,CA#79
+column=BW blank=46 formula=0 non_empty=171
+column=BX blank=46 formula=0 non_empty=171
+column=BY blank=46 formula=0 non_empty=171
+column=BZ blank=46 formula=0 non_empty=171
+column=CA blank=84 formula=0 non_empty=133
+different_non_empty_combinations=171
+purpose_of_later_columns=NOT VERIFIED
+authoritative_column=NOT APPROVED
+DECISION ADDR_COLOR
+problem=the header is duplicated and its later columns have no proven purpose
+evidence=current source reads and writes the header name; pandas would otherwise keep the first physical column
+options=name the one column to keep; give each column a distinct purpose; leave the workbook unchanged
+wrong_choice_effect=the unread column can be lost or the card can use the wrong position, font, colour, or flag
+reference_columns=CP,CW
+DECISION ADDR_SIZE
+problem=the header is duplicated and its later columns have no proven purpose
+evidence=current source reads and writes the header name; pandas would otherwise keep the first physical column
+options=name the one column to keep; give each column a distinct purpose; leave the workbook unchanged
+wrong_choice_effect=the unread column can be lost or the card can use the wrong position, font, colour, or flag
+reference_columns=CO,CV
+DECISION FATHER_COLOR
+problem=the header is duplicated and its later columns have no proven purpose
+evidence=current source reads and writes the header name; pandas would otherwise keep the first physical column
+options=name the one column to keep; give each column a distinct purpose; leave the workbook unchanged
+wrong_choice_effect=the unread column can be lost or the card can use the wrong position, font, colour, or flag
+reference_columns=BE,BS
+DECISION FATHER_FONT
+problem=the header is duplicated and its later columns have no proven purpose
+evidence=current source reads and writes the header name; pandas would otherwise keep the first physical column
+options=name the one column to keep; give each column a distinct purpose; leave the workbook unchanged
+wrong_choice_effect=the unread column can be lost or the card can use the wrong position, font, colour, or flag
+reference_columns=BC,BQ
+DECISION FATHER_PREFIX
+problem=the header is duplicated and its later columns have no proven purpose
+evidence=current source reads and writes the header name; pandas would otherwise keep the first physical column
+options=name the one column to keep; give each column a distinct purpose; leave the workbook unchanged
+wrong_choice_effect=the unread column can be lost or the card can use the wrong position, font, colour, or flag
+reference_columns=BF,BT
+DECISION FATHER_SHOW
+problem=the header is duplicated and its later columns have no proven purpose
+evidence=current source reads and writes the header name; pandas would otherwise keep the first physical column
+options=name the one column to keep; give each column a distinct purpose; leave the workbook unchanged
+wrong_choice_effect=the unread column can be lost or the card can use the wrong position, font, colour, or flag
+reference_columns=AZ,BU
+DECISION FATHER_SIZE
+problem=the header is duplicated and its later columns have no proven purpose
+evidence=current source reads and writes the header name; pandas would otherwise keep the first physical column
+options=name the one column to keep; give each column a distinct purpose; leave the workbook unchanged
+wrong_choice_effect=the unread column can be lost or the card can use the wrong position, font, colour, or flag
+reference_columns=BD,BR
+DECISION FATHER_X
+problem=the header is duplicated and its later columns have no proven purpose
+evidence=current source reads and writes the header name; pandas would otherwise keep the first physical column
+options=name the one column to keep; give each column a distinct purpose; leave the workbook unchanged
+wrong_choice_effect=the unread column can be lost or the card can use the wrong position, font, colour, or flag
+reference_columns=BA,BO
+DECISION FATHER_Y
+problem=the header is duplicated and its later columns have no proven purpose
+evidence=current source reads and writes the header name; pandas would otherwise keep the first physical column
+options=name the one column to keep; give each column a distinct purpose; leave the workbook unchanged
+wrong_choice_effect=the unread column can be lost or the card can use the wrong position, font, colour, or flag
+reference_columns=BB,BP
+DECISION M
+problem=the header is duplicated and its later columns have no proven purpose
+evidence=current source reads and writes the header name; pandas would otherwise keep the first physical column
+options=name the one column to keep; give each column a distinct purpose; leave the workbook unchanged
+wrong_choice_effect=the unread column can be lost or the card can use the wrong position, font, colour, or flag
+reference_columns=BW,BX,BY,BZ,CA

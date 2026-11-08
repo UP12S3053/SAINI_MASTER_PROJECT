@@ -1,0 +1,13 @@
+R23_3B_LAUNCHER_STARTUP_REPORT
+entry=open_launcher.py
+startup=REAL_TK_PROCESS
+windows_double_click=NOT_TESTED
+
+The test started open_launcher.py as its own program under the virtual display.
+The process opened a real window, wrote the live widget text, and closed.
+It was not a syntax check and it was not a fake picker.
+The window title contained the enrollment name.
+No file name was filled in.
+No folder name was filled in.
+The Windows development computer was not available from this workspace, so a physical double-click there was not performed.
+On that computer, the same open_launcher.py file is the file to double-click after the Tk check passes.

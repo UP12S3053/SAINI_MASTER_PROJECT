@@ -1,0 +1,3 @@
+dummy_a.jpg = DUMMY PHOTO A. Not a real student.
+dummy_b.jpg = DUMMY PHOTO B. Not a real student.
+These pictures were drawn for the trial. They are not school photographs.

@@ -1,0 +1,8 @@
+R23_3_TEACHER_FEEDBACK
+status=TEACHER_NOT_AVAILABLE
+feedback_collected=NONE
+
+No teacher used the trial.
+No spoken or written feedback was received.
+Nothing in this file is a teacher comment.
+The simulated technical review is recorded separately and must not be counted as teacher feedback.

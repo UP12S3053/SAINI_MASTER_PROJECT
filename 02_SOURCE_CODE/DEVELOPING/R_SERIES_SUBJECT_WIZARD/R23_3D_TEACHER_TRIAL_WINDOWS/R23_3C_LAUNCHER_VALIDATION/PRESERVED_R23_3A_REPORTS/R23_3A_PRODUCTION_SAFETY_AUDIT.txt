@@ -1,0 +1,16 @@
+R23_3A_PRODUCTION_SAFETY_AUDIT
+production_connection=NONE
+stop_required=NO
+
+The launcher workspace defaults to R23_3A_TEACHER_PREPARATION/TRIAL_WORKSPACE.
+No Excel file is selected when the window opens.
+No photo folder is selected when the window opens.
+A path containing the live project marker or student_data.xlsx is rejected and not stored.
+The new launcher source does not call saini_db, does not call the card generator, and does not name the old baseline program.
+The approved entry is open_launcher.py.
+The preserved baseline files remain unchanged:
+MAIN_ASSISTANT.py D155AB4AA029415A45C01350B586303A19D280BB5C2CC8DD21D9E3257433FD5A
+SAINI_ID_CARD.py EA1E637CD5FABF2E122BD84FCF275908D41B5A2929908D823A3C518FED95D187
+R23.2 and R23.3 folders were hashed again and were not overwritten.
+No ID card function is available from the teacher window.
+The permanent key is checked out of the summary before it is shown.

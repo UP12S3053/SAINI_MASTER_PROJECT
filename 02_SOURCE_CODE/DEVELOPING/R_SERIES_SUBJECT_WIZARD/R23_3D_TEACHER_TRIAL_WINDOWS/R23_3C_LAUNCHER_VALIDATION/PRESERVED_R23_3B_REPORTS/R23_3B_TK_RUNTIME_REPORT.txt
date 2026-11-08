@@ -1,0 +1,22 @@
+R23_3B_TK_RUNTIME_REPORT
+windows_machine_tested=NO
+local_window_opened=YES
+
+This workspace is Linux, not the Windows development computer.
+Python here is 3.10.22 at /usr/local/bin/python3.
+The tkinter module was present, but libtk8.6.so and libtcl8.6.so were not installed.
+A system install was not possible: the package installer had no permission to change the machine.
+No Python installation was replaced and no system-wide setting was changed.
+
+A local copy of Tcl/Tk was used only for this test, with a virtual display.
+Under that display, a real Tk window was created and then closed.
+That local copy is not part of the teacher package and is not for the Windows computer.
+
+Windows check, without removing the current Python:
+Open Command Prompt and run:
+py -c "import tkinter; root=tkinter.Tk(); root.update(); root.destroy(); print('TK_WINDOW_OK')"
+If it prints TK_WINDOW_OK, double-click open_launcher.py.
+If Python says tkinter is missing, install the official Python from python.org alongside the current one and leave the old one in place.
+In that installer, keep tcl/tk and IDLE selected.
+Do not uninstall the existing Python unless that is separately approved.
+The window code does not use a command line for the teacher.

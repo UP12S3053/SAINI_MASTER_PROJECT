@@ -1,0 +1,18 @@
+R23_2_REGRESSION_REPORT
+previous_tests=22
+previous_passed=22
+previous_failed=0
+new_tests=3
+new_passed=3
+new_failed=0
+total_tests=25
+passed=25
+failed=0
+skipped=0
+
+tests/test_r23_engine.py: 14 passed
+tests/test_r23_1_integration.py: 8 passed
+tests/test_r23_2_end_to_end.py: 3 passed
+real_records_used=NO
+r23_and_r23_1_original_folders_modified=NO
+baseline_hashes_unchanged=YES

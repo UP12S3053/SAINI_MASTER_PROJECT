@@ -1,0 +1,10 @@
+R23_3B_TEACHER_TRIAL_EXECUTION
+participation=REAL_TEACHER_NOT_AVAILABLE
+real_teacher_completed=NO
+
+No consenting teacher or school in-charge was present.
+Nobody opened the window by hand.
+Clicks, minutes, and mistakes from a teacher were not observed.
+The synthetic pack was used only by the automated window test.
+That test is not a teacher demonstration.
+The real teacher trial is not passed.

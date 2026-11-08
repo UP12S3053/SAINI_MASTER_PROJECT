@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#082f68">
+<title>SAINI PAPER SYSTEM | Paper Setter</title>
+<style>
+:root{
+ --navy:#082f68;--navy2:#0b559c;--red:#e51d2a;--gold:#ffc928;
+ --ink:#142b59;--muted:#687891;--page:#f2f6fc;--line:#dce5f0;
+ --green:#0aa45b;--purple:#6654e8;--orange:#df5b00;--shadow:0 8px 25px rgba(13,43,88,.09)
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif}
+button,input,select{font:inherit}
+button,a{-webkit-tap-highlight-color:transparent}
+.topbar{min-height:76px;background:#fff;display:flex;align-items:center;gap:11px;padding:9px clamp(10px,3vw,28px);box-shadow:0 3px 15px #102b5010;position:relative;z-index:3}
+.menu-btn{width:43px;height:43px;border:0;border-radius:13px;background:#eff4fb;color:var(--navy);font-size:24px;cursor:pointer;flex:none}
+.brand{display:flex;align-items:center;gap:8px;min-width:0}
+.brand img{width:56px;height:56px;object-fit:contain;border-radius:50%;flex:none}
+.brand strong{display:block;color:var(--red);font-size:clamp(21px,3vw,30px);line-height:.95;font-weight:900}
+.brand b{display:block;color:var(--navy);font-size:clamp(14px,2vw,21px);font-weight:900;line-height:1.15}
+.brand small{display:block;color:#60708a;font-size:8px;letter-spacing:.4px;font-weight:700;margin-top:3px}
+.top-actions{margin-left:auto;display:flex;align-items:center;gap:12px}
+.admin{display:flex;align-items:center;gap:7px;font-size:10px;color:#63718a;white-space:nowrap}
+.avatar{width:35px;height:35px;border-radius:50%;display:grid;place-items:center;background:#e5f0ff;color:#1269cf;font-size:20px}
+.admin b{display:block;color:var(--ink);font-size:12px}
+.hero{margin:12px 13px 0;min-height:145px;border-radius:18px;overflow:hidden;display:grid;grid-template-columns:1fr .7fr;background:linear-gradient(110deg,#062d63,#0757a5);color:#fff}
+.hero-copy{padding:20px 23px;display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:clamp(25px,3.5vw,38px);margin:0;font-weight:900;line-height:1.08}
+.hero h1 span{color:var(--gold)}
+.hero p{font-size:14px;line-height:1.5;margin:8px 0 0;color:#eaf3ff}
+.top-row{display:flex;gap:10px;align-items:center;padding:11px 14px;flex-wrap:wrap}
+.notice{flex:1;background:#fff8e8;border-radius:12px;padding:10px 12px;font-size:13px;min-width:220px}
+.setup-grid{display:grid;grid-template-columns:1fr;gap:12px}
+.setup-card{display:grid;grid-template-columns:52px minmax(0,1fr);gap:10px;align-items:center;background:#f7fbff;border-radius:14px;padding:10px}
+.setup-card.pink{background:#fff5f7}.setup-card.green{background:#f3fff8}.setup-card.gold{background:#fffaf0}.setup-card.purple{background:#f7f4ff}
+.icon{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;font-size:22px;background:#fff}
+.code-line{display:grid;grid-template-columns:minmax(0,1fr) 108px;gap:8px}
+.validate{border:0;border-radius:11px;background:linear-gradient(135deg,#0bb86a,#07934f);color:#fff;font-weight:800;cursor:pointer}
+.pill{background:#eef8f1;color:#087344;border-radius:20px;padding:6px 10px;font-size:13px;font-weight:800}
+.clear{border:0;background:#edf2fa;color:var(--navy);border-radius:11px;min-height:40px;padding:0 12px;font-weight:800;cursor:pointer}
+@media(min-width:760px){.setup-grid{grid-template-columns:1.2fr .8fr}.span2{grid-column:1/-1}}
+.hero-art{display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 55% 50%,#ffffff28,transparent 60%)}
+.hero-art .paper-icon{font-size:85px;filter:drop-shadow(0 8px 8px #001d4a55)}
+.back-row{padding:11px 14px}
+.back-link{display:inline-flex;align-items:center;gap:9px;padding:11px 15px;border-radius:12px;background:#fff;border:1px solid #e2eaf4;text-decoration:none;color:var(--navy);font-weight:800;box-shadow:0 3px 12px #10285b08}
+main{max-width:1500px;margin:auto;padding:0 13px 22px}
+.panel{background:#fff;border-radius:19px;padding:17px;box-shadow:var(--shadow);margin-bottom:15px}
+.panel-head{display:flex;align-items:center;gap:11px;margin-bottom:15px}
+.panel-icon{width:46px;height:46px;border-radius:14px;background:#e7f1ff;color:#086bd7;display:grid;place-items:center;font-size:24px;flex:none}
+.panel-head h2{font-size:22px;margin:0;font-weight:900}
+.panel-head p{font-size:12px;color:var(--muted);margin:4px 0 0}
+.form-grid{display:grid;grid-template-columns:1fr;gap:13px}
+.field label{display:block;font-size:13px;font-weight:800;margin-bottom:6px}
+.field input,.field select{width:100%;height:48px;border:1.5px solid var(--line);border-radius:11px;background:#fbfdff;padding:0 13px;color:var(--ink);outline:none;font-size:15px}
+.field input:focus,.field select:focus{border-color:#3989e9;box-shadow:0 0 0 3px #3989e91b;background:#fff}
+.field.span{grid-column:1/-1}
+.code-action{display:grid;grid-template-columns:minmax(0,1fr) 112px;gap:8px}
+.btn{border:0;border-radius:11px;min-height:47px;padding:0 14px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:7px}
+.btn-validate{background:linear-gradient(135deg,#0bb86a,#07934f);color:#fff}
+.btn-show{width:100%;margin-top:14px;background:linear-gradient(100deg,#0a9f5b,#0bbd72);color:#fff;font-size:16px;min-height:51px}
+.btn-preview{background:linear-gradient(100deg,#6654e8,#8065f4);color:#fff}
+.btn-generate{background:linear-gradient(100deg,#d94d00,#f07800);color:#fff}
+.btn-light{background:#edf2fa;color:var(--navy)}
+.question-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:3px 0 12px}
+.question-head h2{font-size:18px;margin:0;font-weight:900}
+.counter{font-size:13px;color:var(--muted);font-weight:700}
+.counter strong{color:var(--navy)}
+.question-tools{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:12px}
+.search{flex:1;min-width:150px;height:43px;border:1.5px solid var(--line);border-radius:11px;padding:0 12px;background:#fbfdff}
+.filter{height:43px;border:1.5px solid var(--line);border-radius:11px;padding:0 10px;background:#fff;color:var(--ink)}
+.question-list{display:grid;gap:12px}
+.q-card{border:1px solid #dfe7f1;border-radius:14px;padding:12px;background:#fff;transition:.15s}
+.q-card.selected{border:2px solid #1885e8;background:#f6fbff;box-shadow:0 4px 14px #1476d41a;padding:11px}
+.q-top{display:grid;grid-template-columns:25px minmax(0,1fr) 100px;gap:8px;align-items:start}
+.q-check{width:20px;height:20px;accent-color:#0876dc;margin:2px 0 0}
+.q-title{font-size:14px;font-weight:900;line-height:1.35}
+.q-meta{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.4}
+.marks label{display:block;font-size:11px;font-weight:800;margin-bottom:4px}
+.marks select{width:100%;height:37px;border:1px solid #d6dfeb;border-radius:8px;padding:0 7px;background:#fff;color:var(--ink);font-size:12px}
+.q-preview{margin:11px 0 0 32px;border:1px solid #e2e7ee;border-radius:8px;padding:9px;background:#fff;overflow:hidden}
+.paper-sample{border:1.5px solid #ed3434;border-radius:8px;min-height:112px;color:#111;padding:8px 10px;font-family:Georgia,serif}
+.sample-title{font-size:16px;font-weight:bold;border-bottom:1px solid #ed3434;padding-bottom:5px;margin-bottom:7px}
+.sample-content{display:grid;grid-template-columns:1fr 1fr;gap:9px;font-size:12px}
+.sample-content>div+div{border-left:1px dashed #ed3434;padding-left:9px}
+.sample-options{display:flex;gap:8px;justify-content:space-around;margin-top:9px}
+.sample-options span{border:1px solid #ed3434;border-radius:6px;padding:4px 11px;font-size:22px;font-weight:bold}
+.q-card:nth-child(2) .paper-sample{border-color:#ef9b00}
+.q-card:nth-child(2) .sample-title{border-color:#ef9b00}
+.q-card:nth-child(3) .paper-sample{border-color:#178d53}
+.q-card:nth-child(3) .sample-title{border-color:#178d53}
+.bottom-summary{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0;font-size:14px;font-weight:900}
+.bottom-summary span{color:var(--muted);font-weight:700;font-size:12px}
+.bottom-actions{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.bottom-actions .btn{min-height:50px;font-size:14px}
+.status{font-size:12px;color:#087344;min-height:18px;margin-top:10px}
+.footer{text-align:center;color:#6b7890;font-size:11px;padding:16px}
+@media(min-width:760px){
+ .hero{min-height:175px}
+ .hero-art .paper-icon{font-size:105px}
+ .form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .question-list{grid-template-columns:1fr}
+ .panel{padding:22px}
+}
+@media(max-width:600px){
+ .topbar{min-height:68px;padding:7px 9px;gap:7px}
+ .menu-btn{width:37px;height:37px;font-size:21px}
+ .brand{gap:6px}.brand img{width:46px;height:46px}
+ .brand strong{font-size:20px}.brand b{font-size:13px}.brand small{font-size:6.5px}
+ .admin{display:none}.top-actions{gap:5px}
+ .hero{margin:9px 9px 0;min-height:125px;grid-template-columns:1fr 80px}
+ .hero-copy{padding:15px 15px}.hero h1{font-size:25px}.hero p{font-size:12px;margin-top:6px}
+ .hero-art .paper-icon{font-size:55px}
+ .back-row{padding:9px}.back-link{width:100%;justify-content:center;font-size:14px}
+ main{padding:0 9px 16px}
+ .panel{padding:13px 11px;border-radius:16px;margin-bottom:12px}
+ .panel-head{margin-bottom:12px}.panel-icon{width:41px;height:41px;font-size:21px}
+ .panel-head h2{font-size:19px}.panel-head p{font-size:11px}
+ .form-grid{gap:11px}.field label{font-size:12px}.field input,.field select{height:47px;font-size:16px}
+ .code-action{grid-template-columns:minmax(0,1fr) 96px;gap:6px}
+ .btn{padding:0 9px}.btn-validate{font-size:12px}
+ .btn-show{font-size:15px}
+ .question-head h2{font-size:16px}.counter{font-size:12px}
+ .question-tools{gap:7px}.search{min-width:100%;height:42px}.filter{flex:1;min-width:0;height:41px;font-size:12px}
+ .q-card{padding:9px}.q-card.selected{padding:8px}
+ .q-top{grid-template-columns:22px minmax(0,1fr) 82px;gap:6px}
+ .q-title{font-size:12px}.q-meta{font-size:10px}
+ .marks label{font-size:10px}.marks select{height:34px;font-size:11px}
+ .q-preview{margin:9px 0 0 26px;padding:6px}
+ .paper-sample{min-height:100px;padding:7px}
+ .sample-title{font-size:14px}.sample-content{font-size:10px;gap:6px}
+ .sample-options span{font-size:18px;padding:3px 8px}
+ .bottom-actions{grid-template-columns:1fr}
+ .bottom-actions .btn{min-height:49px}
+ .bottom-summary{margin:12px 0}
+}
+@media(max-width:350px){
+ .brand img{width:40px;height:40px}.brand strong{font-size:18px}.brand b{font-size:11px}
+ .q-top{grid-template-columns:20px minmax(0,1fr) 76px}
+ .q-title{font-size:11px}.marks select{font-size:10px}
+}
+.drawer{position:fixed;inset:0;background:#0b2b5066;display:none;z-index:30}
+.drawer.open{display:block}
+.drawer nav{width:min(280px,86vw);height:100%;background:#fff;padding:16px;overflow:auto}
+.drawer a{display:block;padding:12px 10px;border-radius:10px;text-decoration:none;color:var(--navy);font-weight:700}
+</style>
+</head>
+<body>
+<div class="drawer" id="drawer" onclick="if(event.target===this)this.classList.remove('open')">
+ <nav>
+  <a href="/">Home</a><a href="/school">School Master</a><a href="/paper">Paper Setter</a>
+  <a href="/admin/subjects">Subject Enrollment</a><a href="/saini-queue">Delivery Queue</a>
+  <a href="/admin/schools">School Registration</a><a href="/school-login">School Portal</a>
+  <a href="/saini/paper-rates">Paper Rates</a><a href="/saini/archive">Saved Documents</a>
+  <a href="/saini/order">Complete Paper Order</a><a href="/saini/idcard">ID Cards</a>
+ </nav>
+</div>
+<header class="topbar">
+ <button class="menu-btn" type="button" aria-label="Open menu" id="menuBtn">☰</button>
+ <div class="brand">
+  <img src="/paper-ui/logo" alt="Original Saini School Uniforms logo">
+  <div><strong>SAINI</strong><b>PAPER SYSTEM</b><small>SCHOOL MANAGEMENT SOLUTIONS</small></div>
+ </div>
+ <div class="top-actions"><div class="admin"><div class="avatar">●</div><div>Welcome<b>School Admin</b></div></div></div>
+</header>
+
+<section class="hero">
+ <div class="hero-copy">
+  <h1>Paper <span>Setter</span></h1>
+  <p>Create and Manage Question Papers<br>easily with pre-planned questions</p>
+ </div>
+ <div class="hero-art" style="background:url('/paper-ui/building') center 35%/cover no-repeat"></div>
+</section>
+
+<div class="top-row">
+ <a class="back-link" href="/" id="backDashboard">← &nbsp; Back to Dashboard</a>
+ <div class="notice">Select school, class, subject and choose questions (Maximum 20) to create question paper.</div>
+</div>
+
+<main>
+ <section class="panel">
+  <div class="panel-head">
+   <div class="panel-icon">⚙</div>
+   <div><h2>Paper Setup</h2><div class="red-rule" style="width:56px;height:3px;background:#e51d2a;border-radius:4px;margin-top:6px"></div></div>
+  </div>
+  <form id="paperSetup" novalidate>
+   <div class="setup-grid">
+    <div class="setup-card">
+     <div class="icon">🏫</div>
+     <div class="field"><label for="schoolCode">School Code</label><div class="code-line"><input id="schoolCode" name="schoolCode" value="BSM" autocomplete="off"><button class="validate" type="button" id="validateBtn">✓ Validate</button></div></div>
+    </div>
+    <div class="setup-card purple">
+     <div class="icon">📚</div>
+     <div class="field"><label for="board">Board</label><select id="board" name="board"><option>Haryana Board</option><option>SCERT Haryana</option><option>CBSE</option><option>Other</option></select></div>
+    </div>
+    <div class="setup-card pink">
+     <div class="icon">👥</div>
+     <div class="field"><label for="className">Class</label><select id="className" name="className"><option>LKG</option><option>UKG</option><option>Nursery</option><option>Class 1</option><option>Class 2</option><option>Class 3</option><option>Class 4</option><option>Class 5</option><option>Class 6</option><option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option></select></div>
+    </div>
+    <div class="setup-card gold">
+     <div class="icon">🎓</div>
+     <div class="field"><label for="studentQty">Student Quantity</label><input id="studentQty" name="studentQty" type="number" min="1" value="40"></div>
+    </div>
+    <div class="setup-card green">
+     <div class="icon">📗</div>
+     <div class="field"><label for="subject">Subject</label><select id="subject" name="subject"><option>MATH</option><option>ENGLISH</option><option>HINDI</option><option>EVS</option><option>SCIENCE</option><option>SOCIAL SCIENCE</option><option>COMPUTER</option></select></div>
+    </div>
+   </div>
+   <button class="btn btn-show" type="button" id="showQuestions">सवाल दिखाओ</button>
+  </form>
+ </section>
+
+ <section class="panel" id="questionBank">
+  <div class="panel-head">
+   <div class="panel-icon">📚</div>
+   <div><h2>Question Bank</h2><p>Choose questions for your paper. Maximum 20 selections.</p></div>
+  </div>
+  <div class="question-head">
+   <h2>Question Bank</h2>
+   <div class="pill">Selected: <strong id="selectedCount">0/20</strong></div>
+  </div>
+  <div class="question-tools">
+   <input class="search" id="questionSearch" type="search" placeholder="Search question title or ID…">
+   <select class="filter" id="typeFilter"><option value="all">All question types</option><option value="recognition">Recognition</option><option value="counting">Counting</option><option value="addition">Addition</option></select>
+   <select class="filter" id="sortFilter"><option value="default">Default order</option><option value="id">Question ID</option><option value="title">Title A–Z</option></select>
+  </div>
+
+  <div class="question-list" id="questionList">LIVE_QUESTIONS</div>
+  <div id="liveForm" hidden>LIVE_FORM</div>
+
+  <div class="bottom-summary">
+   <div>Total Max Marks: <strong id="totalMarks">0</strong></div>
+   <button class="clear" type="button" id="clearAll">Clear All</button>
+  </div>
+  <div class="bottom-actions">
+   <button class="btn btn-preview" type="button" id="previewBtn">Preview Paper</button>
+   <button class="btn btn-generate" type="button" id="generateBtn">Generate Question Paper + Code</button>
+  </div>
+  <div class="status" id="status" role="status" aria-live="polite"></div>
+ </section>
+</main>
+<footer class="footer">SAINI PAPER SYSTEM · SCHOOL MANAGEMENT SOLUTIONS · PANIPAT, HARYANA</footer>
+
+<script>
+const dashboardHref = "/";
+document.getElementById("backDashboard").href = dashboardHref;
+const statusEl = document.getElementById("status");
+const MAX_SELECTIONS = 20;
+
+function liveForm(){ return document.querySelector("#liveForm form") || document.querySelector("#liveForm"); }
+function checks(){ return [...document.querySelectorAll("#questionList input[type=checkbox], #liveForm input[type=checkbox]")]; }
+function updateTotals(){
+  const selected = checks().filter(c => c.checked);
+  const countEl = document.getElementById("selectedCount");
+  const totalEl = document.getElementById("totalMarks");
+  if (countEl) countEl.textContent = selected.length + "/" + MAX_SELECTIONS;
+  if (totalEl) {
+    const marks = selected.reduce((sum, c) => {
+      const card = c.closest("article, tr, div");
+      const select = card ? card.querySelector("select") : null;
+      return sum + Number(select ? select.value : 0);
+    }, 0);
+    totalEl.textContent = marks;
+  }
+}
+document.addEventListener("change", function (event) {
+  if (event.target && event.target.type === "checkbox") {
+    if (checks().filter(c => c.checked).length > MAX_SELECTIONS) {
+      event.target.checked = false;
+      statusEl.textContent = "Maximum 20 questions can be selected.";
+    } else statusEl.textContent = "";
+    updateTotals();
+  }
+});
+document.getElementById("showQuestions").addEventListener("click", function () {
+  const form = liveForm();
+  if (form && form.tagName === "FORM") {
+    const setup = new FormData(document.getElementById("paperSetup"));
+    setup.forEach(function (value, key) {
+      const field = form.querySelector("[name='" + key + "']");
+      if (field) field.value = value;
+    });
+    form.method = "get";
+    form.submit();
+    return;
+  }
+  const params = new URLSearchParams(new FormData(document.getElementById("paperSetup")));
+  window.location = "/paper?" + params.toString();
+});
+function clickLive(words) {
+  const form = liveForm();
+  if (!form) { statusEl.textContent = "Live paper form is not loaded."; return; }
+  const buttons = [...form.querySelectorAll("button, input[type=submit]")];
+  const hit = buttons.find(function (btn) {
+    const text = (btn.textContent || btn.value || "").toLowerCase();
+    return words.some(function (word) { return text.indexOf(word) >= 0; });
+  });
+  if (hit) { hit.click(); return; }
+  form.method = "post";
+  form.submit();
+}
+document.getElementById("previewBtn").addEventListener("click", function () { clickLive(["preview"]); });
+document.getElementById("generateBtn").addEventListener("click", function () { clickLive(["generate", "code", "paper"]); });
+document.getElementById("menuBtn").addEventListener("click", function () {
+  var drawer = document.getElementById("drawer");
+  if (drawer) drawer.classList.add("open");
+});
+document.getElementById("clearAll").addEventListener("click", function () {
+  checks().forEach(function (box) { box.checked = false; });
+  updateTotals();
+  statusEl.textContent = "Selection cleared.";
+});
+document.getElementById("validateBtn").addEventListener("click", function () {
+  const form = liveForm();
+  const button = form ? [...form.querySelectorAll("button, input[type=submit]")].find(function (item) {
+    return (item.textContent || item.value || "").toLowerCase().indexOf("valid") >= 0;
+  }) : null;
+  if (button) button.click();
+  else statusEl.textContent = "School code: " + document.getElementById("schoolCode").value;
+});
+updateTotals();
+</script>
+</body>
+</html>
