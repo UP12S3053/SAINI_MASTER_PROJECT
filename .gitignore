@@ -1,0 +1,26 @@
+# EDUNEXA - Official Structure
+# Core = Stable production code
+# Developing = Experimental / testing code
+
+# Large media & data (not for Git)
+06_MEDIA/
+03_DATABASE/*.db
+03_DATABASE/*.sqlite
+*.log
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+
+# Keep folder structure
+!06_MEDIA/.gitkeep
+!03_DATABASE/.gitkeep
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*~
+*.swp
