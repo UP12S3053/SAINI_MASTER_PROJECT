@@ -1,0 +1,40 @@
+R21_SOURCE_CODE_REFERENCE_MAP
+selection_method=header name, not a hardcoded column index
+pandas_read_excel_duplicate_behavior=columns=['FATHER_X', 'FATHER_X.1'] first_name_value=1 second_name=FATHER_X.1
+generator_sheet=Sheet1
+workbook_sheets=Sheet1
+file=SAINI_ID_CARD.py function=generate_front_card line=307 header=FATHER_SHOW operation=generator read default=0 validation=NOT VERIFIED effect=father line is drawn only when this value is 1
+file=SAINI_ID_CARD.py function=generate_front_card line=308 header=FATHER_PREFIX operation=generator read default='' validation=NOT VERIFIED effect=text placed before the father name
+file=SAINI_ID_CARD.py function=generate_front_card line=309 header=FATHER_X operation=generator read default=NONE validation=NOT VERIFIED effect=father text horizontal position
+file=SAINI_ID_CARD.py function=generate_front_card line=309 header=FATHER_Y operation=generator read default=NONE validation=NOT VERIFIED effect=father text vertical position
+file=SAINI_ID_CARD.py function=generate_front_card line=310 header=FATHER_FONT operation=generator read default='arial' validation=NOT VERIFIED effect=father text font
+file=SAINI_ID_CARD.py function=generate_front_card line=310 header=FATHER_SIZE operation=generator read default=15 validation=NOT VERIFIED effect=father text size
+file=SAINI_ID_CARD.py function=generate_front_card line=311 header=FATHER_COLOR operation=generator read default='#000000' validation=NOT VERIFIED effect=father text colour
+file=SAINI_ID_CARD.py function=generate_front_card line=312 header=FATHER_X operation=generator read default=NONE validation=NOT VERIFIED effect=father text horizontal position
+file=SAINI_ID_CARD.py function=generate_front_card line=313 header=FATHER_Y operation=generator read default=NONE validation=NOT VERIFIED effect=father text vertical position
+file=SAINI_ID_CARD.py function=generate_front_card line=348 header=ADDR_SIZE operation=generator read default=15 validation=NOT VERIFIED effect=address text size
+file=SAINI_ID_CARD.py function=generate_front_card line=352 header=ADDR_COLOR operation=generator read default='#000000' validation=NOT VERIFIED effect=address text colour
+file=SAINI_ID_CARD.py function=generate_marksheet line=640 header=FATHER_SHOW operation=generator read default=0 validation=NOT VERIFIED effect=father line is drawn only when this value is 1
+file=SAINI_ID_CARD.py function=generate_marksheet line=641 header=FATHER_PREFIX operation=generator read default='' validation=NOT VERIFIED effect=text placed before the father name
+file=SAINI_ID_CARD.py function=generate_marksheet line=642 header=FATHER_X operation=generator read default=NONE validation=NOT VERIFIED effect=father text horizontal position
+file=SAINI_ID_CARD.py function=generate_marksheet line=642 header=FATHER_Y operation=generator read default=NONE validation=NOT VERIFIED effect=father text vertical position
+file=SAINI_ID_CARD.py function=generate_marksheet line=643 header=FATHER_FONT operation=generator read default='arial' validation=NOT VERIFIED effect=father text font
+file=SAINI_ID_CARD.py function=generate_marksheet line=643 header=FATHER_SIZE operation=generator read default=15 validation=NOT VERIFIED effect=father text size
+file=SAINI_ID_CARD.py function=generate_marksheet line=644 header=FATHER_COLOR operation=generator read default='#000000' validation=NOT VERIFIED effect=father text colour
+file=SAINI_ID_CARD.py function=generate_marksheet line=645 header=FATHER_X operation=generator read default=NONE validation=NOT VERIFIED effect=father text horizontal position
+file=SAINI_ID_CARD.py function=generate_marksheet line=646 header=FATHER_Y operation=generator read default=NONE validation=NOT VERIFIED effect=father text vertical position
+file=SAINI_ID_CARD.py function=<module> line=737 header=ADDR_SIZE operation=generator read default=15 validation=NOT VERIFIED effect=address text size
+file=SAINI_ID_CARD.py function=<module> line=738 header=ADDR_COLOR operation=generator read default='#000000' validation=NOT VERIFIED effect=address text colour
+file=config_editor.py function=open_config_editor line=188 header=FATHER_SHOW operation=editor field definition default=NONE validation=NOT VERIFIED effect=father line is drawn only when this value is 1
+file=config_editor.py function=open_config_editor line=189 header=FATHER_X operation=editor field definition default=NONE validation=NOT VERIFIED effect=father text horizontal position
+file=config_editor.py function=open_config_editor line=190 header=FATHER_Y operation=editor field definition default=NONE validation=NOT VERIFIED effect=father text vertical position
+file=config_editor.py function=open_config_editor line=191 header=FATHER_FONT operation=editor field definition default=NONE validation=NOT VERIFIED effect=father text font
+file=config_editor.py function=open_config_editor line=192 header=FATHER_SIZE operation=editor field definition default=NONE validation=NOT VERIFIED effect=father text size
+file=config_editor.py function=open_config_editor line=193 header=FATHER_COLOR operation=editor field definition default=NONE validation=NOT VERIFIED effect=father text colour
+file=config_editor.py function=open_config_editor line=194 header=FATHER_PREFIX operation=editor field definition default=NONE validation=NOT VERIFIED effect=text placed before the father name
+file=config_editor.py function=open_config_editor line=208 header=ADDR_SIZE operation=editor field definition default=NONE validation=NOT VERIFIED effect=address text size
+file=config_editor.py function=open_config_editor line=209 header=ADDR_COLOR operation=editor field definition default=NONE validation=NOT VERIFIED effect=address text colour
+editor_load=reads every pandas column, but displays only fields named in its field list
+editor_save=writes named editor fields with DataFrame.at, then to_excel writes the whole sheet
+no_code_reads_one_duplicate_and_writes_the_other=YES
+no_hardcoded_column_index_for_these_headers=YES

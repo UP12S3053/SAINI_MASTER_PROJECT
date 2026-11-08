@@ -1,0 +1,4 @@
+R20_TEMPLATE_INVENTORY
+templates_changed=NO
+configured=D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\templates\IDCARD\BSM.png absolute=True mixed_slash=False exists=True info=PNG (649, 983) RGBA sha256=FE644757E1F23AAAB47C46AE2880F8DFD4CCDE63B645C50B6C10B7C855151B73 rows=13 shared=False
+configured=D:/ID_CARD_PROJECT/templates/BSM_F.png absolute=True mixed_slash=False exists=False info=NOT_APPLICABLE sha256=MISSING rows=82,129,214 shared=True

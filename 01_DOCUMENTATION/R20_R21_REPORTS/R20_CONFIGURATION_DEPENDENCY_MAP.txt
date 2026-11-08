@@ -1,0 +1,217 @@
+R20_CONFIGURATION_DEPENDENCY_MAP
+header=school_code column=A#1 generator=NOT VERIFIED editor=named editor input render=NOT VERIFIED missing_behavior=NOT VERIFIED
+header=SCHOOLNAME column=B#2 generator=read default='' | read default='' | read default='' | read default='' editor=named editor input render=generator read missing_behavior=see generator default
+header=SCHOOLADD column=C#3 generator=read default='' | read default='' | read default='' | read default='' editor=named editor input render=generator read missing_behavior=see generator default
+header=template column=D#4 generator=read default='' | read default='' editor=named editor input render=generator read missing_behavior=see generator default
+column=E header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=F header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+header=SCHOOL_LOGO_PATH column=G#7 generator=read default='' | read default='' editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=PRINCI_SIGN_PATH column=H#8 generator=read default='' | read default='' editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=ACTIVE column=I#9 generator=NOT VERIFIED editor=named editor input render=NOT VERIFIED missing_behavior=NOT VERIFIED
+header=STUDENT_PHOTO_X column=J#10 generator=read default=0 | read default=80 editor=named editor input render=generator read missing_behavior=see generator default
+header=STUDENT_PHOTO_Y column=K#11 generator=read default=0 | read default=200 editor=named editor input render=generator read missing_behavior=see generator default
+header=STUDENT_PHOTO_W column=L#12 generator=read default=100 | read default=250 editor=named editor input render=generator read missing_behavior=see generator default
+header=STUDENT_PHOTO_H column=M#13 generator=read default=100 | read default=300 editor=named editor input render=generator read missing_behavior=see generator default
+header=PHOTO_RADIUS column=N#14 generator=read default=0 | read default=30 editor=named editor input render=generator read missing_behavior=see generator default
+header=LOGO_X column=O#15 generator=read default=0 | read default=0 editor=named editor input render=generator read missing_behavior=see generator default
+header=LOGO_Y column=P#16 generator=read default=0 | read default=0 editor=named editor input render=generator read missing_behavior=see generator default
+header=LOGO_W column=Q#17 generator=read default=100 | read default=100 editor=named editor input render=generator read missing_behavior=see generator default
+header=LOGO_H column=R#18 generator=read default=100 | read default=100 editor=named editor input render=generator read missing_behavior=see generator default
+header=LOGO_SHOW column=S#19 generator=read default=0 | read default=0 editor=named editor input render=generator read missing_behavior=see generator default
+header=SIGN_X column=T#20 generator=read default=0 | read default=0 editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=SIGN_Y column=U#21 generator=read default=0 | read default=0 editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=SIGN_W column=V#22 generator=read default=100 | read default=100 editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=SIGN_H column=W#23 generator=read default=100 | read default=100 editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=SIGN_SHOW column=X#24 generator=read default=0 | read default=0 editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=SCHOOLNAME_X column=Y#25 generator=read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=SCHOOLNAME_Y column=Z#26 generator=read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=SCHOOLNAME_FONT column=AA#27 generator=read default='arial' | read default='arial' editor=named editor input render=generator read missing_behavior=see generator default
+header=SCHOOLNAME_SIZE column=AB#28 generator=read default=25 | read default=25 editor=named editor input render=generator read missing_behavior=see generator default
+header=SCHOOLNAME_COLOUR column=AC#29 generator=read default='#000000' | read default='#000000' editor=named editor input render=generator read missing_behavior=see generator default
+header=SCHOOLNAME_UPPER column=AD#30 generator=read default=0 | read default=0 editor=named editor input render=generator read missing_behavior=see generator default
+header=SCHOOLADD_X column=AE#31 generator=read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=SCHOOLADD_Y column=AF#32 generator=read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=SCHOOLADD_FONT column=AG#33 generator=read default='arial' | read default='arial' editor=named editor input render=generator read missing_behavior=see generator default
+header=SCHOOLADD_SIZE column=AH#34 generator=read default=15 | read default=15 editor=named editor input render=generator read missing_behavior=see generator default
+header=SCHOOLADD_COLOUR column=AI#35 generator=read default='#000000' | read default='#000000' editor=named editor input render=generator read missing_behavior=see generator default
+header=SCHOOLADD_UPPER column=AJ#36 generator=read default=0 | read default=0 editor=named editor input render=generator read missing_behavior=see generator default
+header=NAME_SHOW column=AK#37 generator=read default=0 | read default=0 editor=named editor input render=generator read missing_behavior=see generator default
+header=NAME_ALIGN column=AL#38 generator=read default='center' | read default='center' editor=named editor input render=generator read missing_behavior=see generator default
+header=NAME_X column=AM#39 generator=read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=NAME_Y column=AN#40 generator=read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=NAME_FONT column=AO#41 generator=read default='arial' | read default='arial' editor=named editor input render=generator read missing_behavior=see generator default
+header=NAME_SIZE column=AP#42 generator=read default=25 | read default=25 editor=named editor input render=generator read missing_behavior=see generator default
+header=NAME_COLOR column=AQ#43 generator=read default='#000000' | read default='#000000' editor=named editor input render=generator read missing_behavior=see generator default
+header=NAME_UPPER column=AR#44 generator=read default=0 | read default=0 editor=named editor input render=generator read missing_behavior=see generator default
+header=CLASS_SHOW column=AS#45 generator=read default=0 | read default=0 editor=named editor input render=generator read missing_behavior=see generator default
+header=CLASS_X column=AT#46 generator=read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=CLASS_Y column=AU#47 generator=read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=CLASS_FONT column=AV#48 generator=read default='arial' | read default='arial' editor=named editor input render=generator read missing_behavior=see generator default
+header=CLASS_SIZE column=AW#49 generator=read default=15 | read default=15 editor=named editor input render=generator read missing_behavior=see generator default
+header=CLASS_COLOR column=AX#50 generator=read default='#000000' | read default='#000000' editor=named editor input render=generator read missing_behavior=see generator default
+header=CLASS_PREFIX column=AY#51 generator=read default='' | read default='' editor=named editor input render=generator read missing_behavior=see generator default
+header=FATHER_SHOW column=AZ#52 generator=read default=0 | read default=0 editor=named editor input render=generator read missing_behavior=see generator default
+header=FATHER_X column=BA#53 generator=read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=FATHER_Y column=BB#54 generator=read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=FATHER_FONT column=BC#55 generator=read default='arial' | read default='arial' editor=named editor input render=generator read missing_behavior=see generator default
+header=FATHER_SIZE column=BD#56 generator=read default=15 | read default=15 editor=named editor input render=generator read missing_behavior=see generator default
+header=FATHER_COLOR column=BE#57 generator=read default='#000000' | read default='#000000' editor=named editor input render=generator read missing_behavior=see generator default
+header=FATHER_PREFIX column=BF#58 generator=read default='' | read default='' editor=named editor input render=generator read missing_behavior=see generator default
+header=ROL_SHOW column=BG#59 generator=read default=0 | read default=0 editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=ROL_X column=BH#60 generator=read default=NONE | read default=NONE | read required | read required editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=ROL_Y column=BI#61 generator=read default=NONE | read required | read required editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=ROL_FONT column=BJ#62 generator=read default='arial' | read default='arial' editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=ROL_SIZE column=BK#63 generator=read default=15 | read default=15 editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=ROL_COLOR column=BL#64 generator=read default='#000000' | read default='#000000' editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=ROL_PREFIX column=BM#65 generator=read default='' | read default='' editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=MOTHER_SHOW column=BN#66 generator=read default=0 editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=FATHER_X column=BO#67 generator=read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=FATHER_Y column=BP#68 generator=read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=FATHER_FONT column=BQ#69 generator=read default='arial' | read default='arial' editor=named editor input render=generator read missing_behavior=see generator default
+header=FATHER_SIZE column=BR#70 generator=read default=15 | read default=15 editor=named editor input render=generator read missing_behavior=see generator default
+header=FATHER_COLOR column=BS#71 generator=read default='#000000' | read default='#000000' editor=named editor input render=generator read missing_behavior=see generator default
+header=FATHER_PREFIX column=BT#72 generator=read default='' | read default='' editor=named editor input render=generator read missing_behavior=see generator default
+header=FATHER_SHOW column=BU#73 generator=read default=0 | read default=0 editor=named editor input render=generator read missing_behavior=see generator default
+column=BV header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+header=M column=BW#75 generator=NOT VERIFIED editor=NOT_IN_EDITOR_FIELD_LIST render=NOT VERIFIED missing_behavior=NOT VERIFIED
+header=M column=BX#76 generator=NOT VERIFIED editor=NOT_IN_EDITOR_FIELD_LIST render=NOT VERIFIED missing_behavior=NOT VERIFIED
+header=M column=BY#77 generator=NOT VERIFIED editor=NOT_IN_EDITOR_FIELD_LIST render=NOT VERIFIED missing_behavior=NOT VERIFIED
+header=M column=BZ#78 generator=NOT VERIFIED editor=NOT_IN_EDITOR_FIELD_LIST render=NOT VERIFIED missing_behavior=NOT VERIFIED
+header=M column=CA#79 generator=NOT VERIFIED editor=NOT_IN_EDITOR_FIELD_LIST render=NOT VERIFIED missing_behavior=NOT VERIFIED
+header=MOB_SHOW column=CB#80 generator=read default=0 | read default=0 editor=named editor input render=generator read missing_behavior=see generator default
+header=MOB_X column=CC#81 generator=read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=MOB_Y column=CD#82 generator=read default=NONE | read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=MOB_FONT column=CE#83 generator=read default='arial' | read default='arial' editor=named editor input render=generator read missing_behavior=see generator default
+header=MOB_SIZE column=CF#84 generator=read default=15 | read default=15 editor=named editor input render=generator read missing_behavior=see generator default
+header=MOB_COLOR column=CG#85 generator=read default='#000000' | read default='#000000' editor=named editor input render=generator read missing_behavior=see generator default
+header=MOB_PREFIX column=CH#86 generator=read default='' | read default='' editor=named editor input render=generator read missing_behavior=see generator default
+header=ADDR_SHOW column=CI#87 generator=read default=0 | read default=0 editor=named editor input render=generator read missing_behavior=see generator default
+header=ADDR_X column=CJ#88 generator=read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=ADDR_Y column=CK#89 generator=read default=NONE | read default=NONE | read required | read required editor=named editor input render=generator read missing_behavior=see generator default
+header=ADDR_WRAP_W column=CL#90 generator=NOT VERIFIED editor=named editor input render=NOT VERIFIED missing_behavior=NOT VERIFIED
+header=ADDR_LINE_H column=CM#91 generator=NOT VERIFIED editor=named editor input render=NOT VERIFIED missing_behavior=NOT VERIFIED
+header=ADDR_FONT column=CN#92 generator=read default='arial' | read default='arial' editor=named editor input render=generator read missing_behavior=see generator default
+header=ADDR_SIZE column=CO#93 generator=read default=15 | read default=15 editor=named editor input render=generator read missing_behavior=see generator default
+header=ADDR_COLOR column=CP#94 generator=read default='#000000' | read default='#000000' editor=named editor input render=generator read missing_behavior=see generator default
+header=ADDR_PREFIX column=CQ#95 generator=read default='' | read default='' editor=named editor input render=generator read missing_behavior=see generator default
+header=CARD_TYPE column=CR#96 generator=read default='SINGLE' editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+header=CARD_ORIENTATION column=CS#97 generator=NOT VERIFIED editor=NOT_IN_EDITOR_FIELD_LIST render=NOT VERIFIED missing_behavior=NOT VERIFIED
+header=CARD column=CT#98 generator=read default='' editor=NOT_IN_EDITOR_FIELD_LIST render=generator read missing_behavior=see generator default
+column=CU header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+header=ADDR_SIZE column=CV#100 generator=read default=15 | read default=15 editor=named editor input render=generator read missing_behavior=see generator default
+header=ADDR_COLOR column=CW#101 generator=read default='#000000' | read default='#000000' editor=named editor input render=generator read missing_behavior=see generator default
+column=CX header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=CY header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=CZ header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DA header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DB header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DC header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DD header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DE header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DF header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DG header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DH header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DI header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DJ header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DK header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DL header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DM header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DN header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DO header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DP header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DQ header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DR header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DS header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DT header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DU header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DV header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DW header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DX header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DY header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=DZ header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EA header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EB header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EC header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=ED header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EE header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EF header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EG header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EH header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EI header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EJ header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EK header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EL header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EM header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EN header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EO header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EP header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EQ header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=ER header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=ES header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=ET header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EU header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EV header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EW header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EX header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EY header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=EZ header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FA header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FB header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FC header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FD header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FE header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FF header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FG header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FH header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FI header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FJ header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FK header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FL header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FM header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FN header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FO header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FP header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FQ header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FR header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FS header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FT header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FU header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FV header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FW header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FX header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FY header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=FZ header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GA header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GB header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GC header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GD header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GE header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GF header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GG header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GH header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GI header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GJ header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GK header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GL header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GM header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GN header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GO header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GP header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GQ header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GR header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GS header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GT header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GU header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GV header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GW header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GX header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GY header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=GZ header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=HA header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=HB header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=HC header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=HD header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=HE header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=HF header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=HG header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED
+column=HH header=BLANK generator=NOT VERIFIED editor=NOT VERIFIED

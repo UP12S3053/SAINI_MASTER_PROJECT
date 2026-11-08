@@ -1,0 +1,13 @@
+R21_FINAL_REPORT
+mode=READ_ONLY_MAPPING
+status=R21_MAPPING_COMPLETE
+schema_changed=NO
+workbook_saved=NO
+headers_changed=NO
+production_deployment=NOT_DONE
+cards_generated=NO
+cell_values_copied=NO
+live_r19_r20_unchanged=YES
+r21_code_folder_created=NO
+duplicate_headers_mapped=ADDR_COLOR,ADDR_SIZE,FATHER_COLOR,FATHER_FONT,FATHER_PREFIX,FATHER_SHOW,FATHER_SIZE,FATHER_X,FATHER_Y,M
+user_approval_required_before_r22=YES

@@ -1,0 +1,52 @@
+R21_USER_DECISIONS_REQUIRED
+answers_filled=NO
+DECISION header=ADDR_COLOR
+problem=current code can read or write only the first column named ADDR_COLOR
+evidence=first=CP later=CW source_references=3 r20_match=True
+options=approve the first column as authoritative; identify a real purpose for each later column; leave the workbook unchanged
+wrong_choice_effect=a later column's configuration can be ignored, or a save can preserve it under a renamed header
+DECISION header=ADDR_SIZE
+problem=current code can read or write only the first column named ADDR_SIZE
+evidence=first=CO later=CV source_references=3 r20_match=True
+options=approve the first column as authoritative; identify a real purpose for each later column; leave the workbook unchanged
+wrong_choice_effect=a later column's configuration can be ignored, or a save can preserve it under a renamed header
+DECISION header=FATHER_COLOR
+problem=current code can read or write only the first column named FATHER_COLOR
+evidence=first=BE later=BS source_references=3 r20_match=True
+options=approve the first column as authoritative; identify a real purpose for each later column; leave the workbook unchanged
+wrong_choice_effect=a later column's configuration can be ignored, or a save can preserve it under a renamed header
+DECISION header=FATHER_FONT
+problem=current code can read or write only the first column named FATHER_FONT
+evidence=first=BC later=BQ source_references=3 r20_match=True
+options=approve the first column as authoritative; identify a real purpose for each later column; leave the workbook unchanged
+wrong_choice_effect=a later column's configuration can be ignored, or a save can preserve it under a renamed header
+DECISION header=FATHER_PREFIX
+problem=current code can read or write only the first column named FATHER_PREFIX
+evidence=first=BF later=BT source_references=3 r20_match=True
+options=approve the first column as authoritative; identify a real purpose for each later column; leave the workbook unchanged
+wrong_choice_effect=a later column's configuration can be ignored, or a save can preserve it under a renamed header
+DECISION header=FATHER_SHOW
+problem=current code can read or write only the first column named FATHER_SHOW
+evidence=first=AZ later=BU source_references=3 r20_match=True
+options=approve the first column as authoritative; identify a real purpose for each later column; leave the workbook unchanged
+wrong_choice_effect=a later column's configuration can be ignored, or a save can preserve it under a renamed header
+DECISION header=FATHER_SIZE
+problem=current code can read or write only the first column named FATHER_SIZE
+evidence=first=BD later=BR source_references=3 r20_match=True
+options=approve the first column as authoritative; identify a real purpose for each later column; leave the workbook unchanged
+wrong_choice_effect=a later column's configuration can be ignored, or a save can preserve it under a renamed header
+DECISION header=FATHER_X
+problem=current code can read or write only the first column named FATHER_X
+evidence=first=BA later=BO source_references=5 r20_match=True
+options=approve the first column as authoritative; identify a real purpose for each later column; leave the workbook unchanged
+wrong_choice_effect=a later column's configuration can be ignored, or a save can preserve it under a renamed header
+DECISION header=FATHER_Y
+problem=current code can read or write only the first column named FATHER_Y
+evidence=first=BB later=BP source_references=5 r20_match=True
+options=approve the first column as authoritative; identify a real purpose for each later column; leave the workbook unchanged
+wrong_choice_effect=a later column's configuration can be ignored, or a save can preserve it under a renamed header
+DECISION header=M
+problem=current code can read or write only the first column named M
+evidence=first=BW later=BX,BY,BZ,CA source_references=0 r20_match=True
+options=approve the first column as authoritative; identify a real purpose for each later column; leave the workbook unchanged
+wrong_choice_effect=a later column's configuration can be ignored, or a save can preserve it under a renamed header

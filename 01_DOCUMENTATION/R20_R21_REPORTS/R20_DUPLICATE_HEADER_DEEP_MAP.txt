@@ -1,0 +1,193 @@
+R20_DUPLICATE_HEADER_DEEP_MAP
+schema_changed=NO
+samples_are_type_only
+duplicate_count=10
+HEADER ADDR_COLOR
+columns=CP#94,CW#101
+column=CP types=BLANK:9,COLOR:205,SHORT_TOKEN:3 sample=COLOR:#000000
+column=CW types=BLANK:47,COLOR:167,SHORT_TOKEN:3 sample=COLOR:#003366
+value_difference_count=2
+left_only_count=38
+right_only_count=0
+generator_references=read default='#000000' | read default='#000000'
+editor_field=YES
+generator_read=first exact header only
+editor_write=whole sheet if the editor saves; duplicate is not a separate named input
+lookup_ambiguous=YES
+data_loss_risk=YES
+purposes_differ=NOT VERIFIED
+current_action=KEEP AS IS
+future_proposal=USER DECISION REQUIRED
+merge_recommendation=NO
+HEADER ADDR_SIZE
+columns=CO#93,CV#100
+column=CO types=BLANK:9,NUMBER:205,SHORT_TOKEN:3 sample=NUMBER:30
+column=CV types=BLANK:47,NUMBER:167,SHORT_TOKEN:3 sample=NUMBER:33
+value_difference_count=42
+left_only_count=38
+right_only_count=0
+generator_references=read default=15 | read default=15
+editor_field=YES
+generator_read=first exact header only
+editor_write=whole sheet if the editor saves; duplicate is not a separate named input
+lookup_ambiguous=YES
+data_loss_risk=YES
+purposes_differ=NOT VERIFIED
+current_action=KEEP AS IS
+future_proposal=USER DECISION REQUIRED
+merge_recommendation=NO
+HEADER FATHER_COLOR
+columns=BE#57,BS#71
+column=BE types=BLANK:9,COLOR:205,SHORT_TOKEN:3 sample=COLOR:#000000
+column=BS types=BLANK:13,COLOR:201,SHORT_TOKEN:3 sample=COLOR:#000000
+value_difference_count=13
+left_only_count=4
+right_only_count=0
+generator_references=read default='#000000' | read default='#000000'
+editor_field=YES
+generator_read=first exact header only
+editor_write=whole sheet if the editor saves; duplicate is not a separate named input
+lookup_ambiguous=YES
+data_loss_risk=YES
+purposes_differ=NOT VERIFIED
+current_action=KEEP AS IS
+future_proposal=USER DECISION REQUIRED
+merge_recommendation=NO
+HEADER FATHER_FONT
+columns=BC#55,BQ#69
+column=BC types=BLANK:9,SHORT_TOKEN:206,TEXT:2 sample=SHORT_TOKEN:IMPACT
+column=BQ types=BLANK:13,SHORT_TOKEN:202,TEXT:2 sample=SHORT_TOKEN:IMPACT
+value_difference_count=2
+left_only_count=4
+right_only_count=0
+generator_references=read default='arial' | read default='arial'
+editor_field=YES
+generator_read=first exact header only
+editor_write=whole sheet if the editor saves; duplicate is not a separate named input
+lookup_ambiguous=YES
+data_loss_risk=YES
+purposes_differ=NOT VERIFIED
+current_action=KEEP AS IS
+future_proposal=USER DECISION REQUIRED
+merge_recommendation=NO
+HEADER FATHER_PREFIX
+columns=BF#58,BT#72
+column=BF types=BLANK:85,SHORT_TOKEN:130,TEXT:2 sample=SHORT_TOKEN::
+column=BT types=BLANK:85,SHORT_TOKEN:130,TEXT:2 sample=SHORT_TOKEN::
+value_difference_count=2
+left_only_count=1
+right_only_count=1
+generator_references=read default='' | read default=''
+editor_field=YES
+generator_read=first exact header only
+editor_write=whole sheet if the editor saves; duplicate is not a separate named input
+lookup_ambiguous=YES
+data_loss_risk=YES
+purposes_differ=NOT VERIFIED
+current_action=KEEP AS IS
+future_proposal=USER DECISION REQUIRED
+merge_recommendation=NO
+HEADER FATHER_SHOW
+columns=AZ#52,BU#73
+column=AZ types=BLANK:9,NUMBER:205,SHORT_TOKEN:3 sample=NUMBER:1
+column=BU types=BLANK:47,NUMBER:167,SHORT_TOKEN:3 sample=NUMBER:0
+value_difference_count=3
+left_only_count=38
+right_only_count=0
+generator_references=read default=0 | read default=0
+editor_field=YES
+generator_read=first exact header only
+editor_write=whole sheet if the editor saves; duplicate is not a separate named input
+lookup_ambiguous=YES
+data_loss_risk=YES
+purposes_differ=NOT VERIFIED
+current_action=KEEP AS IS
+future_proposal=USER DECISION REQUIRED
+merge_recommendation=NO
+HEADER FATHER_SIZE
+columns=BD#56,BR#70
+column=BD types=BLANK:9,NUMBER:205,SHORT_TOKEN:3 sample=NUMBER:32
+column=BR types=BLANK:13,NUMBER:201,SHORT_TOKEN:3 sample=NUMBER:40
+value_difference_count=66
+left_only_count=4
+right_only_count=0
+generator_references=read default=15 | read default=15
+editor_field=YES
+generator_read=first exact header only
+editor_write=whole sheet if the editor saves; duplicate is not a separate named input
+lookup_ambiguous=YES
+data_loss_risk=YES
+purposes_differ=NOT VERIFIED
+current_action=KEEP AS IS
+future_proposal=USER DECISION REQUIRED
+merge_recommendation=NO
+HEADER FATHER_X
+columns=BA#53,BO#67
+column=BA types=BLANK:9,NUMBER:205,SHORT_TOKEN:3 sample=NUMBER:385
+column=BO types=BLANK:15,NUMBER:199,SHORT_TOKEN:3 sample=NUMBER:450
+value_difference_count=73
+left_only_count=6
+right_only_count=0
+generator_references=read default=NONE | read default=NONE | read required | read required
+editor_field=YES
+generator_read=first exact header only
+editor_write=whole sheet if the editor saves; duplicate is not a separate named input
+lookup_ambiguous=YES
+data_loss_risk=YES
+purposes_differ=NOT VERIFIED
+current_action=KEEP AS IS
+future_proposal=USER DECISION REQUIRED
+merge_recommendation=NO
+HEADER FATHER_Y
+columns=BB#54,BP#68
+column=BB types=BLANK:9,NUMBER:205,SHORT_TOKEN:3 sample=NUMBER:400
+column=BP types=BLANK:14,NUMBER:200,SHORT_TOKEN:3 sample=NUMBER:380
+value_difference_count=74
+left_only_count=5
+right_only_count=0
+generator_references=read default=NONE | read default=NONE | read required | read required
+editor_field=YES
+generator_read=first exact header only
+editor_write=whole sheet if the editor saves; duplicate is not a separate named input
+lookup_ambiguous=YES
+data_loss_risk=YES
+purposes_differ=NOT VERIFIED
+current_action=KEEP AS IS
+future_proposal=USER DECISION REQUIRED
+merge_recommendation=NO
+HEADER M
+columns=BW#75,BX#76,BY#77,BZ#78,CA#79
+column=BW types=BLANK:46,NUMBER:168,SHORT_TOKEN:3 sample=NUMBER:740
+column=BX types=BLANK:46,SHORT_TOKEN:169,TEXT:2 sample=SHORT_TOKEN:BOOKOSB
+column=BY types=BLANK:46,NUMBER:168,SHORT_TOKEN:3 sample=NUMBER:33
+column=BZ types=BLANK:46,COLOR:168,SHORT_TOKEN:3 sample=COLOR:#003366
+column=CA types=BLANK:84,SHORT_TOKEN:131,TEXT:2 sample=SHORT_TOKEN::
+value_difference_count=0
+left_only_count=0
+right_only_count=0
+generator_references=NONE
+editor_field=NO
+generator_read=first exact header only
+editor_write=whole sheet if the editor saves; duplicate is not a separate named input
+lookup_ambiguous=YES
+data_loss_risk=NOT_SHOWN
+purposes_differ=NOT VERIFIED
+current_action=KEEP AS IS
+future_proposal=USER DECISION REQUIRED
+merge_recommendation=NO
+FOCUS_COLUMNS
+FATHER_X=BA#53,BO#67
+FATHER_Y=BB#54,BP#68
+FATHER_FONT=BC#55,BQ#69
+FATHER_SIZE=BD#56,BR#70
+FATHER_COLOR=BE#57,BS#71
+FATHER_PREFIX=BF#58,BT#72
+FATHER_SHOW=AZ#52,BU#73
+ADDR_SIZE=CO#93,CV#100
+ADDR_COLOR=CP#94,CW#101
+COLUMNS_75_TO_79
+index=75 letter=BW header=M duplicate=YES
+index=76 letter=BX header=M duplicate=YES
+index=77 letter=BY header=M duplicate=YES
+index=78 letter=BZ header=M duplicate=YES
+index=79 letter=CA header=M duplicate=YES

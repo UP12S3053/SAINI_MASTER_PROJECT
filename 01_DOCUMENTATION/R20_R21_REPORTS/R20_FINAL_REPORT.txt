@@ -1,0 +1,14 @@
+R20_FINAL_REPORT
+mode=READ_ONLY_ANALYSIS
+status=R20_ANALYSIS_COMPLETE
+production_migration=NOT_DONE
+workbook_saved=NO
+headers_changed=NO
+school_names_invented=NO
+templates_created=NO
+cards_generated=NO
+live_and_r19_unchanged=YES
+r19_reports_missing=NONE
+duplicate_header_count=10
+bsm_rows_reviewed=13,82,129,214
+user_decisions_required=YES

@@ -1,0 +1,7 @@
+R20_BSM_CONFIGURATION_REVIEW
+school_names_printed=NO
+rows_changed=NO
+row=13 school_code=BSM SCHOOLNAME=BLANK CARD=IDCARD CARD_TYPE=single template=D:\SHRI_JAI_SHRI_RAM\project_panels\ID_CARD_PROJECT\templates\IDCARD\BSM.png exists=True completeness_gaps=SCHOOLNAME_X,SCHOOLNAME_Y eligibility=REJECTED reason=SCHOOLNAME missing or whitespace-only
+row=82 school_code=BSM SCHOOLNAME=BLANK CARD=IDCARD CARD_TYPE=single template=D:/ID_CARD_PROJECT/templates/BSM_F.png exists=False completeness_gaps=SCHOOLNAME_X,SCHOOLNAME_Y eligibility=REJECTED reason=SCHOOLNAME missing or whitespace-only; template file missing
+row=129 school_code=BSM SCHOOLNAME=BLANK CARD=ADMITCARD CARD_TYPE=SINGLE template=D:/ID_CARD_PROJECT/templates/BSM_F.png exists=False completeness_gaps=SCHOOLNAME_X,SCHOOLNAME_Y eligibility=REJECTED reason=SCHOOLNAME missing or whitespace-only; template file missing
+row=214 school_code=BSM SCHOOLNAME=BLANK CARD=MARKSHEET CARD_TYPE=SINGLE template=D:/ID_CARD_PROJECT/templates/BSM_F.png exists=False completeness_gaps=SCHOOLNAME_X,SCHOOLNAME_Y eligibility=REJECTED reason=SCHOOLNAME missing or whitespace-only; template file missing
